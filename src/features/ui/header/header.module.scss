@@ -1,0 +1,50 @@
+@use "@/assets/sass/main" as *;
+
+.container {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0.25rem;
+  top: 0;
+  z-index: 1;
+  user-select: none;
+  height: 3rem;
+  background-color: var(--bg-color);
+  box-shadow: $blue-gray-shadow;
+}
+
+.hideText {
+  @extend %hide-text;
+}
+
+.drawerWrapper {
+  display: flex;
+  flex: 1;
+}
+
+.searchBarWrapper {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.mainIcon {
+  width: 3rem;
+  width: 3rem;
+}
+
+.searchBar {
+  margin-left: 1rem;
+}
+
+.hamburgerIcon {
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+@include media-query($small) {
+  .searchBar {
+    margin-right: 1rem;
+  }
+}

@@ -1,0 +1,43 @@
+// @use "../abstracts/colors";
+@use "../abstracts";
+
+$theme: (
+  bg-color: (
+    light: abstracts.$slate-50,
+    dark: "black",
+  ),
+  text-color: (
+    light: abstracts.$slate-800,
+    dark: "black",
+  ),
+  card-bg-color: (
+    light: abstracts.$stone-100,
+    dark: "black",
+  ),
+  darker-card-bg-color: (
+    light: abstracts.$neutral-300,
+    dark: "black",
+  ),
+  pid-color: (
+    light: abstracts.$gray-500,
+    dark: "black",
+  ),
+);
+
+@mixin styles($mode) {
+  @each $key, $map in $theme {
+    @each $type, $color in $map {
+      @if $mode == $type {
+        --#{$key}: #{$color};
+      }
+    }
+  }
+}
+
+.dark-theme {
+  @include styles("dark");
+}
+
+.light-theme {
+  @include styles("light");
+}

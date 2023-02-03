@@ -1,0 +1,87 @@
+@use "@/assets/sass/main" as *;
+
+.container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  background-color: var(--card-bg-color);
+  width: 100%;
+  transition: background-color ease-in-out 300ms;
+  user-select: none;
+  border: 1px solid var(--darker-card-bg-color);
+  overflow: hidden;
+}
+
+.container:hover {
+  background-color: var(--darker-card-bg-color);
+}
+
+.container:hover .pokeImg {
+  transform: scale(1.25);
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 0.25rem 0.25rem 0.25rem;
+}
+
+.headContainer {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.pokeName {
+  font-size: 1.1rem;
+  font-weight: 450;
+  color: var(--text-color);
+  align-self: flex-start;
+}
+
+.pokeId {
+  color: var(--pid-color);
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
+.typeContainer {
+  display: flex;
+  margin-top: 0.3rem;
+}
+
+.typeContainer {
+  *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
+
+.rightContainer {
+  @extend %flex-center;
+  flex: 1;
+  position: relative;
+}
+
+.pokeImg {
+  height: auto;
+  position: absolute;
+  right: 0;
+  max-width: 5rem;
+  transition: transform ease-in-out 100ms;
+}
+
+@include media-query($small) {
+  .pokeName {
+    font-size: 1.25rem;
+  }
+  .pokeImg {
+    max-width: 6rem;
+  }
+  .pokeId {
+    font-size: 3rem;
+  }
+  .typeContainer {
+    margin-top: 0.5rem;
+  }
+}

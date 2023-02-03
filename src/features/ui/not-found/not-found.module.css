@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 45vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.container h2 {
+  font-weight: 300;
+}

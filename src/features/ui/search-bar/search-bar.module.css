@@ -1,0 +1,34 @@
+.container {
+  border-radius: 0.5rem;
+  display: flex;
+  padding: 0.25rem;
+  background-color: #e2e8f0;
+}
+
+.container > input {
+  border-style: hidden;
+  background-color: transparent;
+  font-weight: 350;
+  font-size: 1rem;
+  font-family: inherit;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 100%;
+}
+
+.container > input:focus {
+  outline: none;
+}
+
+.container:has(input:hover) {
+  transition: background-color ease-in-out 300ms;
+  background-color: #cbd5e1;
+}
+
+.container:has(input:focus) {
+  background-color: #cbd5e1;
+}
+
+.container > input::placeholder {
+  font-weight: 500;
+}
