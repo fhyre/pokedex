@@ -1,0 +1,62 @@
+@use "@/assets/sass/main" as *;
+
+.container {
+  @include fade-in(200ms);
+
+  margin: 0.5rem 0.5rem 0 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+
+  color: var(--text-color);
+  font-size: 1.4rem;
+
+  & > div {
+    margin-bottom: 1rem;
+  }
+}
+
+.dataField {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+
+  h2 {
+    @extend %clip-text;
+    font-size: 1.5rem;
+    font-weight: 600;
+    filter: brightness(0.9);
+  }
+
+  p {
+    filter: brightness(0.9);
+  }
+
+  &::after {
+    content: "";
+    border-bottom: 2px solid var(--underline-color);
+    position: absolute;
+    bottom: -0.25rem;
+    left: 0;
+    right: 0;
+  }
+}
+
+.typeContainer {
+  display: flex;
+  *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+.abilitiesContainer {
+  display: flex;
+  overflow: auto;
+  margin-left: 1rem;
+  white-space: nowrap;
+
+  p:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}

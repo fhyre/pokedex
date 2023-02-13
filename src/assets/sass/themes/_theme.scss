@@ -1,4 +1,3 @@
-// @use "../abstracts/colors";
 @use "../abstracts";
 
 $theme: (
@@ -20,6 +19,10 @@ $theme: (
   ),
   pid-color: (
     light: abstracts.$gray-500,
+    dark: "black",
+  ),
+  underline-color: (
+    light: abstracts.$gray-200,
     dark: "black",
   ),
 );

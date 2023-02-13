@@ -1,4 +1,4 @@
-import { memo, useEffect, useRef, useState } from "react";
+import { memo, ReactElement, useEffect, useRef, useState } from "react";
 import { formatNodeData } from "./format-node-data";
 import { useScrollListen } from "./use-scroll-listen";
 import styles from "./virtual-scroll.module.css";
@@ -7,7 +7,7 @@ interface VirtualScroll {
   className: string;
   data: JSX.Element[];
   offset: number;
-  FallbackComp: React.FunctionComponent<any>;
+  FallbackComp: React.FunctionComponent;
 }
 
 interface StartEndPos {
@@ -21,7 +21,7 @@ const VirtualScroll = memo(
     data,
     offset: neighborOffset,
     FallbackComp,
-  }: VirtualScroll): JSX.Element => {
+  }: VirtualScroll): ReactElement => {
     const nodeContainerRef = useRef<HTMLDivElement>(null);
     const [containerRef, scrollTop] = useScrollListen();
     const [virtStyles, setVirtStyles] = useState<any>({});

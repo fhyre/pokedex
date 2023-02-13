@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
       <Head>
-        <title>PokeDex</title>
+        <title>Pokédex</title>
       </Head>
       <div className={robotoFlex.className}>
         <Component {...pageProps} />

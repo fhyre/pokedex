@@ -5,57 +5,98 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  user-select: none;
+  min-width: 320px;
+}
+
+.returnArrow {
+  align-self: flex-start;
+  position: absolute;
+  z-index: 1;
+
+  svg {
+    width: 1.75rem;
+    height: auto;
+    color: $slate-600;
+  }
+}
+
+.heading {
+  @extend %hide-text;
+}
+
+.pokeImgContainer {
+  position: relative;
+  width: 100%;
+
+  & div:first-child {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.75rem;
+    font-size: 6rem;
+    mix-blend-mode: multiply;
+    white-space: nowrap;
+  }
 }
 
 .pokeImgWrapper {
   @extend %flex-center;
+  @include fade-in(300ms);
+  position: relative;
 }
 
 .pokeImg {
-  width: 80%;
+  width: 55%;
   height: auto;
   max-width: 15rem;
-  margin: 1rem;
+  margin: 1rem 0 1rem 0;
 }
 
 .detailsContainer {
-  position: relative;
-  background-color: $slate-100;
-  border-radius: 0.75rem;
-  width: 97%;
-  margin-bottom: 0.5rem;
-  box-shadow: $black-box-shadow;
+  background-color: var(--bg-color);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
   flex-grow: 1;
-
-  div:nth-of-type(1) {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
 }
 
-.detailsContainer ul {
-  display: flex;
-  list-style-type: none;
-  white-space: nowrap;
-  padding: 0.25rem 0 0.25rem 0;
-  overflow-x: auto;
-  font-weight: 350;
+.tabsContainer {
+  padding: 0.5rem;
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  & ul {
+    display: flex;
+    list-style-type: none;
+    white-space: nowrap;
+    overflow-x: auto;
 
-  li {
-    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-    background-color: $gray-200;
-    border-radius: 5rem;
-
-    &:not(:last-child) {
-      margin-right: 1.5rem;
+    &::-webkit-scrollbar {
+      display: none;
     }
-  }
 
-  li:hover {
-    cursor: pointer;
+    li {
+      padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+      border-radius: 5rem;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      h2 {
+        font-weight: 350;
+        font-size: inherit;
+      }
+    }
+
+    li:hover {
+      cursor: pointer;
+    }
+
+    li:active {
+      transition: background-color 200ms ease-in-out;
+    }
   }
 }

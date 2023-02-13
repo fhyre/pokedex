@@ -21,7 +21,7 @@ export function PokemonList(): JSX.Element {
         <Link
           href={`/pokemon/${poke.id}`}
           style={{ textDecoration: "none" }}
-          key={poke.id}
+          key={poke.id + " " + poke.name}
           tabIndex={-1}
         >
           <PokemonListCard {...poke} />

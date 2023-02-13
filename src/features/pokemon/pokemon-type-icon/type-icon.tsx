@@ -1,8 +1,13 @@
 import styles from "./type-icon.module.scss";
-import { pokeTypes } from "../types";
+import { pokeTypes } from "@/features/pokemon";
 import Image from "next/image";
 
-export function TypeIcon({ type, status, format }: pokeTypes): JSX.Element {
+interface ITypeIcon extends pokeTypes {
+  size: "small" | "medium" | "large";
+  prio?: boolean;
+}
+
+export function TypeIcon({ type, status, size, prio }: ITypeIcon): JSX.Element {
   return (
     <Image
       src={`/type-icons/${type}.png`}
@@ -10,16 +15,12 @@ export function TypeIcon({ type, status, format }: pokeTypes): JSX.Element {
       height={126}
       quality={100}
       alt=""
-      className={styles.smallType}
+      className={styles[`${size}Type`]}
+      priority={prio}
     />
   );
 }
 
-{
-  /* <div
-      className={`${styles[type]} ${styles[status]} ${
-        styles[`${format}Sprite`]
-      }`}
-      aria-label={type}
-    /> */
-}
+TypeIcon.defaultProps = {
+  prio: false,
+};

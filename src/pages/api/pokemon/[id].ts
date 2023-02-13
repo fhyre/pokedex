@@ -1,7 +1,7 @@
 import { getPokemon } from "@/features/pokemon";
 import { NextApiRequest, NextApiResponse } from "next";
 
-export default async function handler(
+export default async function getPokeById(
   req: NextApiRequest,
   res: NextApiResponse
 ): Promise<void> {

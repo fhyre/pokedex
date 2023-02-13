@@ -3,34 +3,78 @@ import Image from "next/image";
 import { convertId } from "../utils";
 import { alexandria } from "@/assets/fonts";
 import { useState } from "react";
-import { getTypeColor } from "@/features/pokemon";
+import { getTypeColor, Pokemon } from "@/features/pokemon";
+import {
+  EvolutionsTab,
+  FormsTab,
+  GeneralTab,
+  LocationsTab,
+  MovesTab,
+  StatsTab,
+} from "./tabs";
+import ArrowLeft from "@/public/icons/arrow-left";
+import Link from "next/link";
 
-const initialTabs = new Map([
-  ["general", true],
-  ["stats", false],
-  ["moves", false],
-  ["evolutions", false],
-  ["forms", false],
-  ["locations", false],
-]);
+type TabNames =
+  | "general"
+  | "stats"
+  | "moves"
+  | "evolutions"
+  | "forms"
+  | "locations";
 
-export function PokemonDetails({ id, data }): JSX.Element {
-  const [tabs, setTabs] = useState(initialTabs);
+const tabs: TabNames[] = [
+  "general",
+  "stats",
+  "moves",
+  "evolutions",
+  "forms",
+  "locations",
+];
 
-  const strId = convertId(id);
+interface Details {
+  data: Pokemon;
+}
 
+export function PokemonDetails({ data }: Details): JSX.Element {
+  const [selectedTab, setSelectedTab] = useState<TabNames>("general");
+
+  //*Variables
+  const strId = convertId(data.id.toString());
   const type1 = getTypeColor(data.types[0].type.name);
-  const type2 = getTypeColor(data.types[1] ? data.types[1].type.name : "white");
+  const type2 = getTypeColor(data.types[1] && data.types[1].type.name);
+  const gradientStr = `linear-gradient(45deg, ${type1}, ${type2})`;
 
+  const tabMapping: Map<TabNames, JSX.Element> = new Map([
+    [
+      "general",
+      <GeneralTab
+        data={data}
+        grdColor={gradientStr}
+        typeClr={type1}
+        key={"general-tab"}
+      />,
+    ],
+    ["stats", <StatsTab key={"stats-tab"} />],
+    ["moves", <MovesTab key={"moves-tab"} />],
+    ["evolutions", <EvolutionsTab key={"evolutions-tab"} />],
+    ["forms", <FormsTab key={"forms-tab"} />],
+    ["locations", <LocationsTab key={"locations-tab"} />],
+  ]);
+
+  //*Tab Array
   const tabItems = [];
-  tabs.forEach((selected, name) =>
+  tabs.forEach((name) =>
     tabItems.push(
       <li
         style={{
-          backgroundColor: selected ? type1 : "transparent",
-          color: selected ? "white" : type1,
+          background: name === selectedTab ? gradientStr : "transparent",
+          color: name === selectedTab ? "white" : type1,
         }}
-        onClick={(e) => console.log(e)}
+        onClick={(e) => {
+          const target = e.target as HTMLElement;
+          setSelectedTab(target.innerText.toLowerCase() as TabNames);
+        }}
         key={name}
       >
         {name.toUpperCase()}
@@ -39,44 +83,43 @@ export function PokemonDetails({ id, data }): JSX.Element {
   );
 
   return (
-    <div className={styles.container}>
-      <section className={styles.pokeImgWrapper}>
-        <Image
-          src={`https://dfuzyzc1tyyvb.cloudfront.net/${strId}.png`}
-          quality={100}
-          width={600}
-          height={600}
-          alt={data.name}
-          className={styles.pokeImg}
-        />
-      </section>
+    <div
+      className={styles.container}
+      style={{
+        background: gradientStr,
+      }}
+    >
+      <Link href="/" className={styles.returnArrow}>
+        <ArrowLeft />
+      </Link>
+      <h1 className={styles.heading}>{`about ${data.name}`}</h1>
+      <div className={styles.pokeImgContainer}>
+        <div
+          style={{
+            color: type1,
+          }}
+          className={alexandria.className}
+        >
+          {data.name.toUpperCase()}
+        </div>
+        <div className={styles.pokeImgWrapper}>
+          <Image
+            src={`https://dfuzyzc1tyyvb.cloudfront.net/${strId}.png`}
+            quality={100}
+            width={600}
+            height={600}
+            alt={data.name}
+            className={styles.pokeImg}
+            priority
+          />
+        </div>
+      </div>
       <section className={styles.detailsContainer}>
-        <div>
+        <div className={styles.tabsContainer}>
           <ul className={alexandria.className}>{tabItems}</ul>
         </div>
+        <div>{tabMapping.get(selectedTab)}</div>
       </section>
     </div>
   );
-}
-
-{
-  /* <li
-  key={"tab" + i}
-  style={{
-    backgroundColor: selected ? type1 : "transparent",
-    color: selected ? "white" : type1,
-  }}
-  onClick={(e) => console.log(e)}
->
-  {name.toUpperCase()}
-</li>; */
-}
-
-{
-  /* <li>General</li>
-<li>Stats</li>
-<li>Moves</li>
-<li>Evolutions</li>
-<li>Forms</li>
-<li>Locations</li> */
 }

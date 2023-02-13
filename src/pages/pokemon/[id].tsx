@@ -1,10 +1,10 @@
-import { getPokemon, PokemonDetails } from "@/features/pokemon";
+import { PokemonDetails, getPokemon } from "@/features/pokemon";
 import { GetStaticPaths, GetStaticProps } from "next";
 
-export default function DexEntry({ id, data }): JSX.Element {
+export default function DexEntry({ data }): JSX.Element {
   return (
     <main>
-      <PokemonDetails id={id.toString()} data={data} />
+      <PokemonDetails data={data} />
     </main>
   );
 }

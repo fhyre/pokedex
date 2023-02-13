@@ -1,4 +1,4 @@
-import { InitialPokeData } from "../types";
+import { InitialPokeData } from "@/features/pokemon";
 
 export const allPokemon: InitialPokeData[] = [
   { id: 1, name: "bulbasaur", types: ["grass", "poison"], gen: 1 },
@@ -1009,4 +1009,4 @@ export const allPokemon: InitialPokeData[] = [
   { id: 1006, name: "iron Valiant", types: ["fairy", "fighting"], gen: 9 },
   { id: 1007, name: "koraidon", types: ["fighting", "dragon"], gen: 9 },
   { id: 1008, name: "miraidon", types: ["electric", "dragon"], gen: 9 },
-];
+] as const;

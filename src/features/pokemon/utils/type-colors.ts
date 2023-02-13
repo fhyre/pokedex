@@ -56,6 +56,6 @@ export const getTypeColor = (typing: string): string => {
     case "fairy":
       return fairy;
     default:
-      return "beige";
+      return "#d4d4d4";
   }
 };
