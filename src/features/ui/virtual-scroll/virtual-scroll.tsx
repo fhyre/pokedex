@@ -1,4 +1,11 @@
-import { memo, ReactElement, useEffect, useRef, useState } from "react";
+import {
+  memo,
+  ReactElement,
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from "react";
 import { formatNodeData } from "./format-node-data";
 import { useScrollListen } from "./use-scroll-listen";
 import styles from "./virtual-scroll.module.css";
@@ -8,11 +15,20 @@ interface VirtualScroll {
   data: JSX.Element[];
   offset: number;
   FallbackComp: React.FunctionComponent;
+  scrollProps?: {
+    scrollCb: (e: number) => void;
+    scrollPercent: number;
+  };
 }
 
 interface StartEndPos {
   startPos: number;
   endPos: number;
+}
+
+interface IVirtStyles {
+  height?: number;
+  offsetY?: number;
 }
 
 const VirtualScroll = memo(
@@ -24,22 +40,28 @@ const VirtualScroll = memo(
   }: VirtualScroll): ReactElement => {
     const nodeContainerRef = useRef<HTMLDivElement>(null);
     const [containerRef, scrollTop] = useScrollListen();
-    const [virtStyles, setVirtStyles] = useState<any>({});
+    const [virtStyles, setVirtStyles] = useState<IVirtStyles>({});
     const [nodePos, setNodePos] = useState<StartEndPos>({
       startPos: 0,
-      endPos: 50,
+      endPos: 10,
     });
+    const [nodeDetails, setNodeDetails] = useState<any>({});
+
+    //*Set node data
+    useEffect(() => {
+      setNodeDetails(formatNodeData(nodeContainerRef, data.length));
+    }, [nodeContainerRef, data.length]);
 
     useEffect(() => {
       const onResize = (e: Event) => {
         const oldTotalHeight = containerRef.current.scrollHeight;
         const scrollPos = containerRef.current.scrollTop;
-
         const percent = scrollPos / oldTotalHeight;
-        const updatedData = formatNodeData(nodeContainerRef, data.length);
 
-        const scrollTo = updatedData.totalHeight * percent;
-        containerRef.current.scrollTo(0, scrollTo);
+        setNodeDetails(formatNodeData(nodeContainerRef, data.length));
+
+        const scrollToPos = nodeDetails.totalHeight * percent;
+        containerRef.current.scrollTo(0, scrollToPos);
       };
 
       window.addEventListener("resize", onResize);
@@ -47,22 +69,17 @@ const VirtualScroll = memo(
       return () => {
         window.removeEventListener("resize", onResize);
       };
-    }, [containerRef, data.length]);
+    }, [containerRef, data.length, nodeDetails]);
 
     useEffect(() => {
       const calcData = (): void => {
-        const nodeDetails = formatNodeData(nodeContainerRef, data.length);
-        if (nodeDetails.totalHeight !== virtStyles.height) {
-          setVirtStyles((prev) => ({
-            ...prev,
-            height: `${nodeDetails.totalHeight}px`,
-          }));
-        }
+        setVirtStyles((prev) => ({
+          ...prev,
+          height: nodeDetails.totalHeight,
+        }));
       };
 
       const nodesInView = (): void => {
-        const nodeDetails = formatNodeData(nodeContainerRef, data.length);
-
         const renderAhead = 3;
 
         const rowsInView = Math.ceil(
@@ -89,13 +106,13 @@ const VirtualScroll = memo(
 
         setVirtStyles((prev) => ({
           ...prev,
-          offsetY: `translateY(${startingRow * nodeDetails.nodeHeight}px)`,
+          offsetY: startingRow * nodeDetails.nodeHeight,
         }));
       };
 
       calcData();
       nodesInView();
-    }, [data, scrollTop, nodeContainerRef, containerRef, virtStyles.height]);
+    }, [data.length, scrollTop, containerRef, nodeDetails]);
 
     return (
       <div
@@ -103,11 +120,11 @@ const VirtualScroll = memo(
         style={{ height: `calc(100vh - ${neighborOffset}px)` }}
         ref={containerRef}
       >
-        <div style={{ height: virtStyles.height }}>
+        <div style={{ height: `${virtStyles.height}px` }}>
           <div
             className={`${containerStyle}`}
             style={{
-              transform: virtStyles.offsetY,
+              transform: `translateY(${virtStyles.offsetY}px)`,
             }}
             ref={nodeContainerRef}
           >

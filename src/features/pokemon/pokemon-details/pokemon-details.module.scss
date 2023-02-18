@@ -13,11 +13,11 @@
   align-self: flex-start;
   position: absolute;
   z-index: 1;
+  mix-blend-mode: screen;
 
   svg {
     width: 1.75rem;
     height: auto;
-    color: $slate-600;
   }
 }
 
@@ -67,7 +67,7 @@
 .tabsContainer {
   padding: 0.5rem;
 
-  & ul {
+  ul {
     display: flex;
     list-style-type: none;
     white-space: nowrap;
@@ -89,14 +89,22 @@
         font-weight: 350;
         font-size: inherit;
       }
-    }
 
-    li:hover {
-      cursor: pointer;
-    }
+      &:hover {
+        cursor: pointer;
+      }
 
-    li:active {
-      transition: background-color 200ms ease-in-out;
+      @media (hover: none) and (pointer: coarse) {
+        &:active {
+          @include fade-in(200ms);
+        }
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        &:not(:active) {
+          @include fade-in(200ms);
+        }
+      }
     }
   }
 }

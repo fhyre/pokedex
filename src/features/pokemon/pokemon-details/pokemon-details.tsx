@@ -3,7 +3,7 @@ import Image from "next/image";
 import { convertId } from "../utils";
 import { alexandria } from "@/assets/fonts";
 import { useState } from "react";
-import { getTypeColor, Pokemon } from "@/features/pokemon";
+import { getTypeColor, Pokemon, allPokemon } from "@/features/pokemon";
 import {
   EvolutionsTab,
   FormsTab,
@@ -44,6 +44,10 @@ export function PokemonDetails({ data }: Details): JSX.Element {
   const type1 = getTypeColor(data.types[0].type.name);
   const type2 = getTypeColor(data.types[1] && data.types[1].type.name);
   const gradientStr = `linear-gradient(45deg, ${type1}, ${type2})`;
+  const formattedName = allPokemon.at(data.id - 1).name;
+  const gen = allPokemon.at(data.id - 1).gen;
+
+  console.log();
 
   const tabMapping: Map<TabNames, JSX.Element> = new Map([
     [
@@ -52,6 +56,8 @@ export function PokemonDetails({ data }: Details): JSX.Element {
         data={data}
         grdColor={gradientStr}
         typeClr={type1}
+        formattedName={formattedName}
+        gen={gen}
         key={"general-tab"}
       />,
     ],
@@ -89,7 +95,14 @@ export function PokemonDetails({ data }: Details): JSX.Element {
         background: gradientStr,
       }}
     >
-      <Link href="/" className={styles.returnArrow}>
+      <Link
+        href="/"
+        className={styles.returnArrow}
+        style={{
+          color: type1,
+          mixBlendMode: "screen",
+        }}
+      >
         <ArrowLeft />
       </Link>
       <h1 className={styles.heading}>{`about ${data.name}`}</h1>
@@ -100,7 +113,7 @@ export function PokemonDetails({ data }: Details): JSX.Element {
           }}
           className={alexandria.className}
         >
-          {data.name.toUpperCase()}
+          {formattedName.toUpperCase()}
         </div>
         <div className={styles.pokeImgWrapper}>
           <Image

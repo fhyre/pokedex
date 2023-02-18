@@ -6,9 +6,17 @@ interface IGenTab {
   data: Pokemon;
   grdColor: string;
   typeClr: string;
+  formattedName: string;
+  gen: string;
 }
 
-export function GeneralTab({ data, grdColor, typeClr }: IGenTab): JSX.Element {
+export function GeneralTab({
+  data,
+  grdColor,
+  typeClr,
+  formattedName,
+  gen,
+}: IGenTab): JSX.Element {
   const {
     name,
     abilities,
@@ -29,9 +37,19 @@ export function GeneralTab({ data, grdColor, typeClr }: IGenTab): JSX.Element {
         `background-image: ${grdColor}`
       );
     });
-  }, []);
 
-  console.log(data);
+    const abilities = document.querySelectorAll(
+      `.${styles.abilitiesContainer} > div`
+    );
+
+    abilities.forEach((abilityWrapper: HTMLElement) => {
+      abilityWrapper.classList.add(`${styles.abilityWrapper}`);
+      abilityWrapper.setAttribute("style", `background-color: ${typeClr}`);
+      if (abilityWrapper.dataset.hidden === "true") {
+        abilityWrapper.style["filter"] = "opacity(0.6)";
+      }
+    });
+  }, [grdColor]);
 
   return (
     <div className={styles.container} style={{ color: typeClr }}>
@@ -41,7 +59,7 @@ export function GeneralTab({ data, grdColor, typeClr }: IGenTab): JSX.Element {
       </div>
       <div>
         <h2>Name</h2>
-        <p>{name.replace(/[a-z]/, (l) => l.toUpperCase())}</p>
+        <p>{formattedName.replace(/[a-z]/, (l) => l.toUpperCase())}</p>
       </div>
       <div>
         <h2>Species</h2>
@@ -64,9 +82,20 @@ export function GeneralTab({ data, grdColor, typeClr }: IGenTab): JSX.Element {
         {abilities.length > 1 ? <h2>Abilities</h2> : <h2>Ability</h2>}
         <div className={styles.abilitiesContainer}>
           {abilities.map((abilSet, i) => (
-            <p key={abilSet.ability.name + i}>{abilSet.ability.name}</p>
+            <div key={abilSet.ability.name + i} data-hidden={abilSet.is_hidden}>
+              <p>
+                {abilSet.ability.name
+                  .split("-")
+                  .map((word) => word.at(0).toUpperCase() + word.substring(1))
+                  .join(" ")}
+              </p>
+            </div>
           ))}
         </div>
+      </div>
+      <div>
+        <h2>Generation</h2>
+        <p>{gen}</p>
       </div>
       <div>
         <h2>Height</h2>

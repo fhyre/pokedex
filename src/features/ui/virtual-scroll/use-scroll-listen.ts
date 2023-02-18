@@ -1,4 +1,11 @@
-import { MutableRefObject, useEffect, useRef, useState } from "react";
+import {
+  Dispatch,
+  MutableRefObject,
+  SetStateAction,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { throttle } from "./throttle";
 
 export function useScrollListen(): [MutableRefObject<HTMLDivElement>, number] {
