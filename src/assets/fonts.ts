@@ -1,10 +1,9 @@
-import { NextFont } from "@next/font/dist/types";
-import { Alexandria, Roboto_Flex } from "@next/font/google";
+import { Alexandria, Roboto_Flex } from "next/font/google";
 
-export const robotoFlex: NextFont = Roboto_Flex({
+export const robotoFlex = Roboto_Flex({
   subsets: ["latin"],
 });
 
-export const alexandria: NextFont = Alexandria({
+export const alexandria = Alexandria({
   subsets: ["latin"],
-});
+})

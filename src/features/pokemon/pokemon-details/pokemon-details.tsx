@@ -47,8 +47,6 @@ export function PokemonDetails({ data }: Details): JSX.Element {
   const formattedName = allPokemon.at(data.id - 1).name;
   const gen = allPokemon.at(data.id - 1).gen;
 
-  console.log();
-
   const tabMapping: Map<TabNames, JSX.Element> = new Map([
     [
       "general",

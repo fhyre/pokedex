@@ -55,6 +55,7 @@
   overflow: auto;
   margin-left: 1rem;
   white-space: nowrap;
+  scrollbar-width: none;
 
   .abilityWrapper {
     color: var(--bg-color);
