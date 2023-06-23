@@ -1,14 +1,14 @@
 import { jsonFetch } from "@/lib";
-import { INameURL, Pokemon } from "@/features/pokemon";
+import { INameURL } from "@/features/pokemon";
 
 const BASE_URL = "https://pokeapi.co/api/v2/";
 
-export async function getPokemon(id: string): Promise<Pokemon> {
-  return await jsonFetch<Pokemon>({
-    url: BASE_URL + "pokemon/" + id,
-    options: { method: "GET" },
-  });
-}
+// export async function getPokemon(id: string): Promise<Pokemon> {
+//   return await jsonFetch<Pokemon>({
+//     url: BASE_URL + "pokemon/" + id,
+//     options: { method: "GET" },
+//   });
+// }
 
 // //!To get weight divide by 10 (kg) to get height divide by 10 (m)
 // export async function formattedPokeData(id: string): Promise<any> {

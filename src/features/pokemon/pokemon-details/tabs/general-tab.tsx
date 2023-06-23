@@ -3,7 +3,6 @@ import { TypeIcon, species } from "@/features/pokemon";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "@/store/index";
-import {} from "@/features/pokemon";
 
 interface IGenTab {
   id: number;
@@ -39,7 +38,7 @@ export function GeneralTab({ id, grdColor, typeClr }: IGenTab): JSX.Element {
         abilityWrapper.style["filter"] = "opacity(0.6)";
       }
     });
-  }, [grdColor]);
+  }, [grdColor, typeClr]);
 
   return (
     <div className={styles.container} style={{ color: typeClr }}>
