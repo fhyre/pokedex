@@ -40,6 +40,7 @@ const PokemonListCard = ({
       </div>
       <div className={styles.rightContainer}>
         <Image
+          unoptimized
           src={`/compressed-pokemon/${strId}.png`}
           alt=""
           width={160}

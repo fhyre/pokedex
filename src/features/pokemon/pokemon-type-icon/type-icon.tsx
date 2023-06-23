@@ -10,6 +10,7 @@ interface ITypeIcon extends IPokeTypes {
 export function TypeIcon({ type, status, size, prio }: ITypeIcon): JSX.Element {
   return (
     <Image
+      unoptimized
       src={`/type-icons/${type}.png`}
       width={469}
       height={126}

@@ -112,6 +112,7 @@ export function PokemonDetails({ id }): JSX.Element {
         </div>
         <div className={styles.pokeImgWrapper}>
           <Image
+            unoptimized
             src={`https://poke-images.pages.dev/images/${strId}.png`}
             quality={100}
             width={600}
