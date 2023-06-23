@@ -1,8 +1,8 @@
 import styles from "./type-icon.module.scss";
-import { pokeTypes } from "@/features/pokemon";
+import { IPokeTypes } from "@/features/pokemon";
 import Image from "next/image";
 
-interface ITypeIcon extends pokeTypes {
+interface ITypeIcon extends IPokeTypes {
   size: "small" | "medium" | "large";
   prio?: boolean;
 }

@@ -8,7 +8,7 @@ import { PokemonListCard } from "./pokemon-list-card";
 
 export function PokemonList(): JSX.Element {
   const searchQ = useSelector((state: RootState) => state.allPokemon.query);
-  const allPokemon = useSelector((state: RootState) => state.allPokemon.arr);
+  const allPokemon = useSelector((state: RootState) => state.allPokemon.all);
 
   const filtered = allPokemon
     .filter(

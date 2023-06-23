@@ -1,7 +1,7 @@
 export function LocationsTab(): JSX.Element {
   return (
     <>
-      <h3>Locations tab</h3>
+      <h2>Work In Progress</h2>
     </>
   );
 }

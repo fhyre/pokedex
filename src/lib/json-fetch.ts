@@ -1,4 +1,4 @@
-interface Request {
+interface IRequest {
   url: string;
   body?: string;
   options: {
@@ -10,7 +10,7 @@ export async function jsonFetch<T>({
   url,
   body,
   options,
-}: Request): Promise<T> {
+}: IRequest): Promise<T> {
   return fetch(url, {
     headers: {
       "Content-Type": "application/json",
@@ -23,7 +23,6 @@ export async function jsonFetch<T>({
       return Promise.reject(res);
     })
     .catch((res) => {
-      console.log(res);
       return res.status;
     });
 }

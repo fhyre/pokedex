@@ -2,7 +2,6 @@ import {
   memo,
   ReactElement,
   useEffect,
-  useLayoutEffect,
   useRef,
   useState,
 } from "react";
@@ -10,7 +9,7 @@ import { formatNodeData } from "./format-node-data";
 import { useScrollListen } from "./use-scroll-listen";
 import styles from "./virtual-scroll.module.css";
 
-interface VirtualScroll {
+interface IVirtualScroll {
   className: string;
   data: JSX.Element[];
   offset: number;
@@ -21,7 +20,7 @@ interface VirtualScroll {
   };
 }
 
-interface StartEndPos {
+interface IStartEndPos {
   startPos: number;
   endPos: number;
 }
@@ -37,17 +36,17 @@ const VirtualScroll = memo(
     data,
     offset: neighborOffset,
     FallbackComp,
-  }: VirtualScroll): ReactElement => {
+  }: IVirtualScroll): ReactElement => {
     const nodeContainerRef = useRef<HTMLDivElement>(null);
     const [containerRef, scrollTop] = useScrollListen();
     const [virtStyles, setVirtStyles] = useState<IVirtStyles>({});
-    const [nodePos, setNodePos] = useState<StartEndPos>({
+    const [nodePos, setNodePos] = useState<IStartEndPos>({
       startPos: 0,
       endPos: 10,
     });
     const [nodeDetails, setNodeDetails] = useState<any>({});
 
-    //*Set node data
+    // Set node data
     useEffect(() => {
       setNodeDetails(formatNodeData(nodeContainerRef, data.length));
     }, [nodeContainerRef, data.length]);

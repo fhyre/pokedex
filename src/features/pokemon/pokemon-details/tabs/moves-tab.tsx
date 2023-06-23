@@ -1,7 +1,7 @@
 export function MovesTab(): JSX.Element {
   return (
     <section>
-      <h2>Moves Tab</h2>
+      <h2>Work In Progress</h2>
     </section>
   );
 }

@@ -1,7 +1,7 @@
 export function StatsTab(): JSX.Element {
   return (
     <section>
-      <h2>Stats Tab</h2>
+      <h2>Work in Progress</h2>
     </section>
   );
 }

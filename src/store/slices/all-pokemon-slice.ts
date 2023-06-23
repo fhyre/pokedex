@@ -1,14 +1,13 @@
-import { allPokemon } from "@/features/pokemon";
-import { InitialPokeData } from "@/features/pokemon/types";
+import { IPokemon, parseAllPokemon } from "@/features/pokemon";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-interface AllPokemonState {
-  arr: InitialPokeData[];
+interface IAllPokemon {
+  all: IPokemon[];
   query: string;
 }
 
-const initialState: AllPokemonState = {
-  arr: allPokemon,
+const initialState: IAllPokemon = {
+  all: parseAllPokemon(),
   query: "",
 };
 

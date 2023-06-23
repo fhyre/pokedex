@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
-interface Debounce {
+interface IDebounce {
   cb: (e: string) => void;
 }
 
-export function useDebounce({ cb }: Debounce) {
+export function useDebounce({ cb }: IDebounce) {
   const [debouncedQ, setDebouncedQ] = useState<string>("");
 
   useEffect(() => {

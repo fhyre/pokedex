@@ -1,28 +1,27 @@
-import { PokemonDetails, getPokemon } from "@/features/pokemon";
+import { PokemonDetails } from "@/features/pokemon";
 import { GetStaticPaths, GetStaticProps } from "next";
 
-export default function DexEntry({ data }): JSX.Element {
+export default function DexEntry({ id }): JSX.Element {
   return (
     <main>
-      <PokemonDetails data={data} />
+      <PokemonDetails id={id} />
     </main>
   );
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const id = params["id"];
-  const data = await getPokemon(id as string);
 
   return {
     props: {
-      data: data,
+      id: id,
     },
   };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const pokePaths = [];
-  for (let i = 1; i < 1009; i++) {
+  for (let i = 1; i < 1011; i++) {
     pokePaths.push({ params: { id: i.toString() } });
   }
 

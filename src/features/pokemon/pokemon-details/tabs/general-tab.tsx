@@ -1,32 +1,22 @@
 import styles from "./general-tab.module.scss";
-import { Pokemon, TypeIcon, Types } from "@/features/pokemon";
+import { TypeIcon, species } from "@/features/pokemon";
 import { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "@/store/index";
+import {} from "@/features/pokemon";
 
 interface IGenTab {
-  data: Pokemon;
+  id: number;
   grdColor: string;
   typeClr: string;
-  formattedName: string;
-  gen: string;
 }
 
-export function GeneralTab({
-  data,
-  grdColor,
-  typeClr,
-  formattedName,
-  gen,
-}: IGenTab): JSX.Element {
-  const {
-    name,
-    abilities,
-    base_experience,
-    held_items,
-    id,
-    types,
-    height,
-    weight,
-  } = data;
+export function GeneralTab({ id, grdColor, typeClr }: IGenTab): JSX.Element {
+  const { abilities, gen, height, weight, name, types } = useSelector(
+    (state: RootState) => state.allPokemon.all
+  )[id];
+
+  const speciesData = species[id];
 
   useEffect(() => {
     const dataFields = document.querySelectorAll(`.${styles.container} > div`);
@@ -55,24 +45,24 @@ export function GeneralTab({
     <div className={styles.container} style={{ color: typeClr }}>
       <div>
         <h2>ID</h2>
-        <p>{"#" + id}</p>
+        <p>{"#" + (id + 1)}</p>
       </div>
       <div>
         <h2>Name</h2>
-        <p>{formattedName.replace(/[a-z]/, (l) => l.toUpperCase())}</p>
+        <p>{name.replace(/[a-z]/, (l) => l.toUpperCase())}</p>
       </div>
       <div>
         <h2>Species</h2>
-        <p>Seed Pokemon</p>
+        <p>{speciesData.genus}</p>
       </div>
       <div>
         <h2>Type</h2>
         <div className={styles.typeContainer}>
-          {types.map((res, i) => (
+          {types.map((type, i) => (
             <TypeIcon
-              type={res.type.name as Types}
+              type={type}
               size="medium"
-              key={res.type.name + res.slot + i}
+              key={type + i + "medium"}
               prio
             />
           ))}
@@ -81,10 +71,10 @@ export function GeneralTab({
       <div>
         {abilities.length > 1 ? <h2>Abilities</h2> : <h2>Ability</h2>}
         <div className={styles.abilitiesContainer}>
-          {abilities.map((abilSet, i) => (
-            <div key={abilSet.ability.name + i} data-hidden={abilSet.is_hidden}>
+          {abilities.map((ability, i) => (
+            <div key={ability.name + i} data-hidden={ability.hidden}>
               <p>
-                {abilSet.ability.name
+                {ability.name
                   .split("-")
                   .map((word) => word.at(0).toUpperCase() + word.substring(1))
                   .join(" ")}

@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { CSSProperties } from "react";
-import { TypeIcon, InitialPokeData, convertId } from "@/features/pokemon";
+import { TypeIcon, IPokemon, convertId } from "@/features/pokemon";
 import styles from "./pokemon-list-card.module.scss";
 import { robotoFlex } from "@/assets/fonts";
 
-interface PokeListCard extends InitialPokeData {
+interface IPokeListCard extends IPokemon {
+  id: number;
   style?: CSSProperties;
 }
 
@@ -13,7 +14,7 @@ const PokemonListCard = ({
   name,
   types,
   style,
-}: PokeListCard): JSX.Element => {
+}: IPokeListCard): JSX.Element => {
   const strId = convertId(id.toString());
 
   return (

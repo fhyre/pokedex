@@ -3,7 +3,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["dfuzyzc1tyyvb.cloudfront.net"],
+    domains: ["poke-images.pages.dev"],
   },
 };
 

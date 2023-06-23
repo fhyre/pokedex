@@ -3,13 +3,13 @@ import { CSSProperties } from "react";
 import styles from "./search-bar.module.css";
 import { useDebounce } from "./use-debounce";
 
-interface SearchBar {
+interface ISearchBar {
   cb: (res: string) => object;
   style?: CSSProperties;
   className?: string;
 }
 
-export function SearchBar({ cb, style, className }: SearchBar): JSX.Element {
+export function SearchBar({ cb, style, className }: ISearchBar): JSX.Element {
   const [setDebounce] = useDebounce({ cb: cb });
 
   return (

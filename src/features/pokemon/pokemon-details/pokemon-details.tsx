@@ -3,7 +3,7 @@ import Image from "next/image";
 import { convertId } from "../utils";
 import { alexandria } from "@/assets/fonts";
 import { useState } from "react";
-import { getTypeColor, Pokemon, allPokemon } from "@/features/pokemon";
+import { getTypeColor } from "@/features/pokemon";
 import {
   EvolutionsTab,
   FormsTab,
@@ -14,6 +14,8 @@ import {
 } from "./tabs";
 import ArrowLeft from "@/public/icons/arrow-left";
 import Link from "next/link";
+import { useSelector } from "react-redux";
+import { RootState } from "@/store/index";
 
 type TabNames =
   | "general"
@@ -32,30 +34,25 @@ const tabs: TabNames[] = [
   "locations",
 ];
 
-interface Details {
-  data: Pokemon;
-}
-
-export function PokemonDetails({ data }: Details): JSX.Element {
+export function PokemonDetails({ id }): JSX.Element {
   const [selectedTab, setSelectedTab] = useState<TabNames>("general");
+  const pokemon = useSelector((state: RootState) => state.allPokemon.all)[
+    id - 1
+  ];
 
   //*Variables
-  const strId = convertId(data.id.toString());
-  const type1 = getTypeColor(data.types[0].type.name);
-  const type2 = getTypeColor(data.types[1] && data.types[1].type.name);
+  const strId = convertId(pokemon.id.toString());
+  const type1 = getTypeColor(pokemon.types[0]);
+  const type2 = getTypeColor(pokemon.types[1] && pokemon.types[1]);
   const gradientStr = `linear-gradient(45deg, ${type1}, ${type2})`;
-  const formattedName = allPokemon.at(data.id - 1).name;
-  const gen = allPokemon.at(data.id - 1).gen;
 
   const tabMapping: Map<TabNames, JSX.Element> = new Map([
     [
       "general",
       <GeneralTab
-        data={data}
+        id={id - 1}
         grdColor={gradientStr}
         typeClr={type1}
-        formattedName={formattedName}
-        gen={gen}
         key={"general-tab"}
       />,
     ],
@@ -98,12 +95,12 @@ export function PokemonDetails({ data }: Details): JSX.Element {
         className={styles.returnArrow}
         style={{
           color: type1,
-          mixBlendMode: "screen",
+          mixBlendMode: "multiply",
         }}
       >
         <ArrowLeft />
       </Link>
-      <h1 className={styles.heading}>{`about ${data.name}`}</h1>
+      <h1 className={styles.heading}>{`about ${pokemon.name}`}</h1>
       <div className={styles.pokeImgContainer}>
         <div
           style={{
@@ -111,15 +108,15 @@ export function PokemonDetails({ data }: Details): JSX.Element {
           }}
           className={alexandria.className}
         >
-          {formattedName.toUpperCase()}
+          {pokemon.name.toUpperCase()}
         </div>
         <div className={styles.pokeImgWrapper}>
           <Image
-            src={`https://dfuzyzc1tyyvb.cloudfront.net/${strId}.png`}
+            src={`https://poke-images.pages.dev/images/${strId}.png`}
             quality={100}
             width={600}
             height={600}
-            alt={data.name}
+            alt={pokemon.name}
             className={styles.pokeImg}
             priority
           />

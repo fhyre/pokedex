@@ -13,10 +13,9 @@
   align-self: flex-start;
   position: absolute;
   z-index: 1;
-  mix-blend-mode: screen;
 
   svg {
-    width: 1.75rem;
+    width: 3rem;
     height: auto;
   }
 }
@@ -106,6 +105,40 @@
           @include fade-in(200ms);
         }
       }
+    }
+  }
+}
+
+@include media-query($medium) {
+  .container {
+    flex-direction: row;
+    align-items: initial;
+  }
+
+  .pokeImgContainer {
+    align-self: center;
+    & div:first-child {
+      top: 50%;
+      letter-spacing: 3vw;
+      font-size: 5vw;
+    }
+  }
+
+  .pokeImg {
+    height: auto;
+    max-width: 60%;
+  }
+
+  .detailsContainer {
+    border-top-right-radius: initial;
+    border-bottom-left-radius: 1rem;
+    width: 50%;
+  }
+
+  .returnArrow {
+    svg {
+      width: 4rem;
+      height: auto;
     }
   }
 }
