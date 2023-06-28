@@ -45,7 +45,7 @@
 .pokeImgWrapper {
   @extend %flex-center;
   position: relative;
-  @include fade-in(1500ms);
+  @include fade-in(1400ms);
 }
 
 .pokeImg {

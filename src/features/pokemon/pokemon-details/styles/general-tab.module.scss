@@ -81,6 +81,9 @@
 @include media-query($medium) {
   .container {
     font-size: var(--size-5);
+    & > div {
+      margin-bottom: var(--size-7);
+    }
   }
 
   .dataField {
