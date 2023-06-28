@@ -3,7 +3,7 @@ import Pokeball from "@/public/icons/pokeball";
 import { modifyQuery } from "@/store/slices/all-pokemon-slice";
 import { useDispatch } from "react-redux";
 import { SearchBar } from "@/features/ui";
-import styles from "./header.module.scss";
+import styles from "./styles/header.module.scss";
 
 export function Header(): JSX.Element {
   const dispatch = useDispatch();

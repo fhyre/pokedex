@@ -1,4 +1,4 @@
-import styles from "./pokemon-list.module.scss";
+import styles from "./styles/pokemon-list.module.scss";
 import { VirtualScroll } from "@/features/ui";
 import { RootState } from "@/store/index";
 import Link from "next/link";

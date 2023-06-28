@@ -4,7 +4,7 @@ export default function Document(): JSX.Element {
   return (
     <Html lang="en">
       <Head />
-      <body className="light-theme fade-in">
+      <body>
         <Main />
         <NextScript />
       </body>

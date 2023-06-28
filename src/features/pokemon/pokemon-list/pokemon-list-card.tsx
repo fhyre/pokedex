@@ -1,8 +1,7 @@
 import Image from "next/image";
 import { CSSProperties } from "react";
 import { TypeIcon, IPokemon, convertId } from "@/features/pokemon";
-import styles from "./pokemon-list-card.module.scss";
-import { robotoFlex } from "@/assets/fonts";
+import styles from "./styles/pokemon-list-card.module.scss";
 
 interface IPokeListCard extends IPokemon {
   id: number;
@@ -18,11 +17,7 @@ const PokemonListCard = ({
   const strId = convertId(id.toString());
 
   return (
-    <section
-      className={`${styles.container} ${robotoFlex.className}`}
-      style={style}
-      tabIndex={0}
-    >
+    <section className={`${styles.container}`} style={style} tabIndex={0}>
       <div className={styles.leftContainer}>
         <div className={styles.headContainer}>
           <p className={`${styles.pokeId}`} aria-label={`Number ${id}`}>

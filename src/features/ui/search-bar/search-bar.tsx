@@ -1,6 +1,6 @@
 import SearchIcon from "@/public/icons/search-icon";
 import { CSSProperties } from "react";
-import styles from "./search-bar.module.css";
+import styles from "./styles/search-bar.module.css";
 import { useDebounce } from "./use-debounce";
 
 interface ISearchBar {

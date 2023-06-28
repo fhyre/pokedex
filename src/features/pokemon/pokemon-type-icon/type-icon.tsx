@@ -1,4 +1,4 @@
-import styles from "./type-icon.module.scss";
+import styles from "./styles/type-icon.module.scss";
 import { IPokeTypes } from "@/features/pokemon";
 import Image from "next/image";
 

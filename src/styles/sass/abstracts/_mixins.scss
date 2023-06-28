@@ -1,0 +1,37 @@
+// Fade In Animation
+@mixin fade-in($delay) {
+  animation: fade-in #{$delay} ease-in;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Media Query
+@mixin media-query($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+// Themes
+@mixin light-theme {
+  --background: var(--gray-0);
+  --text: var(--gray-10);
+  --card-bg: var(--gray-0);
+  --darker-card-bg: var(--gray-4);
+  --pid: var(--gray-6);
+}
+
+@mixin dark-theme {
+  --background: var(--gray-10);
+  --text: var(--gray-1);
+  --card-bg-color: var(--gray-2);
+  --darker-card-bg-color: var(--gray-5);
+  --pid-color: var(--gray-5);
+}

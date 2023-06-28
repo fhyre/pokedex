@@ -1,6 +1,6 @@
-import "@/assets/globals.scss";
+import "@/styles/sass/main.scss";
 import { AppProps } from "next/app";
-import { robotoFlex } from "@/assets/fonts";
+import { inter } from "@/styles/fonts";
 import Head from "next/head";
 import { Provider } from "react-redux";
 import { store } from "../store";
@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Pokédex</title>
       </Head>
-      <div className={robotoFlex.className}>
+      <div className={inter.className}>
         <Component {...pageProps} />
       </div>
       <Analytics />

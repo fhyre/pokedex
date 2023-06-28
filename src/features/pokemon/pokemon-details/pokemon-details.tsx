@@ -1,7 +1,6 @@
-import styles from "./pokemon-details.module.scss";
+import styles from "./styles/pokemon-details.module.scss";
 import Image from "next/image";
 import { convertId } from "../utils";
-import { alexandria } from "@/assets/fonts";
 import { useState } from "react";
 import { getTypeColor } from "@/features/pokemon";
 import {
@@ -106,7 +105,6 @@ export function PokemonDetails({ id }): JSX.Element {
           style={{
             color: type1,
           }}
-          className={alexandria.className}
         >
           {pokemon.name.toUpperCase()}
         </div>
@@ -125,7 +123,7 @@ export function PokemonDetails({ id }): JSX.Element {
       </div>
       <section className={styles.detailsContainer}>
         <div className={styles.tabsContainer}>
-          <ul className={alexandria.className}>{tabItems}</ul>
+          <ul>{tabItems}</ul>
         </div>
         <div>{tabMapping.get(selectedTab)}</div>
       </section>

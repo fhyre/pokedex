@@ -1,8 +1,10 @@
-@use "@/assets/sass/main" as *;
+@use "@/styles/sass/abstracts" as *;
 
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  @include fade-in(500ms);
+  padding-inline: var(--size-3);
 }
 
 @include media-query($small) {

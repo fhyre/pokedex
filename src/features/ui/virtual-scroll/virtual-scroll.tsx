@@ -1,13 +1,7 @@
-import {
-  memo,
-  ReactElement,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import { memo, ReactElement, useEffect, useRef, useState } from "react";
 import { formatNodeData } from "./format-node-data";
 import { useScrollListen } from "./use-scroll-listen";
-import styles from "./virtual-scroll.module.css";
+import styles from "./styles/virtual-scroll.module.css";
 
 interface IVirtualScroll {
   className: string;

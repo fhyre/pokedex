@@ -1,4 +1,4 @@
-import styles from "./general-tab.module.scss";
+import styles from "../styles/general-tab.module.scss";
 import { TypeIcon, species } from "@/features/pokemon";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
