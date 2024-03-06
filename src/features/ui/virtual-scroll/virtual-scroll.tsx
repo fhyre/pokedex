@@ -1,7 +1,7 @@
-import { memo, ReactElement, useEffect, useRef, useState } from "react";
-import { formatNodeData } from "./format-node-data";
-import { useScrollListen } from "./use-scroll-listen";
-import styles from "./styles/virtual-scroll.module.css";
+import { memo, ReactElement, useEffect, useRef, useState } from 'react';
+import { formatNodeData } from './format-node-data';
+import { useScrollListen } from './use-scroll-listen';
+import styles from './styles/virtual-scroll.module.css';
 
 interface IVirtualScroll {
   className: string;
@@ -57,10 +57,10 @@ const VirtualScroll = memo(
         containerRef.current.scrollTo(0, scrollToPos);
       };
 
-      window.addEventListener("resize", onResize);
+      window.addEventListener('resize', onResize);
 
       return () => {
-        window.removeEventListener("resize", onResize);
+        window.removeEventListener('resize', onResize);
       };
     }, [containerRef, data.length, nodeDetails]);
 
@@ -133,5 +133,5 @@ const VirtualScroll = memo(
   }
 );
 
-VirtualScroll.displayName = "VirtualScroll";
+VirtualScroll.displayName = 'VirtualScroll';
 export { VirtualScroll };

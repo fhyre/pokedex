@@ -1,7 +1,7 @@
-import Image from "next/image";
-import { CSSProperties } from "react";
-import { TypeIcon, IPokemon, convertId } from "@/features/pokemon";
-import styles from "./styles/pokemon-list-card.module.scss";
+import { CSSProperties } from 'react';
+import { TypeIcon, IPokemon, convertId } from '@/features/pokemon';
+import styles from './styles/pokemon-list-card.module.scss';
+import { ImageWrapper } from '@/features/ui/image-wrapper';
 
 interface IPokeListCard extends IPokemon {
   id: number;
@@ -34,19 +34,18 @@ const PokemonListCard = ({
         </section>
       </div>
       <div className={styles.rightContainer}>
-        <Image
-          unoptimized
-          src={`/compressed-pokemon/${strId}.png`}
-          alt=""
+        <ImageWrapper
+          imagePath={`/compressed-pokemon/${strId}.png`}
+          imageAlt={name}
+          styles={[styles.pokeImg]}
           width={160}
           height={160}
-          quality={100}
-          className={`${styles.pokeImg}`}
+          priority
         />
       </div>
     </section>
   );
 };
-PokemonListCard.displayName = "PokemonListCard";
+PokemonListCard.displayName = 'PokemonListCard';
 
 export { PokemonListCard };

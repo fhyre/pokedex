@@ -1,8 +1,7 @@
-import styles from "./styles/pokemon-details.module.scss";
-import Image from "next/image";
-import { convertId } from "../utils";
-import { useState } from "react";
-import { getTypeColor } from "@/features/pokemon";
+import styles from './styles/pokemon-details.module.scss';
+import { convertId } from '../utils';
+import { useState } from 'react';
+import { getTypeColor } from '@/features/pokemon';
 import {
   EvolutionsTab,
   FormsTab,
@@ -10,31 +9,32 @@ import {
   LocationsTab,
   MovesTab,
   StatsTab,
-} from "./tabs";
-import ArrowLeft from "@/public/icons/arrow-left";
-import Link from "next/link";
-import { useSelector } from "react-redux";
-import { RootState } from "@/store/index";
+} from './tabs';
+import ArrowLeft from '@/public/icons/arrow-left';
+import Link from 'next/link';
+import { useSelector } from 'react-redux';
+import { RootState } from '@/store/index';
+import { ImageWrapper } from '@/features/ui/image-wrapper';
 
 type TabNames =
-  | "general"
-  | "stats"
-  | "moves"
-  | "evolutions"
-  | "forms"
-  | "locations";
+  | 'general'
+  | 'stats'
+  | 'moves'
+  | 'evolutions'
+  | 'forms'
+  | 'locations';
 
 const tabs: TabNames[] = [
-  "general",
-  "stats",
-  "moves",
-  "evolutions",
-  "forms",
-  "locations",
+  'general',
+  'stats',
+  'moves',
+  'evolutions',
+  'forms',
+  'locations',
 ];
 
 export function PokemonDetails({ id }): JSX.Element {
-  const [selectedTab, setSelectedTab] = useState<TabNames>("general");
+  const [selectedTab, setSelectedTab] = useState<TabNames>('general');
   const pokemon = useSelector((state: RootState) => state.allPokemon.all)[
     id - 1
   ];
@@ -47,19 +47,19 @@ export function PokemonDetails({ id }): JSX.Element {
 
   const tabMapping: Map<TabNames, JSX.Element> = new Map([
     [
-      "general",
+      'general',
       <GeneralTab
         id={id - 1}
         grdColor={gradientStr}
         typeClr={type1}
-        key={"general-tab"}
+        key={'general-tab'}
       />,
     ],
-    ["stats", <StatsTab key={"stats-tab"} />],
-    ["moves", <MovesTab key={"moves-tab"} />],
-    ["evolutions", <EvolutionsTab key={"evolutions-tab"} />],
-    ["forms", <FormsTab key={"forms-tab"} />],
-    ["locations", <LocationsTab key={"locations-tab"} />],
+    ['stats', <StatsTab key={'stats-tab'} />],
+    ['moves', <MovesTab key={'moves-tab'} />],
+    ['evolutions', <EvolutionsTab key={'evolutions-tab'} />],
+    ['forms', <FormsTab key={'forms-tab'} />],
+    ['locations', <LocationsTab key={'locations-tab'} />],
   ]);
 
   //*Tab Array
@@ -68,8 +68,8 @@ export function PokemonDetails({ id }): JSX.Element {
     tabItems.push(
       <li
         style={{
-          background: name === selectedTab ? gradientStr : "transparent",
-          color: name === selectedTab ? "white" : type1,
+          background: name === selectedTab ? gradientStr : 'transparent',
+          color: name === selectedTab ? 'white' : type1,
         }}
         onClick={(e) => {
           const target = e.target as HTMLElement;
@@ -94,7 +94,7 @@ export function PokemonDetails({ id }): JSX.Element {
         className={styles.returnArrow}
         style={{
           color: type1,
-          mixBlendMode: "multiply",
+          mixBlendMode: 'multiply',
         }}
       >
         <ArrowLeft />
@@ -109,14 +109,13 @@ export function PokemonDetails({ id }): JSX.Element {
           {pokemon.name.toUpperCase()}
         </div>
         <div className={styles.pokeImgWrapper}>
-          <Image
-            unoptimized
-            src={`https://poke-images.pages.dev/images/${strId}.png`}
+          <ImageWrapper
+            imagePath={`https://poke-images.pages.dev/images/${strId}.png`}
+            imageAlt={pokemon.name}
             quality={100}
             width={600}
             height={600}
-            alt={pokemon.name}
-            className={styles.pokeImg}
+            styles={[styles.pokeImg]}
             priority
           />
         </div>
