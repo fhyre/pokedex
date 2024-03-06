@@ -1,3 +1,9 @@
+// Misc
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 // Fade In Animation
 @mixin fade-in($delay) {
   animation: fade-in #{$delay} ease-in;

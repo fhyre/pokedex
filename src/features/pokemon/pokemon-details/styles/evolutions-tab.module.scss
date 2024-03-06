@@ -1,0 +1,12 @@
+@use '@/styles/sass/abstracts' as *;
+
+.container {
+  @include flex-column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  h2 {
+    font-weight: var(--font-weight-3);
+  }
+}

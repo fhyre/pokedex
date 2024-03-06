@@ -1,4 +1,4 @@
-@use "@/styles/sass/abstracts" as *;
+@use '@/styles/sass/abstracts' as *;
 
 .container {
   display: flex;
@@ -35,7 +35,7 @@
 
 .pokeName {
   font-size: 1.2rem;
-  font-weight: var(--font-weight-4);
+  font-weight: var(--font-weight-2);
   color: var(--text);
   align-self: flex-start;
 }
