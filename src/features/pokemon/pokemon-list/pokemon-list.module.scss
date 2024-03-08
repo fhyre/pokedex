@@ -1,9 +1,9 @@
-@use "@/styles/sass/abstracts" as *;
+@use '@/styles/sass/abstracts' as *;
 
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
-  @include fade-in(500ms);
+  @include fade-in(1500ms);
   padding-inline: var(--size-3);
 }
 

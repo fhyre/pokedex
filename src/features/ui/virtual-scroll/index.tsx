@@ -10,10 +10,10 @@ const VirtualScroll = memo(
     data,
     offset: neighborOffset,
     FallbackComp,
+    prevScrollPos,
   }: IVirtualScroll) => {
     const nodeContainerRef = useRef<HTMLDivElement>(null);
     const [containerRef, scrollTop] = useScrollListen();
-    const [prevScrollPos] = useScrollRestore();
     const [virtStyles, setVirtStyles] = useState<IVirtStyles>({});
     const [nodePos, setNodePos] = useState<IStartEndPos>({
       startPos: 0,
@@ -23,13 +23,16 @@ const VirtualScroll = memo(
 
     // Set scroll position on reload
     useEffect(() => {
-      if (containerRef.current && prevScrollPos != 0) {
-        const timer = setTimeout(() => {
+      let timer: NodeJS.Timeout | null;
+      if (containerRef.current && prevScrollPos && prevScrollPos != 0) {
+        timer = setTimeout(() => {
           containerRef.current.scroll(0, prevScrollPos);
         }, 50);
-
-        return () => clearTimeout(timer);
       }
+
+      return () => {
+        if (timer) clearTimeout(timer);
+      };
     }, [containerRef, prevScrollPos]);
 
     // Set node data
@@ -99,11 +102,9 @@ const VirtualScroll = memo(
       nodesInView();
     }, [data.length, scrollTop, containerRef, nodeDetails]);
 
-    const handleNodeClick = () =>
-      sessionStorage.setItem('scrollPos', scrollTop.toString());
-
     return (
       <div
+        id="virtual-scroll"
         className={`${styles.container}`}
         style={{ height: `calc(100vh - ${neighborOffset}px)` }}
         ref={containerRef}
@@ -117,16 +118,7 @@ const VirtualScroll = memo(
             ref={nodeContainerRef}
           >
             {data.length > 0 ? (
-              data
-                .slice(nodePos.startPos, nodePos.endPos)
-                .map((pokeCard, i) => (
-                  <div
-                    onClick={handleNodeClick}
-                    key={nodePos.startPos + i + nodePos.endPos}
-                  >
-                    {pokeCard}
-                  </div>
-                ))
+              data.slice(nodePos.startPos, nodePos.endPos)
             ) : (
               <FallbackComp />
             )}
@@ -146,6 +138,7 @@ interface IVirtualScroll {
     scrollCb: (e: number) => void;
     scrollPercent: number;
   };
+  prevScrollPos?: number;
 }
 
 interface IStartEndPos {
