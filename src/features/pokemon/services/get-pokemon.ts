@@ -1,12 +1,11 @@
-import { jsonFetch } from "@/lib";
-import { INameURL } from "@/features/pokemon";
+import { jsonFetch } from '@/lib';
 
-const BASE_URL = "https://pokeapi.co/api/v2/";
+const BASE_URL = 'https://pokeapi.co/api/v2/';
 
 export async function getPokemon(id: string): Promise<any> {
   return await jsonFetch<any>({
-    url: BASE_URL + "pokemon/" + id,
-    options: { method: "GET" },
+    url: BASE_URL + 'pokemon/' + id,
+    options: { method: 'GET' },
   });
 }
 

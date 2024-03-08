@@ -1,4 +1,4 @@
-import styles from '../styles/moves-tab.module.scss';
+import styles from './styles/moves-tab.module.scss';
 
 export function MovesTab(): JSX.Element {
   return (

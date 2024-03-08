@@ -1,7 +1,7 @@
-import SearchIcon from "@/public/icons/search-icon";
-import { CSSProperties } from "react";
-import styles from "./styles/search-bar.module.css";
-import { useDebounce } from "./use-debounce";
+import styles from './search-bar.module.css';
+import SearchIcon from '@/public/icons/search-icon';
+import { CSSProperties } from 'react';
+import { useDebounce } from './use-debounce';
 
 interface ISearchBar {
   cb: (res: string) => object;
@@ -9,7 +9,7 @@ interface ISearchBar {
   className?: string;
 }
 
-export function SearchBar({ cb, style, className }: ISearchBar): JSX.Element {
+export function SearchBar({ cb, style, className }: ISearchBar) {
   const [setDebounce] = useDebounce({ cb: cb });
 
   return (
@@ -19,7 +19,7 @@ export function SearchBar({ cb, style, className }: ISearchBar): JSX.Element {
       style={style}
       tabIndex={0}
     >
-      <SearchIcon style={{ overflow: "initial" }} />
+      <SearchIcon style={{ overflow: 'initial' }} />
       <input
         type="text"
         placeholder="Search"

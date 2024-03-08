@@ -1,6 +1,6 @@
-import styles from "./styles/footer.module.css";
+import styles from './footer.module.css';
 
-export function Footer(): JSX.Element {
+export function Footer() {
   return (
     <footer className={styles.container}>
       <h2 tabIndex={0}>Pokédex</h2>

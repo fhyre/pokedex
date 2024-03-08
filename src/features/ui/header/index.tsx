@@ -1,11 +1,11 @@
-import Hamburger from "@/public/icons/hamburger";
-import Pokeball from "@/public/icons/pokeball";
-import { modifyQuery } from "@/store/slices/all-pokemon-slice";
-import { useDispatch } from "react-redux";
-import { SearchBar } from "@/features/ui";
-import styles from "./styles/header.module.scss";
+import styles from './header.module.scss';
+import Hamburger from '@/public/icons/hamburger';
+import Pokeball from '@/public/icons/pokeball';
+import { modifyQuery } from '@/store/slices/all-pokemon-slice';
+import { useDispatch } from 'react-redux';
+import { SearchBar } from '@/features/ui';
 
-export function Header(): JSX.Element {
+export function Header() {
   const dispatch = useDispatch();
 
   return (

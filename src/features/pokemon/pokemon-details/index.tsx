@@ -1,7 +1,6 @@
-import styles from './styles/pokemon-details.module.scss';
-import { convertId } from '../utils';
+import styles from './pokemon-details.module.scss';
+import { convertId, getTypeColor } from '../utils';
 import { useState } from 'react';
-import { getTypeColor } from '@/features/pokemon';
 import {
   EvolutionsTab,
   FormsTab,
@@ -16,24 +15,7 @@ import { useSelector } from 'react-redux';
 import { RootState } from '@/store/index';
 import { ImageWrapper } from '@/features/ui/image-wrapper';
 
-type TabNames =
-  | 'general'
-  | 'stats'
-  | 'moves'
-  | 'evolutions'
-  | 'forms'
-  | 'locations';
-
-const tabs: TabNames[] = [
-  'general',
-  'stats',
-  'moves',
-  'evolutions',
-  'forms',
-  'locations',
-];
-
-export function PokemonDetails({ id }): JSX.Element {
+export function PokemonDetails({ id }) {
   const [selectedTab, setSelectedTab] = useState<TabNames>('general');
   const pokemon = useSelector((state: RootState) => state.allPokemon.all)[
     id - 1
@@ -129,3 +111,20 @@ export function PokemonDetails({ id }): JSX.Element {
     </div>
   );
 }
+
+type TabNames =
+  | 'general'
+  | 'stats'
+  | 'moves'
+  | 'evolutions'
+  | 'forms'
+  | 'locations';
+
+const tabs: TabNames[] = [
+  'general',
+  'stats',
+  'moves',
+  'evolutions',
+  'forms',
+  'locations',
+];

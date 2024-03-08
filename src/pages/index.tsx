@@ -1,7 +1,7 @@
-import { Header } from "@/features/ui";
-import { PokemonList } from "@/features/pokemon";
+import { Header } from '@/features/ui';
+import { PokemonList } from '@/features/pokemon';
 
-export default function Home(): JSX.Element {
+export default function Home() {
   return (
     <>
       <Header />

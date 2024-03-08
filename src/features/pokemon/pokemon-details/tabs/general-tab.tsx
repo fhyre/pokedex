@@ -1,14 +1,9 @@
-import styles from "../styles/general-tab.module.scss";
-import { TypeIcon, species } from "@/features/pokemon";
-import { useEffect } from "react";
-import { useSelector } from "react-redux";
-import { RootState } from "@/store/index";
-
-interface IGenTab {
-  id: number;
-  grdColor: string;
-  typeClr: string;
-}
+import styles from './styles/general-tab.module.scss';
+import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { RootState } from '@/store/index';
+import { species } from '../../assets';
+import { TypeIcon } from '../../pokemon-type-icon';
 
 export function GeneralTab({ id, grdColor, typeClr }: IGenTab): JSX.Element {
   const { abilities, gen, height, weight, name, types } = useSelector(
@@ -22,7 +17,7 @@ export function GeneralTab({ id, grdColor, typeClr }: IGenTab): JSX.Element {
     dataFields.forEach((dataField) => {
       dataField.classList.add(`${styles.dataField}`);
       dataField.children[0].setAttribute(
-        "style",
+        'style',
         `background-image: ${grdColor}`
       );
     });
@@ -33,9 +28,9 @@ export function GeneralTab({ id, grdColor, typeClr }: IGenTab): JSX.Element {
 
     abilities.forEach((abilityWrapper: HTMLElement) => {
       abilityWrapper.classList.add(`${styles.abilityWrapper}`);
-      abilityWrapper.setAttribute("style", `background-color: ${typeClr}`);
-      if (abilityWrapper.dataset.hidden === "true") {
-        abilityWrapper.style["filter"] = "opacity(0.6)";
+      abilityWrapper.setAttribute('style', `background-color: ${typeClr}`);
+      if (abilityWrapper.dataset.hidden === 'true') {
+        abilityWrapper.style['filter'] = 'opacity(0.6)';
       }
     });
   }, [grdColor, typeClr]);
@@ -44,7 +39,7 @@ export function GeneralTab({ id, grdColor, typeClr }: IGenTab): JSX.Element {
     <div className={styles.container} style={{ color: typeClr }}>
       <div>
         <h2>ID</h2>
-        <p>{"#" + (id + 1)}</p>
+        <p>{'#' + (id + 1)}</p>
       </div>
       <div>
         <h2>Name</h2>
@@ -61,7 +56,7 @@ export function GeneralTab({ id, grdColor, typeClr }: IGenTab): JSX.Element {
             <TypeIcon
               type={type}
               size="medium"
-              key={type + i + "medium"}
+              key={type + i + 'medium'}
               prio
             />
           ))}
@@ -74,9 +69,9 @@ export function GeneralTab({ id, grdColor, typeClr }: IGenTab): JSX.Element {
             <div key={ability.name + i} data-hidden={ability.hidden}>
               <p>
                 {ability.name
-                  .split("-")
+                  .split('-')
                   .map((word) => word.at(0).toUpperCase() + word.substring(1))
-                  .join(" ")}
+                  .join(' ')}
               </p>
             </div>
           ))}
@@ -96,4 +91,10 @@ export function GeneralTab({ id, grdColor, typeClr }: IGenTab): JSX.Element {
       </div>
     </div>
   );
+}
+
+interface IGenTab {
+  id: number;
+  grdColor: string;
+  typeClr: string;
 }

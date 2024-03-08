@@ -1,12 +1,12 @@
-import styles from "./styles/pokemon-list.module.scss";
-import { VirtualScroll } from "@/features/ui";
-import { RootState } from "@/store/index";
-import Link from "next/link";
-import { useSelector } from "react-redux";
-import { NotFound } from "@/features/ui";
-import { PokemonListCard } from "./pokemon-list-card";
+import styles from './pokemon-list.module.scss';
+import { VirtualScroll } from '@/features/ui';
+import { RootState } from '@/store/index';
+import Link from 'next/link';
+import { useSelector } from 'react-redux';
+import { NotFound } from '@/features/ui';
+import { PokemonListCard } from '../pokemon-list-card';
 
-export function PokemonList(): JSX.Element {
+export function PokemonList() {
   const searchQ = useSelector((state: RootState) => state.allPokemon.query);
   const allPokemon = useSelector((state: RootState) => state.allPokemon.all);
 
@@ -20,8 +20,8 @@ export function PokemonList(): JSX.Element {
       return (
         <Link
           href={`/pokemon/${poke.id}`}
-          style={{ textDecoration: "none" }}
-          key={poke.id + " " + poke.name}
+          style={{ textDecoration: 'none' }}
+          key={poke.id + ' ' + poke.name}
           tabIndex={-1}
         >
           <PokemonListCard {...poke} />

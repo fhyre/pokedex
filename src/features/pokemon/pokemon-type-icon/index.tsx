@@ -1,5 +1,5 @@
-import styles from './styles/type-icon.module.scss';
-import { IPokeTypes } from '@/features/pokemon';
+import styles from './type-icon.module.scss';
+import { IPokeTypes } from '../types';
 import { ImageWrapper } from '@/features/ui/image-wrapper';
 
 interface ITypeIcon extends IPokeTypes {
@@ -7,7 +7,7 @@ interface ITypeIcon extends IPokeTypes {
   prio?: boolean;
 }
 
-export function TypeIcon({ type, status, size, prio }: ITypeIcon): JSX.Element {
+export function TypeIcon({ type, status, size, prio }: ITypeIcon) {
   return (
     <ImageWrapper
       imagePath={`/type-icons/${type}.png`}

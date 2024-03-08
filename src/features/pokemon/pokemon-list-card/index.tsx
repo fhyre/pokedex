@@ -1,19 +1,11 @@
+import styles from './pokemon-list-card.module.scss';
 import { CSSProperties } from 'react';
-import { TypeIcon, IPokemon, convertId } from '@/features/pokemon';
-import styles from './styles/pokemon-list-card.module.scss';
 import { ImageWrapper } from '@/features/ui/image-wrapper';
+import { IPokemon } from '../types';
+import { convertId } from '../utils';
+import { TypeIcon } from '../pokemon-type-icon';
 
-interface IPokeListCard extends IPokemon {
-  id: number;
-  style?: CSSProperties;
-}
-
-const PokemonListCard = ({
-  id,
-  name,
-  types,
-  style,
-}: IPokeListCard): JSX.Element => {
+export function PokemonListCard({ id, name, types, style }: IPokeListCard) {
   const strId = convertId(id.toString());
 
   return (
@@ -45,7 +37,9 @@ const PokemonListCard = ({
       </div>
     </section>
   );
-};
-PokemonListCard.displayName = 'PokemonListCard';
+}
 
-export { PokemonListCard };
+interface IPokeListCard extends IPokemon {
+  id: number;
+  style?: CSSProperties;
+}

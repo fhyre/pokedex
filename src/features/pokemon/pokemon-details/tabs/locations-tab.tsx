@@ -1,4 +1,4 @@
-import styles from '../styles/locations-tab.module.scss';
+import styles from './styles/locations-tab.module.scss';
 
 export function LocationsTab(): JSX.Element {
   return (

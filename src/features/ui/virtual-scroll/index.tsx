@@ -1,28 +1,7 @@
-import { memo, ReactElement, useEffect, useRef, useState } from 'react';
+import styles from './virtual-scroll.module.css';
+import { memo, useEffect, useRef, useState } from 'react';
 import { formatNodeData } from './format-node-data';
 import { useScrollListen } from './use-scroll-listen';
-import styles from './styles/virtual-scroll.module.css';
-
-interface IVirtualScroll {
-  className: string;
-  data: JSX.Element[];
-  offset: number;
-  FallbackComp: React.FunctionComponent;
-  scrollProps?: {
-    scrollCb: (e: number) => void;
-    scrollPercent: number;
-  };
-}
-
-interface IStartEndPos {
-  startPos: number;
-  endPos: number;
-}
-
-interface IVirtStyles {
-  height?: number;
-  offsetY?: number;
-}
 
 const VirtualScroll = memo(
   ({
@@ -30,7 +9,7 @@ const VirtualScroll = memo(
     data,
     offset: neighborOffset,
     FallbackComp,
-  }: IVirtualScroll): ReactElement => {
+  }: IVirtualScroll) => {
     const nodeContainerRef = useRef<HTMLDivElement>(null);
     const [containerRef, scrollTop] = useScrollListen();
     const [virtStyles, setVirtStyles] = useState<IVirtStyles>({});
@@ -132,6 +111,27 @@ const VirtualScroll = memo(
     );
   }
 );
+
+interface IVirtualScroll {
+  className: string;
+  data: JSX.Element[];
+  offset: number;
+  FallbackComp: React.FunctionComponent;
+  scrollProps?: {
+    scrollCb: (e: number) => void;
+    scrollPercent: number;
+  };
+}
+
+interface IStartEndPos {
+  startPos: number;
+  endPos: number;
+}
+
+interface IVirtStyles {
+  height?: number;
+  offsetY?: number;
+}
 
 VirtualScroll.displayName = 'VirtualScroll';
 export { VirtualScroll };

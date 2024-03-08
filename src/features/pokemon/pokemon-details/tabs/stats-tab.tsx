@@ -1,4 +1,4 @@
-import styles from '../styles/stats-tab.module.scss';
+import styles from './styles/stats-tab.module.scss';
 
 export function StatsTab(): JSX.Element {
   return (
