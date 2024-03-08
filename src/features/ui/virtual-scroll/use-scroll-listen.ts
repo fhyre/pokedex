@@ -1,12 +1,4 @@
-import {
-  Dispatch,
-  MutableRefObject,
-  SetStateAction,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
-import { throttle } from "./throttle";
+import { MutableRefObject, useEffect, useRef, useState } from 'react';
 
 export function useScrollListen(): [MutableRefObject<HTMLDivElement>, number] {
   const [scrollTopOffset, setScrollTopOffset] = useState<number>(0);
@@ -15,9 +7,9 @@ export function useScrollListen(): [MutableRefObject<HTMLDivElement>, number] {
   useEffect(() => {
     const currentRef = ref.current;
 
-    currentRef.addEventListener("scroll", onScroll, { passive: true });
+    currentRef.addEventListener('scroll', onScroll, { passive: true });
 
-    return () => currentRef.removeEventListener("scroll", onScroll);
+    return () => currentRef.removeEventListener('scroll', onScroll);
   }, []);
 
   const onScroll = (e: Event) => {

@@ -2,6 +2,7 @@ import styles from './virtual-scroll.module.css';
 import { memo, useEffect, useRef, useState } from 'react';
 import { formatNodeData } from './format-node-data';
 import { useScrollListen } from './use-scroll-listen';
+import { useScrollRestore } from './use-scroll-restore';
 
 const VirtualScroll = memo(
   ({
@@ -12,6 +13,7 @@ const VirtualScroll = memo(
   }: IVirtualScroll) => {
     const nodeContainerRef = useRef<HTMLDivElement>(null);
     const [containerRef, scrollTop] = useScrollListen();
+    const [prevScrollPos] = useScrollRestore();
     const [virtStyles, setVirtStyles] = useState<IVirtStyles>({});
     const [nodePos, setNodePos] = useState<IStartEndPos>({
       startPos: 0,
@@ -19,13 +21,24 @@ const VirtualScroll = memo(
     });
     const [nodeDetails, setNodeDetails] = useState<any>({});
 
+    // Set scroll position on reload
+    useEffect(() => {
+      if (containerRef.current && prevScrollPos != 0) {
+        const timer = setTimeout(() => {
+          containerRef.current.scroll(0, prevScrollPos);
+        }, 50);
+
+        return () => clearTimeout(timer);
+      }
+    }, [containerRef, prevScrollPos]);
+
     // Set node data
     useEffect(() => {
       setNodeDetails(formatNodeData(nodeContainerRef, data.length));
     }, [nodeContainerRef, data.length]);
 
     useEffect(() => {
-      const onResize = (e: Event) => {
+      const onResize = (_e: Event) => {
         const oldTotalHeight = containerRef.current.scrollHeight;
         const scrollPos = containerRef.current.scrollTop;
         const percent = scrollPos / oldTotalHeight;
@@ -33,7 +46,7 @@ const VirtualScroll = memo(
         setNodeDetails(formatNodeData(nodeContainerRef, data.length));
 
         const scrollToPos = nodeDetails.totalHeight * percent;
-        containerRef.current.scrollTo(0, scrollToPos);
+        containerRef.current.scroll(0, scrollToPos);
       };
 
       window.addEventListener('resize', onResize);
@@ -86,6 +99,9 @@ const VirtualScroll = memo(
       nodesInView();
     }, [data.length, scrollTop, containerRef, nodeDetails]);
 
+    const handleNodeClick = () =>
+      sessionStorage.setItem('scrollPos', scrollTop.toString());
+
     return (
       <div
         className={`${styles.container}`}
@@ -101,7 +117,16 @@ const VirtualScroll = memo(
             ref={nodeContainerRef}
           >
             {data.length > 0 ? (
-              data.slice(nodePos.startPos, nodePos.endPos)
+              data
+                .slice(nodePos.startPos, nodePos.endPos)
+                .map((pokeCard, i) => (
+                  <div
+                    onClick={handleNodeClick}
+                    key={nodePos.startPos + i + nodePos.endPos}
+                  >
+                    {pokeCard}
+                  </div>
+                ))
             ) : (
               <FallbackComp />
             )}
