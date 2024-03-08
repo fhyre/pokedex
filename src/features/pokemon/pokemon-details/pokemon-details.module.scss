@@ -1,4 +1,4 @@
-@use "@/styles/sass/abstracts" as *;
+@use '@/styles/sass/abstracts' as *;
 
 .container {
   display: flex;
@@ -45,7 +45,6 @@
 .pokeImgWrapper {
   @extend %flex-center;
   position: relative;
-  @include fade-in(1400ms);
 }
 
 .pokeImg {
