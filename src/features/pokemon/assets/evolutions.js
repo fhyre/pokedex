@@ -2,17 +2,17 @@ export const evolutions = [
   [
     {
       id: 1,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 2,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 3,
-          cond: "Level 32",
+          cond: 'Level 32',
         },
       ],
     ],
@@ -20,17 +20,17 @@ export const evolutions = [
   [
     {
       id: 4,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 5,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 6,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -38,17 +38,17 @@ export const evolutions = [
   [
     {
       id: 7,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 8,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 9,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -56,17 +56,17 @@ export const evolutions = [
   [
     {
       id: 10,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 11,
-        cond: "Level 7",
+        cond: 'Level 7',
       },
       [
         {
           id: 12,
-          cond: "Level 10",
+          cond: 'Level 10',
         },
       ],
     ],
@@ -74,17 +74,17 @@ export const evolutions = [
   [
     {
       id: 13,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 14,
-        cond: "Level 7",
+        cond: 'Level 7',
       },
       [
         {
           id: 15,
-          cond: "Level 10",
+          cond: 'Level 10',
         },
       ],
     ],
@@ -92,17 +92,17 @@ export const evolutions = [
   [
     {
       id: 16,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 17,
-        cond: "Level 18",
+        cond: 'Level 18',
       },
       [
         {
           id: 18,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -110,53 +110,53 @@ export const evolutions = [
   [
     {
       id: 19,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 20,
-        cond: "Level 20",
+        cond: 'Level 20',
       },
     ],
   ],
   [
     {
       id: 21,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 22,
-        cond: "Level 20",
+        cond: 'Level 20',
       },
     ],
   ],
   [
     {
       id: 23,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 24,
-        cond: "Level 22",
+        cond: 'Level 22',
       },
     ],
   ],
   [
     {
       id: 172,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 25,
-        cond: "Level up with affection of at least 160",
+        cond: 'Level up with affection of at least 220',
       },
       [
         {
           id: 26,
-          cond: "Use Thunder Stone",
+          cond: 'Use Thunder Stone',
         },
       ],
     ],
@@ -164,29 +164,29 @@ export const evolutions = [
   [
     {
       id: 27,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 28,
-        cond: "Level 22",
+        cond: 'Level 22',
       },
     ],
   ],
   [
     {
       id: 29,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 30,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 31,
-          cond: "Use Moon Stone",
+          cond: 'Use Moon Stone',
         },
       ],
     ],
@@ -194,17 +194,17 @@ export const evolutions = [
   [
     {
       id: 32,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 33,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 34,
-          cond: "Use Moon Stone",
+          cond: 'Use Moon Stone',
         },
       ],
     ],
@@ -212,17 +212,17 @@ export const evolutions = [
   [
     {
       id: 173,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 35,
-        cond: "Level up with affection of at least 160",
+        cond: 'Level up with affection of at least 160',
       },
       [
         {
           id: 36,
-          cond: "Use Moon Stone",
+          cond: 'Use Moon Stone',
         },
       ],
     ],
@@ -230,29 +230,29 @@ export const evolutions = [
   [
     {
       id: 37,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 38,
-        cond: "Use Fire Stone",
+        cond: 'Use Fire Stone',
       },
     ],
   ],
   [
     {
       id: 174,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 39,
-        cond: "Level up with affection of at least 160",
+        cond: 'Level up with affection of at least 160',
       },
       [
         {
           id: 40,
-          cond: "Use Moon Stone",
+          cond: 'Use Moon Stone',
         },
       ],
     ],
@@ -260,17 +260,17 @@ export const evolutions = [
   [
     {
       id: 41,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 42,
-        cond: "Level 22",
+        cond: 'Level 22',
       },
       [
         {
           id: 169,
-          cond: "Level up with affection of at least 160",
+          cond: 'Level up with affection of at least 160',
         },
       ],
     ],
@@ -278,21 +278,21 @@ export const evolutions = [
   [
     {
       id: 43,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 44,
-        cond: "Level 21",
+        cond: 'Level 21',
       },
       [
         {
           id: 45,
-          cond: "Use Leaf Stone",
+          cond: 'Use Leaf Stone',
         },
         {
           id: 182,
-          cond: "Use Sun Stone",
+          cond: 'Use Sun Stone',
         },
       ],
     ],
@@ -300,81 +300,81 @@ export const evolutions = [
   [
     {
       id: 46,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 47,
-        cond: "Level 24",
+        cond: 'Level 24',
       },
     ],
   ],
   [
     {
       id: 48,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 49,
-        cond: "Level 31",
+        cond: 'Level 31',
       },
     ],
   ],
   [
     {
       id: 50,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 51,
-        cond: "Level 26",
+        cond: 'Level 26',
       },
     ],
   ],
   [
     {
       id: 52,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 53,
-        cond: "Level 28",
+        cond: 'Level 28',
       },
       {
         id: 863,
-        cond: "Level 28",
+        cond: 'Level 28',
       },
     ],
   ],
   [
     {
       id: 54,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 55,
-        cond: "Level 33",
+        cond: 'Level 33',
       },
     ],
   ],
   [
     {
       id: 56,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 57,
-        cond: "Level 28",
+        cond: 'Level 28',
       },
       [
         {
           id: 979,
-          cond: "Level up after using Rage Fist 20 times",
+          cond: 'Level up after using Rage Fist 20 times',
         },
       ],
     ],
@@ -382,33 +382,33 @@ export const evolutions = [
   [
     {
       id: 58,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 59,
-        cond: "Use Fire Stone",
+        cond: 'Use Fire Stone',
       },
     ],
   ],
   [
     {
       id: 60,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 61,
-        cond: "Level 25",
+        cond: 'Level 25',
       },
       [
         {
           id: 62,
-          cond: "Use Water Stone",
+          cond: 'Use Water Stone',
         },
         {
           id: 186,
-          cond: "Trade while holding Kings Rock",
+          cond: 'Trade while holding Kings Rock',
         },
       ],
     ],
@@ -416,17 +416,17 @@ export const evolutions = [
   [
     {
       id: 63,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 64,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 65,
-          cond: "Trade",
+          cond: 'Trade',
         },
       ],
     ],
@@ -434,17 +434,17 @@ export const evolutions = [
   [
     {
       id: 66,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 67,
-        cond: "Level 28",
+        cond: 'Level 28',
       },
       [
         {
           id: 68,
-          cond: "Trade",
+          cond: 'Trade',
         },
       ],
     ],
@@ -452,17 +452,17 @@ export const evolutions = [
   [
     {
       id: 69,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 70,
-        cond: "Level 21",
+        cond: 'Level 21',
       },
       [
         {
           id: 71,
-          cond: "Use Leaf Stone",
+          cond: 'Use Leaf Stone',
         },
       ],
     ],
@@ -470,29 +470,29 @@ export const evolutions = [
   [
     {
       id: 72,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 73,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
     ],
   ],
   [
     {
       id: 74,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 75,
-        cond: "Level 25",
+        cond: 'Level 25',
       },
       [
         {
           id: 76,
-          cond: "Trade",
+          cond: 'Trade',
         },
       ],
     ],
@@ -500,45 +500,45 @@ export const evolutions = [
   [
     {
       id: 77,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 78,
-        cond: "Level 40",
+        cond: 'Level 40',
       },
     ],
   ],
   [
     {
       id: 79,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 80,
-        cond: "Level 37",
+        cond: 'Level 37',
       },
       {
         id: 199,
-        cond: "Trade while holding Kings Rock",
+        cond: 'Trade while holding Kings Rock',
       },
     ],
   ],
   [
     {
       id: 81,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 82,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
       [
         {
           id: 462,
-          cond: "Level up in Mt Coronet",
+          cond: 'Level up in Mt Coronet',
         },
       ],
     ],
@@ -546,77 +546,77 @@ export const evolutions = [
   [
     {
       id: 83,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 865,
-        cond: "Land three critical hits in battle",
+        cond: 'Land three critical hits in battle',
       },
     ],
   ],
   [
     {
       id: 84,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 85,
-        cond: "Level 31",
+        cond: 'Level 31',
       },
     ],
   ],
   [
     {
       id: 86,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 87,
-        cond: "Level 34",
+        cond: 'Level 34',
       },
     ],
   ],
   [
     {
       id: 88,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 89,
-        cond: "Level 38",
+        cond: 'Level 38',
       },
     ],
   ],
   [
     {
       id: 90,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 91,
-        cond: "Use Water Stone",
+        cond: 'Use Water Stone',
       },
     ],
   ],
   [
     {
       id: 92,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 93,
-        cond: "Level 25",
+        cond: 'Level 25',
       },
       [
         {
           id: 94,
-          cond: "Trade",
+          cond: 'Trade',
         },
       ],
     ],
@@ -624,133 +624,133 @@ export const evolutions = [
   [
     {
       id: 95,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 208,
-        cond: "Trade while holding Metal Coat",
+        cond: 'Trade while holding Metal Coat',
       },
     ],
   ],
   [
     {
       id: 96,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 97,
-        cond: "Level 26",
+        cond: 'Level 26',
       },
     ],
   ],
   [
     {
       id: 98,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 99,
-        cond: "Level 28",
+        cond: 'Level 28',
       },
     ],
   ],
   [
     {
       id: 100,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 101,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
     ],
   ],
   [
     {
       id: 102,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 103,
-        cond: "Use Leaf Stone",
+        cond: 'Use Leaf Stone',
       },
     ],
   ],
   [
     {
       id: 104,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 105,
-        cond: "Level 28",
+        cond: 'Level 28',
       },
     ],
   ],
   [
     {
       id: 236,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 106,
-        cond: "Level 20 and Attack > Defense",
+        cond: 'Level 20 and Attack > Defense',
       },
       {
         id: 107,
-        cond: "Level 20 and Defense > Attack",
+        cond: 'Level 20 and Defense > Attack',
       },
       {
         id: 237,
-        cond: "Level 20",
+        cond: 'Level 20',
       },
     ],
   ],
   [
     {
       id: 108,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 463,
-        cond: "Level up while knowing Rollout",
+        cond: 'Level up while knowing Rollout',
       },
     ],
   ],
   [
     {
       id: 109,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 110,
-        cond: "Level 35",
+        cond: 'Level 35',
       },
     ],
   ],
   [
     {
       id: 111,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 112,
-        cond: "Level 42",
+        cond: 'Level 42',
       },
       [
         {
           id: 464,
-          cond: "Trade while holding Protector",
+          cond: 'Trade while holding Protector',
         },
       ],
     ],
@@ -758,17 +758,17 @@ export const evolutions = [
   [
     {
       id: 440,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 113,
-        cond: "Level up while holding Oval Stone during the Day",
+        cond: 'Level up while holding Oval Stone during the Day',
       },
       [
         {
           id: 242,
-          cond: "Level up with affection of at least 160",
+          cond: 'Level up with affection of at least 160',
         },
       ],
     ],
@@ -776,33 +776,33 @@ export const evolutions = [
   [
     {
       id: 114,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 465,
-        cond: "Level up while knowing Ancient Power",
+        cond: 'Level up while knowing Ancient Power',
       },
     ],
   ],
   {
     id: 115,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 116,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 117,
-        cond: "Level 32",
+        cond: 'Level 32',
       },
       [
         {
           id: 230,
-          cond: "Trade while holding Dragon Scale",
+          cond: 'Trade while holding Dragon Scale',
         },
       ],
     ],
@@ -810,41 +810,41 @@ export const evolutions = [
   [
     {
       id: 118,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 119,
-        cond: "Level 33",
+        cond: 'Level 33',
       },
     ],
   ],
   [
     {
       id: 120,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 121,
-        cond: "Use Water Stone",
+        cond: 'Use Water Stone',
       },
     ],
   ],
   [
     {
       id: 439,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 122,
-        cond: "Level up while knowing Mimic",
+        cond: 'Level up while knowing Mimic',
       },
       [
         {
           id: 866,
-          cond: "Level 42",
+          cond: 'Level 42',
         },
       ],
     ],
@@ -852,45 +852,45 @@ export const evolutions = [
   [
     {
       id: 123,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 212,
-        cond: "Trade while holding Metal Coat",
+        cond: 'Trade while holding Metal Coat',
       },
       {
         id: 900,
-        cond: "Use Black Augurite",
+        cond: 'Use Black Augurite',
       },
     ],
   ],
   [
     {
       id: 238,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 124,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
     ],
   ],
   [
     {
       id: 239,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 125,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
       [
         {
           id: 466,
-          cond: "Trade while holding Electirizer",
+          cond: 'Trade while holding Electirizer',
         },
       ],
     ],
@@ -898,103 +898,103 @@ export const evolutions = [
   [
     {
       id: 240,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 126,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
       [
         {
           id: 467,
-          cond: "Trade while holding Magmarizer",
+          cond: 'Trade while holding Magmarizer',
         },
       ],
     ],
   ],
   {
     id: 127,
-    cond: "",
+    cond: '',
   },
   {
     id: 128,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 129,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 130,
-        cond: "Level 20",
+        cond: 'Level 20',
       },
     ],
   ],
   {
     id: 131,
-    cond: "",
+    cond: '',
   },
   {
     id: 132,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 133,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 134,
-        cond: "Use Water Stone",
+        cond: 'Use Water Stone',
       },
       {
         id: 135,
-        cond: "Use Thunder Stone",
+        cond: 'Use Thunder Stone',
       },
       {
         id: 136,
-        cond: "Use Fire Stone",
+        cond: 'Use Fire Stone',
       },
       {
         id: 196,
-        cond: "Level up with affection of at least 160 during the Day",
+        cond: 'Level up with affection of at least 160 during the Day',
       },
       {
         id: 197,
-        cond: "Level up with affection of at least 160 during the Night",
+        cond: 'Level up with affection of at least 160 during the Night',
       },
       {
         id: 470,
-        cond: "Level up in Eterna Forest",
+        cond: 'Level up in Eterna Forest',
       },
       {
         id: 471,
-        cond: "Level up in Sinnoh Route 217",
+        cond: 'Level up in Sinnoh Route 217',
       },
       {
         id: 700,
-        cond: "Level up with affection of at least 2 while knowing a Fairy type move",
+        cond: 'Level up with affection of at least 2 while knowing a Fairy type move',
       },
     ],
   ],
   [
     {
       id: 137,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 233,
-        cond: "Trade while holding Up Grade",
+        cond: 'Trade while holding Up Grade',
       },
       [
         {
           id: 474,
-          cond: "Trade while holding Dubious Disc",
+          cond: 'Trade while holding Dubious Disc',
         },
       ],
     ],
@@ -1002,95 +1002,95 @@ export const evolutions = [
   [
     {
       id: 138,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 139,
-        cond: "Level 40",
+        cond: 'Level 40',
       },
     ],
   ],
   [
     {
       id: 140,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 141,
-        cond: "Level 40",
+        cond: 'Level 40',
       },
     ],
   ],
   {
     id: 142,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 446,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 143,
-        cond: "Level up with affection of at least 160",
+        cond: 'Level up with affection of at least 160',
       },
     ],
   ],
   {
     id: 144,
-    cond: "",
+    cond: '',
   },
   {
     id: 145,
-    cond: "",
+    cond: '',
   },
   {
     id: 146,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 147,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 148,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
       [
         {
           id: 149,
-          cond: "Level 55",
+          cond: 'Level 55',
         },
       ],
     ],
   ],
   {
     id: 150,
-    cond: "",
+    cond: '',
   },
   {
     id: 151,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 152,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 153,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 154,
-          cond: "Level 32",
+          cond: 'Level 32',
         },
       ],
     ],
@@ -1098,17 +1098,17 @@ export const evolutions = [
   [
     {
       id: 155,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 156,
-        cond: "Level 14",
+        cond: 'Level 14',
       },
       [
         {
           id: 157,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -1116,17 +1116,17 @@ export const evolutions = [
   [
     {
       id: 158,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 159,
-        cond: "Level 18",
+        cond: 'Level 18',
       },
       [
         {
           id: 160,
-          cond: "Level 30",
+          cond: 'Level 30',
         },
       ],
     ],
@@ -1134,77 +1134,77 @@ export const evolutions = [
   [
     {
       id: 161,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 162,
-        cond: "Level 15",
+        cond: 'Level 15',
       },
     ],
   ],
   [
     {
       id: 163,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 164,
-        cond: "Level 20",
+        cond: 'Level 20',
       },
     ],
   ],
   [
     {
       id: 165,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 166,
-        cond: "Level 18",
+        cond: 'Level 18',
       },
     ],
   ],
   [
     {
       id: 167,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 168,
-        cond: "Level 22",
+        cond: 'Level 22',
       },
     ],
   ],
   [
     {
       id: 170,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 171,
-        cond: "Level 27",
+        cond: 'Level 27',
       },
     ],
   ],
   [
     {
       id: 175,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 176,
-        cond: "Level up with affection of at least 160",
+        cond: 'Level up with affection of at least 160',
       },
       [
         {
           id: 468,
-          cond: "Use Shiny Stone",
+          cond: 'Use Shiny Stone',
         },
       ],
     ],
@@ -1212,29 +1212,29 @@ export const evolutions = [
   [
     {
       id: 177,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 178,
-        cond: "Level 25",
+        cond: 'Level 25',
       },
     ],
   ],
   [
     {
       id: 179,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 180,
-        cond: "Level 15",
+        cond: 'Level 15',
       },
       [
         {
           id: 181,
-          cond: "Level 30",
+          cond: 'Level 30',
         },
       ],
     ],
@@ -1242,17 +1242,17 @@ export const evolutions = [
   [
     {
       id: 298,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 183,
-        cond: "Level up with affection of at least 160",
+        cond: 'Level up with affection of at least 160',
       },
       [
         {
           id: 184,
-          cond: "Level 18",
+          cond: 'Level 18',
         },
       ],
     ],
@@ -1260,29 +1260,29 @@ export const evolutions = [
   [
     {
       id: 438,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 185,
-        cond: "Level up while knowing Mimic",
+        cond: 'Level up while knowing Mimic',
       },
     ],
   ],
   [
     {
       id: 187,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 188,
-        cond: "Level 18",
+        cond: 'Level 18',
       },
       [
         {
           id: 189,
-          cond: "Level 27",
+          cond: 'Level 27',
         },
       ],
     ],
@@ -1290,205 +1290,205 @@ export const evolutions = [
   [
     {
       id: 190,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 424,
-        cond: "Level up while knowing Double Hit",
+        cond: 'Level up while knowing Double Hit',
       },
     ],
   ],
   [
     {
       id: 191,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 192,
-        cond: "Use Sun Stone",
+        cond: 'Use Sun Stone',
       },
     ],
   ],
   [
     {
       id: 193,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 469,
-        cond: "Level up while knowing Ancient Power",
+        cond: 'Level up while knowing Ancient Power',
       },
     ],
   ],
   [
     {
       id: 194,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 195,
-        cond: "Level 20",
+        cond: 'Level 20',
       },
       {
         id: 980,
-        cond: "Level 20",
+        cond: 'Level 20',
       },
     ],
   ],
   [
     {
       id: 198,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 430,
-        cond: "Use Dusk Stone",
+        cond: 'Use Dusk Stone',
       },
     ],
   ],
   [
     {
       id: 200,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 429,
-        cond: "Use Dusk Stone",
+        cond: 'Use Dusk Stone',
       },
     ],
   ],
   {
     id: 201,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 360,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 202,
-        cond: "Level 15",
+        cond: 'Level 15',
       },
     ],
   ],
   [
     {
       id: 203,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 981,
-        cond: "Level up while knowing Twin Beam",
+        cond: 'Level up while knowing Twin Beam',
       },
     ],
   ],
   [
     {
       id: 204,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 205,
-        cond: "Level 31",
+        cond: 'Level 31',
       },
     ],
   ],
   [
     {
       id: 206,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 982,
-        cond: "Level up while knowing Hyper Drill",
+        cond: 'Level up while knowing Hyper Drill',
       },
     ],
   ],
   [
     {
       id: 207,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 472,
-        cond: "Level up while holding Razor Fang during the Night",
+        cond: 'Level up while holding Razor Fang during the Night',
       },
     ],
   ],
   [
     {
       id: 209,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 210,
-        cond: "Level 23",
+        cond: 'Level 23',
       },
     ],
   ],
   [
     {
       id: 211,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 904,
-        cond: "In Hisui, use Barb Barrage in the strong style at least twenty times",
+        cond: 'In Hisui, use Barb Barrage in the strong style at least twenty times',
       },
     ],
   ],
   {
     id: 213,
-    cond: "",
+    cond: '',
   },
   {
     id: 214,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 215,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 461,
-        cond: "Level up while holding Razor Claw during the Night",
+        cond: 'Level up while holding Razor Claw during the Night',
       },
       {
         id: 903,
-        cond: "Level up while holding Razor Claw during the Day",
+        cond: 'Level up while holding Razor Claw during the Day',
       },
     ],
   ],
   [
     {
       id: 216,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 217,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
       [
         {
           id: 901,
-          cond: "Use Peat Block during the Full Moon",
+          cond: 'Use Peat Block during the Full Moon',
         },
       ],
     ],
@@ -1496,29 +1496,29 @@ export const evolutions = [
   [
     {
       id: 218,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 219,
-        cond: "Level 38",
+        cond: 'Level 38',
       },
     ],
   ],
   [
     {
       id: 220,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 221,
-        cond: "Level 33",
+        cond: 'Level 33',
       },
       [
         {
           id: 473,
-          cond: "Level up while knowing Ancient Power",
+          cond: 'Level up while knowing Ancient Power',
         },
       ],
     ],
@@ -1526,147 +1526,147 @@ export const evolutions = [
   [
     {
       id: 222,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 864,
-        cond: "Level 38",
+        cond: 'Level 38',
       },
     ],
   ],
   [
     {
       id: 223,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 224,
-        cond: "Level 25",
+        cond: 'Level 25',
       },
     ],
   ],
   {
     id: 225,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 458,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 226,
-        cond: "Level up with a Remoraid",
+        cond: 'Level up with a Remoraid',
       },
     ],
   ],
   {
     id: 227,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 228,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 229,
-        cond: "Level 24",
+        cond: 'Level 24',
       },
     ],
   ],
   [
     {
       id: 231,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 232,
-        cond: "Level 25",
+        cond: 'Level 25',
       },
     ],
   ],
   [
     {
       id: 234,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 899,
-        cond: "In Hisui, use Psyshield Bash in the agile style at least twenty times",
+        cond: 'In Hisui, use Psyshield Bash in the agile style at least twenty times',
       },
     ],
   ],
   {
     id: 235,
-    cond: "",
+    cond: '',
   },
   {
     id: 241,
-    cond: "",
+    cond: '',
   },
   {
     id: 243,
-    cond: "",
+    cond: '',
   },
   {
     id: 244,
-    cond: "",
+    cond: '',
   },
   {
     id: 245,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 246,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 247,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
       [
         {
           id: 248,
-          cond: "Level 55",
+          cond: 'Level 55',
         },
       ],
     ],
   ],
   {
     id: 249,
-    cond: "",
+    cond: '',
   },
   {
     id: 250,
-    cond: "",
+    cond: '',
   },
   {
     id: 251,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 252,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 253,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 254,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -1674,17 +1674,17 @@ export const evolutions = [
   [
     {
       id: 255,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 256,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 257,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -1692,17 +1692,17 @@ export const evolutions = [
   [
     {
       id: 258,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 259,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 260,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -1710,29 +1710,29 @@ export const evolutions = [
   [
     {
       id: 261,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 262,
-        cond: "Level 18",
+        cond: 'Level 18',
       },
     ],
   ],
   [
     {
       id: 263,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 264,
-        cond: "Level 20",
+        cond: 'Level 20',
       },
       [
         {
           id: 862,
-          cond: "Level 35 during the Night",
+          cond: 'Level 35 during the Night',
         },
       ],
     ],
@@ -1740,29 +1740,29 @@ export const evolutions = [
   [
     {
       id: 265,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 268,
-        cond: "Level 7",
+        cond: 'Level 7',
       },
       [
         {
           id: 269,
-          cond: "Level 10",
+          cond: 'Level 10',
         },
       ],
     ],
     [
       {
         id: 266,
-        cond: "Level 7",
+        cond: 'Level 7',
       },
       [
         {
           id: 267,
-          cond: "Level 10",
+          cond: 'Level 10',
         },
       ],
     ],
@@ -1770,17 +1770,17 @@ export const evolutions = [
   [
     {
       id: 270,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 271,
-        cond: "Level 14",
+        cond: 'Level 14',
       },
       [
         {
           id: 272,
-          cond: "Use Water Stone",
+          cond: 'Use Water Stone',
         },
       ],
     ],
@@ -1788,17 +1788,17 @@ export const evolutions = [
   [
     {
       id: 273,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 274,
-        cond: "Level 14",
+        cond: 'Level 14',
       },
       [
         {
           id: 275,
-          cond: "Use Leaf Stone",
+          cond: 'Use Leaf Stone',
         },
       ],
     ],
@@ -1806,45 +1806,45 @@ export const evolutions = [
   [
     {
       id: 276,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 277,
-        cond: "Level 22",
+        cond: 'Level 22',
       },
     ],
   ],
   [
     {
       id: 278,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 279,
-        cond: "Level 25",
+        cond: 'Level 25',
       },
     ],
   ],
   [
     {
       id: 280,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 281,
-        cond: "Level 20",
+        cond: 'Level 20',
       },
       [
         {
           id: 282,
-          cond: "Level 30",
+          cond: 'Level 30',
         },
         {
           id: 475,
-          cond: "Use Dawn Stone",
+          cond: 'Use Dawn Stone',
         },
       ],
     ],
@@ -1852,41 +1852,41 @@ export const evolutions = [
   [
     {
       id: 283,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 284,
-        cond: "Level 22",
+        cond: 'Level 22',
       },
     ],
   ],
   [
     {
       id: 285,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 286,
-        cond: "Level 23",
+        cond: 'Level 23',
       },
     ],
   ],
   [
     {
       id: 287,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 288,
-        cond: "Level 18",
+        cond: 'Level 18',
       },
       [
         {
           id: 289,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -1894,33 +1894,33 @@ export const evolutions = [
   [
     {
       id: 290,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 291,
-        cond: "Level 20",
+        cond: 'Level 20',
       },
       {
         id: 292,
-        cond: "Reach Level 20+ while having an empty slot in the party and a extra Pok\u00e9 Ball",
+        cond: 'Reach Level 20+ while having an empty slot in the party and a extra Pok\u00e9 Ball',
       },
     ],
   ],
   [
     {
       id: 293,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 294,
-        cond: "Level 20",
+        cond: 'Level 20',
       },
       [
         {
           id: 295,
-          cond: "Level 40",
+          cond: 'Level 40',
         },
       ],
     ],
@@ -1928,61 +1928,61 @@ export const evolutions = [
   [
     {
       id: 296,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 297,
-        cond: "Level 24",
+        cond: 'Level 24',
       },
     ],
   ],
   [
     {
       id: 299,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 476,
-        cond: "Level up in Mt Coronet",
+        cond: 'Level up in Mt Coronet',
       },
     ],
   ],
   [
     {
       id: 300,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 301,
-        cond: "Use Moon Stone",
+        cond: 'Use Moon Stone',
       },
     ],
   ],
   {
     id: 302,
-    cond: "",
+    cond: '',
   },
   {
     id: 303,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 304,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 305,
-        cond: "Level 32",
+        cond: 'Level 32',
       },
       [
         {
           id: 306,
-          cond: "Level 42",
+          cond: 'Level 42',
         },
       ],
     ],
@@ -1990,57 +1990,57 @@ export const evolutions = [
   [
     {
       id: 307,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 308,
-        cond: "Level 37",
+        cond: 'Level 37',
       },
     ],
   ],
   [
     {
       id: 309,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 310,
-        cond: "Level 26",
+        cond: 'Level 26',
       },
     ],
   ],
   {
     id: 311,
-    cond: "",
+    cond: '',
   },
   {
     id: 312,
-    cond: "",
+    cond: '',
   },
   {
     id: 313,
-    cond: "",
+    cond: '',
   },
   {
     id: 314,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 406,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 315,
-        cond: "Level up with affection of at least 160 during the Day",
+        cond: 'Level up with affection of at least 160 during the Day',
       },
       [
         {
           id: 407,
-          cond: "Use Shiny Stone",
+          cond: 'Use Shiny Stone',
         },
       ],
     ],
@@ -2048,85 +2048,85 @@ export const evolutions = [
   [
     {
       id: 316,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 317,
-        cond: "Level 26",
+        cond: 'Level 26',
       },
     ],
   ],
   [
     {
       id: 318,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 319,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
     ],
   ],
   [
     {
       id: 320,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 321,
-        cond: "Level 40",
+        cond: 'Level 40',
       },
     ],
   ],
   [
     {
       id: 322,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 323,
-        cond: "Level 33",
+        cond: 'Level 33',
       },
     ],
   ],
   {
     id: 324,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 325,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 326,
-        cond: "Level 32",
+        cond: 'Level 32',
       },
     ],
   ],
   {
     id: 327,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 328,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 329,
-        cond: "Level 35",
+        cond: 'Level 35',
       },
       [
         {
           id: 330,
-          cond: "Level 45",
+          cond: 'Level 45',
         },
       ],
     ],
@@ -2134,203 +2134,203 @@ export const evolutions = [
   [
     {
       id: 331,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 332,
-        cond: "Level 32",
+        cond: 'Level 32',
       },
     ],
   ],
   [
     {
       id: 333,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 334,
-        cond: "Level 35",
+        cond: 'Level 35',
       },
     ],
   ],
   {
     id: 335,
-    cond: "",
+    cond: '',
   },
   {
     id: 336,
-    cond: "",
+    cond: '',
   },
   {
     id: 337,
-    cond: "",
+    cond: '',
   },
   {
     id: 338,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 339,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 340,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
     ],
   ],
   [
     {
       id: 341,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 342,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
     ],
   ],
   [
     {
       id: 343,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 344,
-        cond: "Level 36",
+        cond: 'Level 36',
       },
     ],
   ],
   [
     {
       id: 345,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 346,
-        cond: "Level 40",
+        cond: 'Level 40',
       },
     ],
   ],
   [
     {
       id: 347,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 348,
-        cond: "Level 40",
+        cond: 'Level 40',
       },
     ],
   ],
   [
     {
       id: 349,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 350,
-        cond: "Level up with beauty of at least 171",
+        cond: 'Level up with beauty of at least 171',
       },
     ],
   ],
   {
     id: 351,
-    cond: "",
+    cond: '',
   },
   {
     id: 352,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 353,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 354,
-        cond: "Level 37",
+        cond: 'Level 37',
       },
     ],
   ],
   [
     {
       id: 355,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 356,
-        cond: "Level 37",
+        cond: 'Level 37',
       },
       [
         {
           id: 477,
-          cond: "Trade while holding Reaper Cloth",
+          cond: 'Trade while holding Reaper Cloth',
         },
       ],
     ],
   ],
   {
     id: 357,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 433,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 358,
-        cond: "Level up with affection of at least 220 during the Night",
+        cond: 'Level up with affection of at least 220 during the Night',
       },
     ],
   ],
   {
     id: 359,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 361,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 362,
-        cond: "Level 42",
+        cond: 'Level 42',
       },
       {
         id: 478,
-        cond: "Use Dawn Stone",
+        cond: 'Use Dawn Stone',
       },
     ],
   ],
   [
     {
       id: 363,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 364,
-        cond: "Level 32",
+        cond: 'Level 32',
       },
       [
         {
           id: 365,
-          cond: "Level 44",
+          cond: 'Level 44',
         },
       ],
     ],
@@ -2338,41 +2338,41 @@ export const evolutions = [
   [
     {
       id: 366,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 367,
-        cond: "Trade while holding Deep Sea Tooth",
+        cond: 'Trade while holding Deep Sea Tooth',
       },
       {
         id: 368,
-        cond: "Trade while holding Deep Sea Scale",
+        cond: 'Trade while holding Deep Sea Scale',
       },
     ],
   ],
   {
     id: 369,
-    cond: "",
+    cond: '',
   },
   {
     id: 370,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 371,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 372,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
       [
         {
           id: 373,
-          cond: "Level 50",
+          cond: 'Level 50',
         },
       ],
     ],
@@ -2380,75 +2380,75 @@ export const evolutions = [
   [
     {
       id: 374,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 375,
-        cond: "Level 20",
+        cond: 'Level 20',
       },
       [
         {
           id: 376,
-          cond: "Level 45",
+          cond: 'Level 45',
         },
       ],
     ],
   ],
   {
     id: 377,
-    cond: "",
+    cond: '',
   },
   {
     id: 378,
-    cond: "",
+    cond: '',
   },
   {
     id: 379,
-    cond: "",
+    cond: '',
   },
   {
     id: 380,
-    cond: "",
+    cond: '',
   },
   {
     id: 381,
-    cond: "",
+    cond: '',
   },
   {
     id: 382,
-    cond: "",
+    cond: '',
   },
   {
     id: 383,
-    cond: "",
+    cond: '',
   },
   {
     id: 384,
-    cond: "",
+    cond: '',
   },
   {
     id: 385,
-    cond: "",
+    cond: '',
   },
   {
     id: 386,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 387,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 388,
-        cond: "Level 18",
+        cond: 'Level 18',
       },
       [
         {
           id: 389,
-          cond: "Level 32",
+          cond: 'Level 32',
         },
       ],
     ],
@@ -2456,17 +2456,17 @@ export const evolutions = [
   [
     {
       id: 390,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 391,
-        cond: "Level 14",
+        cond: 'Level 14',
       },
       [
         {
           id: 392,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -2474,17 +2474,17 @@ export const evolutions = [
   [
     {
       id: 393,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 394,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 395,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -2492,17 +2492,17 @@ export const evolutions = [
   [
     {
       id: 396,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 397,
-        cond: "Level 14",
+        cond: 'Level 14',
       },
       [
         {
           id: 398,
-          cond: "Level 34",
+          cond: 'Level 34',
         },
       ],
     ],
@@ -2510,41 +2510,41 @@ export const evolutions = [
   [
     {
       id: 399,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 400,
-        cond: "Level 15",
+        cond: 'Level 15',
       },
     ],
   ],
   [
     {
       id: 401,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 402,
-        cond: "Level 10",
+        cond: 'Level 10',
       },
     ],
   ],
   [
     {
       id: 403,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 404,
-        cond: "Level 15",
+        cond: 'Level 15',
       },
       [
         {
           id: 405,
-          cond: "Level 30",
+          cond: 'Level 30',
         },
       ],
     ],
@@ -2552,177 +2552,177 @@ export const evolutions = [
   [
     {
       id: 408,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 409,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
     ],
   ],
   [
     {
       id: 410,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 411,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
     ],
   ],
   [
     {
       id: 412,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 413,
-        cond: "Level 20 (Male)",
+        cond: 'Level 20 (Male)',
       },
       {
         id: 414,
-        cond: "Level 20 (Female)",
+        cond: 'Level 20 (Female)',
       },
     ],
   ],
   [
     {
       id: 415,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 416,
-        cond: "Level 21 (Male)",
+        cond: 'Level 21 (Male)',
       },
     ],
   ],
   {
     id: 417,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 418,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 419,
-        cond: "Level 26",
+        cond: 'Level 26',
       },
     ],
   ],
   [
     {
       id: 420,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 421,
-        cond: "Level 25",
+        cond: 'Level 25',
       },
     ],
   ],
   [
     {
       id: 422,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 423,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
     ],
   ],
   [
     {
       id: 425,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 426,
-        cond: "Level 28",
+        cond: 'Level 28',
       },
     ],
   ],
   [
     {
       id: 427,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 428,
-        cond: "Level up with affection of at least 160",
+        cond: 'Level up with affection of at least 160',
       },
     ],
   ],
   [
     {
       id: 431,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 432,
-        cond: "Level 38",
+        cond: 'Level 38',
       },
     ],
   ],
   [
     {
       id: 434,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 435,
-        cond: "Level 34",
+        cond: 'Level 34',
       },
     ],
   ],
   [
     {
       id: 436,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 437,
-        cond: "Level 33",
+        cond: 'Level 33',
       },
     ],
   ],
   {
     id: 441,
-    cond: "",
+    cond: '',
   },
   {
     id: 442,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 443,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 444,
-        cond: "Level 24",
+        cond: 'Level 24',
       },
       [
         {
           id: 445,
-          cond: "Level 48",
+          cond: 'Level 48',
         },
       ],
     ],
@@ -2730,161 +2730,161 @@ export const evolutions = [
   [
     {
       id: 447,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 448,
-        cond: "Level up with affection of at least 160 during the Day",
+        cond: 'Level up with affection of at least 160 during the Day',
       },
     ],
   ],
   [
     {
       id: 449,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 450,
-        cond: "Level 34",
+        cond: 'Level 34',
       },
     ],
   ],
   [
     {
       id: 451,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 452,
-        cond: "Level 40",
+        cond: 'Level 40',
       },
     ],
   ],
   [
     {
       id: 453,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 454,
-        cond: "Level 37",
+        cond: 'Level 37',
       },
     ],
   ],
   {
     id: 455,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 456,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 457,
-        cond: "Level 31",
+        cond: 'Level 31',
       },
     ],
   ],
   [
     {
       id: 459,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 460,
-        cond: "Level 40",
+        cond: 'Level 40',
       },
     ],
   ],
   {
     id: 479,
-    cond: "",
+    cond: '',
   },
   {
     id: 480,
-    cond: "",
+    cond: '',
   },
   {
     id: 481,
-    cond: "",
+    cond: '',
   },
   {
     id: 482,
-    cond: "",
+    cond: '',
   },
   {
     id: 483,
-    cond: "",
+    cond: '',
   },
   {
     id: 484,
-    cond: "",
+    cond: '',
   },
   {
     id: 485,
-    cond: "",
+    cond: '',
   },
   {
     id: 486,
-    cond: "",
+    cond: '',
   },
   {
     id: 487,
-    cond: "",
+    cond: '',
   },
   {
     id: 488,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 489,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 490,
-        cond: "",
+        cond: '',
       },
     ],
   ],
   {
     id: 491,
-    cond: "",
+    cond: '',
   },
   {
     id: 492,
-    cond: "",
+    cond: '',
   },
   {
     id: 493,
-    cond: "",
+    cond: '',
   },
   {
     id: 494,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 495,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 496,
-        cond: "Level 17",
+        cond: 'Level 17',
       },
       [
         {
           id: 497,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -2892,17 +2892,17 @@ export const evolutions = [
   [
     {
       id: 498,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 499,
-        cond: "Level 17",
+        cond: 'Level 17',
       },
       [
         {
           id: 500,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -2910,17 +2910,17 @@ export const evolutions = [
   [
     {
       id: 501,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 502,
-        cond: "Level 17",
+        cond: 'Level 17',
       },
       [
         {
           id: 503,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -2928,29 +2928,29 @@ export const evolutions = [
   [
     {
       id: 504,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 505,
-        cond: "Level 20",
+        cond: 'Level 20',
       },
     ],
   ],
   [
     {
       id: 506,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 507,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 508,
-          cond: "Level 32",
+          cond: 'Level 32',
         },
       ],
     ],
@@ -2958,77 +2958,77 @@ export const evolutions = [
   [
     {
       id: 509,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 510,
-        cond: "Level 20",
+        cond: 'Level 20',
       },
     ],
   ],
   [
     {
       id: 511,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 512,
-        cond: "Use Leaf Stone",
+        cond: 'Use Leaf Stone',
       },
     ],
   ],
   [
     {
       id: 513,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 514,
-        cond: "Use Fire Stone",
+        cond: 'Use Fire Stone',
       },
     ],
   ],
   [
     {
       id: 515,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 516,
-        cond: "Use Water Stone",
+        cond: 'Use Water Stone',
       },
     ],
   ],
   [
     {
       id: 517,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 518,
-        cond: "Use Moon Stone",
+        cond: 'Use Moon Stone',
       },
     ],
   ],
   [
     {
       id: 519,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 520,
-        cond: "Level 21",
+        cond: 'Level 21',
       },
       [
         {
           id: 521,
-          cond: "Level 32",
+          cond: 'Level 32',
         },
       ],
     ],
@@ -3036,29 +3036,29 @@ export const evolutions = [
   [
     {
       id: 522,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 523,
-        cond: "Level 27",
+        cond: 'Level 27',
       },
     ],
   ],
   [
     {
       id: 524,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 525,
-        cond: "Level 25",
+        cond: 'Level 25',
       },
       [
         {
           id: 526,
-          cond: "Trade",
+          cond: 'Trade',
         },
       ],
     ],
@@ -3066,45 +3066,45 @@ export const evolutions = [
   [
     {
       id: 527,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 528,
-        cond: "Level up with affection of at least 160",
+        cond: 'Level up with affection of at least 160',
       },
     ],
   ],
   [
     {
       id: 529,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 530,
-        cond: "Level 31",
+        cond: 'Level 31',
       },
     ],
   ],
   {
     id: 531,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 532,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 533,
-        cond: "Level 25",
+        cond: 'Level 25',
       },
       [
         {
           id: 534,
-          cond: "Trade",
+          cond: 'Trade',
         },
       ],
     ],
@@ -3112,43 +3112,43 @@ export const evolutions = [
   [
     {
       id: 535,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 536,
-        cond: "Level 25",
+        cond: 'Level 25',
       },
       [
         {
           id: 537,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
   ],
   {
     id: 538,
-    cond: "",
+    cond: '',
   },
   {
     id: 539,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 540,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 541,
-        cond: "Level 20",
+        cond: 'Level 20',
       },
       [
         {
           id: 542,
-          cond: "Level up with affection of at least 220",
+          cond: 'Level up with affection of at least 220',
         },
       ],
     ],
@@ -3156,17 +3156,17 @@ export const evolutions = [
   [
     {
       id: 543,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 544,
-        cond: "Level 22",
+        cond: 'Level 22',
       },
       [
         {
           id: 545,
-          cond: "Level 30",
+          cond: 'Level 30',
         },
       ],
     ],
@@ -3174,53 +3174,53 @@ export const evolutions = [
   [
     {
       id: 546,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 547,
-        cond: "Use Sun Stone",
+        cond: 'Use Sun Stone',
       },
     ],
   ],
   [
     {
       id: 548,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 549,
-        cond: "Use Sun Stone",
+        cond: 'Use Sun Stone',
       },
     ],
   ],
   [
     {
       id: 550,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 902,
-        cond: "White-Striped Basculin after losing at least 294 HP from recoil damage without fainting",
+        cond: 'White-Striped Basculin after losing at least 294 HP from recoil damage without fainting',
       },
     ],
   ],
   [
     {
       id: 551,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 552,
-        cond: "Level 29",
+        cond: 'Level 29',
       },
       [
         {
           id: 553,
-          cond: "Level 40",
+          cond: 'Level 40',
         },
       ],
     ],
@@ -3228,137 +3228,137 @@ export const evolutions = [
   [
     {
       id: 554,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 555,
-        cond: "Level 35",
+        cond: 'Level 35',
       },
     ],
   ],
   {
     id: 556,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 557,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 558,
-        cond: "Level 34",
+        cond: 'Level 34',
       },
     ],
   ],
   [
     {
       id: 559,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 560,
-        cond: "Level 39",
+        cond: 'Level 39',
       },
     ],
   ],
   {
     id: 561,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 562,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 563,
-        cond: "Level 34",
+        cond: 'Level 34',
       },
       {
         id: 867,
-        cond: "Receive at least 49 HP of battle damage and go under the large rock arch in Dusty Bowl",
+        cond: 'Receive at least 49 HP of battle damage and go under the large rock arch in Dusty Bowl',
       },
     ],
   ],
   [
     {
       id: 564,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 565,
-        cond: "Level 37",
+        cond: 'Level 37',
       },
     ],
   ],
   [
     {
       id: 566,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 567,
-        cond: "Level 37",
+        cond: 'Level 37',
       },
     ],
   ],
   [
     {
       id: 568,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 569,
-        cond: "Level 36",
+        cond: 'Level 36',
       },
     ],
   ],
   [
     {
       id: 570,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 571,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
     ],
   ],
   [
     {
       id: 572,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 573,
-        cond: "Use Shiny Stone",
+        cond: 'Use Shiny Stone',
       },
     ],
   ],
   [
     {
       id: 574,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 575,
-        cond: "Level 32",
+        cond: 'Level 32',
       },
       [
         {
           id: 576,
-          cond: "Level 41",
+          cond: 'Level 41',
         },
       ],
     ],
@@ -3366,17 +3366,17 @@ export const evolutions = [
   [
     {
       id: 577,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 578,
-        cond: "Level 32",
+        cond: 'Level 32',
       },
       [
         {
           id: 579,
-          cond: "Level 41",
+          cond: 'Level 41',
         },
       ],
     ],
@@ -3384,29 +3384,29 @@ export const evolutions = [
   [
     {
       id: 580,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 581,
-        cond: "Level 35",
+        cond: 'Level 35',
       },
     ],
   ],
   [
     {
       id: 582,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 583,
-        cond: "Level 35",
+        cond: 'Level 35',
       },
       [
         {
           id: 584,
-          cond: "Level 47",
+          cond: 'Level 47',
         },
       ],
     ],
@@ -3414,97 +3414,97 @@ export const evolutions = [
   [
     {
       id: 585,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 586,
-        cond: "Level 34",
+        cond: 'Level 34',
       },
     ],
   ],
   {
     id: 587,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 588,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 589,
-        cond: "Trade for a Shelmet",
+        cond: 'Trade for a Shelmet',
       },
     ],
   ],
   [
     {
       id: 590,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 591,
-        cond: "Level 39",
+        cond: 'Level 39',
       },
     ],
   ],
   [
     {
       id: 592,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 593,
-        cond: "Level 40",
+        cond: 'Level 40',
       },
     ],
   ],
   {
     id: 594,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 595,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 596,
-        cond: "Level 36",
+        cond: 'Level 36',
       },
     ],
   ],
   [
     {
       id: 597,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 598,
-        cond: "Level 40",
+        cond: 'Level 40',
       },
     ],
   ],
   [
     {
       id: 599,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 600,
-        cond: "Level 38",
+        cond: 'Level 38',
       },
       [
         {
           id: 601,
-          cond: "Level 49",
+          cond: 'Level 49',
         },
       ],
     ],
@@ -3512,17 +3512,17 @@ export const evolutions = [
   [
     {
       id: 602,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 603,
-        cond: "Level 39",
+        cond: 'Level 39',
       },
       [
         {
           id: 604,
-          cond: "Use Thunder Stone",
+          cond: 'Use Thunder Stone',
         },
       ],
     ],
@@ -3530,29 +3530,29 @@ export const evolutions = [
   [
     {
       id: 605,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 606,
-        cond: "Level 42",
+        cond: 'Level 42',
       },
     ],
   ],
   [
     {
       id: 607,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 608,
-        cond: "Level 41",
+        cond: 'Level 41',
       },
       [
         {
           id: 609,
-          cond: "Use Dusk Stone",
+          cond: 'Use Dusk Stone',
         },
       ],
     ],
@@ -3560,17 +3560,17 @@ export const evolutions = [
   [
     {
       id: 610,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 611,
-        cond: "Level 38",
+        cond: 'Level 38',
       },
       [
         {
           id: 612,
-          cond: "Level 48",
+          cond: 'Level 48',
         },
       ],
     ],
@@ -3578,72 +3578,72 @@ export const evolutions = [
   [
     {
       id: 613,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 614,
-        cond: "Level 37",
+        cond: 'Level 37',
       },
     ],
   ],
   {
     id: 615,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 616,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 617,
-        cond: "Trade for a Karrablast",
+        cond: 'Trade for a Karrablast',
       },
     ],
   ],
   {
     id: 618,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 619,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 620,
-        cond: "Level 50",
+        cond: 'Level 50',
       },
     ],
   ],
   {
     id: 621,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 622,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 623,
-        cond: "Level 43",
+        cond: 'Level 43',
       },
     ],
   ],
   [
     {
       id: 624,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 625,
-        cond: "Level 52",
+        cond: 'Level 52',
       },
       [
         {
@@ -3655,54 +3655,54 @@ export const evolutions = [
   ],
   {
     id: 626,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 627,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 628,
-        cond: "Level 54",
+        cond: 'Level 54',
       },
     ],
   ],
   [
     {
       id: 629,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 630,
-        cond: "Level 54",
+        cond: 'Level 54',
       },
     ],
   ],
   {
     id: 631,
-    cond: "",
+    cond: '',
   },
   {
     id: 632,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 633,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 634,
-        cond: "Level 50",
+        cond: 'Level 50',
       },
       [
         {
           id: 635,
-          cond: "Level 64",
+          cond: 'Level 64',
         },
       ],
     ],
@@ -3710,77 +3710,77 @@ export const evolutions = [
   [
     {
       id: 636,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 637,
-        cond: "Level 59",
+        cond: 'Level 59',
       },
     ],
   ],
   {
     id: 638,
-    cond: "",
+    cond: '',
   },
   {
     id: 639,
-    cond: "",
+    cond: '',
   },
   {
     id: 640,
-    cond: "",
+    cond: '',
   },
   {
     id: 641,
-    cond: "",
+    cond: '',
   },
   {
     id: 642,
-    cond: "",
+    cond: '',
   },
   {
     id: 643,
-    cond: "",
+    cond: '',
   },
   {
     id: 644,
-    cond: "",
+    cond: '',
   },
   {
     id: 645,
-    cond: "",
+    cond: '',
   },
   {
     id: 646,
-    cond: "",
+    cond: '',
   },
   {
     id: 647,
-    cond: "",
+    cond: '',
   },
   {
     id: 648,
-    cond: "",
+    cond: '',
   },
   {
     id: 649,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 650,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 651,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 652,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -3788,17 +3788,17 @@ export const evolutions = [
   [
     {
       id: 653,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 654,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 655,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -3806,17 +3806,17 @@ export const evolutions = [
   [
     {
       id: 656,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 657,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 658,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -3824,29 +3824,29 @@ export const evolutions = [
   [
     {
       id: 659,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 660,
-        cond: "Level 20",
+        cond: 'Level 20',
       },
     ],
   ],
   [
     {
       id: 661,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 662,
-        cond: "Level 17",
+        cond: 'Level 17',
       },
       [
         {
           id: 663,
-          cond: "Level 35",
+          cond: 'Level 35',
         },
       ],
     ],
@@ -3854,17 +3854,17 @@ export const evolutions = [
   [
     {
       id: 664,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 665,
-        cond: "Level 9",
+        cond: 'Level 9',
       },
       [
         {
           id: 666,
-          cond: "Level 12",
+          cond: 'Level 12',
         },
       ],
     ],
@@ -3872,29 +3872,29 @@ export const evolutions = [
   [
     {
       id: 667,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 668,
-        cond: "Level 35",
+        cond: 'Level 35',
       },
     ],
   ],
   [
     {
       id: 669,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 670,
-        cond: "Level 19",
+        cond: 'Level 19',
       },
       [
         {
           id: 671,
-          cond: "Use Shiny Stone",
+          cond: 'Use Shiny Stone',
         },
       ],
     ],
@@ -3902,57 +3902,57 @@ export const evolutions = [
   [
     {
       id: 672,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 673,
-        cond: "Level 32",
+        cond: 'Level 32',
       },
     ],
   ],
   [
     {
       id: 674,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 675,
-        cond: "Level 32 with a dark type in the party",
+        cond: 'Level 32 with a dark type in the party',
       },
     ],
   ],
   {
     id: 676,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 677,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 678,
-        cond: "Level 25",
+        cond: 'Level 25',
       },
     ],
   ],
   [
     {
       id: 679,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 680,
-        cond: "Level 35",
+        cond: 'Level 35',
       },
       [
         {
           id: 681,
-          cond: "Use Dusk Stone",
+          cond: 'Use Dusk Stone',
         },
       ],
     ],
@@ -3960,231 +3960,231 @@ export const evolutions = [
   [
     {
       id: 682,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 683,
-        cond: "Trade while holding Sachet",
+        cond: 'Trade while holding Sachet',
       },
     ],
   ],
   [
     {
       id: 684,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 685,
-        cond: "Trade while holding Whipped Dream",
+        cond: 'Trade while holding Whipped Dream',
       },
     ],
   ],
   [
     {
       id: 686,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 687,
-        cond: "Level 30 while holding the console upside-down",
+        cond: 'Level 30 while holding the console upside-down',
       },
     ],
   ],
   [
     {
       id: 688,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 689,
-        cond: "Level 39",
+        cond: 'Level 39',
       },
     ],
   ],
   [
     {
       id: 690,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 691,
-        cond: "Level 48",
+        cond: 'Level 48',
       },
     ],
   ],
   [
     {
       id: 692,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 693,
-        cond: "Level 37",
+        cond: 'Level 37',
       },
     ],
   ],
   [
     {
       id: 694,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 695,
-        cond: "Use Sun Stone",
+        cond: 'Use Sun Stone',
       },
     ],
   ],
   [
     {
       id: 696,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 697,
-        cond: "Level 39 during the Day",
+        cond: 'Level 39 during the Day',
       },
     ],
   ],
   [
     {
       id: 698,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 699,
-        cond: "Level 39 during the Night",
+        cond: 'Level 39 during the Night',
       },
     ],
   ],
   {
     id: 701,
-    cond: "",
+    cond: '',
   },
   {
     id: 702,
-    cond: "",
+    cond: '',
   },
   {
     id: 703,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 704,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 705,
-        cond: "Level 40",
+        cond: 'Level 40',
       },
       [
         {
           id: 706,
-          cond: "Level 50 while it is raining",
+          cond: 'Level 50 while it is raining',
         },
       ],
     ],
   ],
   {
     id: 707,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 708,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 709,
-        cond: "Trade",
+        cond: 'Trade',
       },
     ],
   ],
   [
     {
       id: 710,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 711,
-        cond: "Trade",
+        cond: 'Trade',
       },
     ],
   ],
   [
     {
       id: 712,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 713,
-        cond: "Level 37",
+        cond: 'Level 37',
       },
     ],
   ],
   [
     {
       id: 714,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 715,
-        cond: "Level 48",
+        cond: 'Level 48',
       },
     ],
   ],
   {
     id: 716,
-    cond: "",
+    cond: '',
   },
   {
     id: 717,
-    cond: "",
+    cond: '',
   },
   {
     id: 718,
-    cond: "",
+    cond: '',
   },
   {
     id: 719,
-    cond: "",
+    cond: '',
   },
   {
     id: 720,
-    cond: "",
+    cond: '',
   },
   {
     id: 721,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 722,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 723,
-        cond: "Level 17",
+        cond: 'Level 17',
       },
       [
         {
           id: 724,
-          cond: "Level 34",
+          cond: 'Level 34',
         },
       ],
     ],
@@ -4192,17 +4192,17 @@ export const evolutions = [
   [
     {
       id: 725,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 726,
-        cond: "Level 17",
+        cond: 'Level 17',
       },
       [
         {
           id: 727,
-          cond: "Level 34",
+          cond: 'Level 34',
         },
       ],
     ],
@@ -4210,17 +4210,17 @@ export const evolutions = [
   [
     {
       id: 728,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 729,
-        cond: "Level 17",
+        cond: 'Level 17',
       },
       [
         {
           id: 730,
-          cond: "Level 34",
+          cond: 'Level 34',
         },
       ],
     ],
@@ -4228,17 +4228,17 @@ export const evolutions = [
   [
     {
       id: 731,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 732,
-        cond: "Level 14",
+        cond: 'Level 14',
       },
       [
         {
           id: 733,
-          cond: "Level 28",
+          cond: 'Level 28',
         },
       ],
     ],
@@ -4246,29 +4246,29 @@ export const evolutions = [
   [
     {
       id: 734,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 735,
-        cond: "Level 20 during the Day",
+        cond: 'Level 20 during the Day',
       },
     ],
   ],
   [
     {
       id: 736,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 737,
-        cond: "Level 20",
+        cond: 'Level 20',
       },
       [
         {
           id: 738,
-          cond: "Level",
+          cond: 'Level',
         },
       ],
     ],
@@ -4276,375 +4276,375 @@ export const evolutions = [
   [
     {
       id: 739,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 740,
-        cond: "Level up in Mount Lanakila",
+        cond: 'Level up in Mount Lanakila',
       },
     ],
   ],
   {
     id: 741,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 742,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 743,
-        cond: "Level 25",
+        cond: 'Level 25',
       },
     ],
   ],
   [
     {
       id: 744,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 745,
-        cond: "Level 25 during the Day",
+        cond: 'Level 25 during the Day',
       },
     ],
   ],
   {
     id: 746,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 747,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 748,
-        cond: "Level 38",
+        cond: 'Level 38',
       },
     ],
   ],
   [
     {
       id: 749,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 750,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
     ],
   ],
   [
     {
       id: 751,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 752,
-        cond: "Level 22",
+        cond: 'Level 22',
       },
     ],
   ],
   [
     {
       id: 753,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 754,
-        cond: "Level 34 during the Day",
+        cond: 'Level 34 during the Day',
       },
     ],
   ],
   [
     {
       id: 755,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 756,
-        cond: "Level 24",
+        cond: 'Level 24',
       },
     ],
   ],
   [
     {
       id: 757,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 758,
-        cond: "Level 33 (Male)",
+        cond: 'Level 33 (Male)',
       },
     ],
   ],
   [
     {
       id: 759,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 760,
-        cond: "Level 27",
+        cond: 'Level 27',
       },
     ],
   ],
   [
     {
       id: 761,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 762,
-        cond: "Level 18",
+        cond: 'Level 18',
       },
       [
         {
           id: 763,
-          cond: "Level up while knowing Stomp",
+          cond: 'Level up while knowing Stomp',
         },
       ],
     ],
   ],
   {
     id: 764,
-    cond: "",
+    cond: '',
   },
   {
     id: 765,
-    cond: "",
+    cond: '',
   },
   {
     id: 766,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 767,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 768,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
     ],
   ],
   [
     {
       id: 769,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 770,
-        cond: "Level 42",
+        cond: 'Level 42',
       },
     ],
   ],
   {
     id: 771,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 772,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 773,
-        cond: "Level up with affection of at least 160",
+        cond: 'Level up with affection of at least 160',
       },
     ],
   ],
   {
     id: 774,
-    cond: "",
+    cond: '',
   },
   {
     id: 775,
-    cond: "",
+    cond: '',
   },
   {
     id: 776,
-    cond: "",
+    cond: '',
   },
   {
     id: 777,
-    cond: "",
+    cond: '',
   },
   {
     id: 778,
-    cond: "",
+    cond: '',
   },
   {
     id: 779,
-    cond: "",
+    cond: '',
   },
   {
     id: 780,
-    cond: "",
+    cond: '',
   },
   {
     id: 781,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 782,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 783,
-        cond: "Level 35",
+        cond: 'Level 35',
       },
       [
         {
           id: 784,
-          cond: "Level 45",
+          cond: 'Level 45',
         },
       ],
     ],
   ],
   {
     id: 785,
-    cond: "",
+    cond: '',
   },
   {
     id: 786,
-    cond: "",
+    cond: '',
   },
   {
     id: 787,
-    cond: "",
+    cond: '',
   },
   {
     id: 788,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 789,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 790,
-        cond: "Level 43",
+        cond: 'Level 43',
       },
       [
         {
           id: 791,
-          cond: "Level 53",
+          cond: 'Level 53',
         },
         {
           id: 792,
-          cond: "Level 53",
+          cond: 'Level 53',
         },
       ],
     ],
   ],
   {
     id: 793,
-    cond: "",
+    cond: '',
   },
   {
     id: 794,
-    cond: "",
+    cond: '',
   },
   {
     id: 795,
-    cond: "",
+    cond: '',
   },
   {
     id: 796,
-    cond: "",
+    cond: '',
   },
   {
     id: 797,
-    cond: "",
+    cond: '',
   },
   {
     id: 798,
-    cond: "",
+    cond: '',
   },
   {
     id: 799,
-    cond: "",
+    cond: '',
   },
   {
     id: 800,
-    cond: "",
+    cond: '',
   },
   {
     id: 801,
-    cond: "",
+    cond: '',
   },
   {
     id: 802,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 803,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 804,
-        cond: "Level up while knowing Dragon Pulse",
+        cond: 'Level up while knowing Dragon Pulse',
       },
     ],
   ],
   {
     id: 805,
-    cond: "",
+    cond: '',
   },
   {
     id: 806,
-    cond: "",
+    cond: '',
   },
   {
     id: 807,
-    cond: "",
+    cond: '',
   },
   {
     id: 808,
-    cond: "",
+    cond: '',
   },
   {
     id: 809,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 810,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 811,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 812,
-          cond: "Level 35",
+          cond: 'Level 35',
         },
       ],
     ],
@@ -4652,17 +4652,17 @@ export const evolutions = [
   [
     {
       id: 813,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 814,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 815,
-          cond: "Level 35",
+          cond: 'Level 35',
         },
       ],
     ],
@@ -4670,17 +4670,17 @@ export const evolutions = [
   [
     {
       id: 816,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 817,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 818,
-          cond: "Level 35",
+          cond: 'Level 35',
         },
       ],
     ],
@@ -4688,29 +4688,29 @@ export const evolutions = [
   [
     {
       id: 819,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 820,
-        cond: "Level 24",
+        cond: 'Level 24',
       },
     ],
   ],
   [
     {
       id: 821,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 822,
-        cond: "Level 18",
+        cond: 'Level 18',
       },
       [
         {
           id: 823,
-          cond: "Level 38",
+          cond: 'Level 38',
         },
       ],
     ],
@@ -4718,17 +4718,17 @@ export const evolutions = [
   [
     {
       id: 824,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 825,
-        cond: "Level 10",
+        cond: 'Level 10',
       },
       [
         {
           id: 826,
-          cond: "Level 30",
+          cond: 'Level 30',
         },
       ],
     ],
@@ -4736,77 +4736,77 @@ export const evolutions = [
   [
     {
       id: 827,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 828,
-        cond: "Level 18",
+        cond: 'Level 18',
       },
     ],
   ],
   [
     {
       id: 829,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 830,
-        cond: "Level 20",
+        cond: 'Level 20',
       },
     ],
   ],
   [
     {
       id: 831,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 832,
-        cond: "Level 24",
+        cond: 'Level 24',
       },
     ],
   ],
   [
     {
       id: 833,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 834,
-        cond: "Level 22",
+        cond: 'Level 22',
       },
     ],
   ],
   [
     {
       id: 835,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 836,
-        cond: "Level 25",
+        cond: 'Level 25',
       },
     ],
   ],
   [
     {
       id: 837,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 838,
-        cond: "Level 18",
+        cond: 'Level 18',
       },
       [
         {
           id: 839,
-          cond: "Level 34",
+          cond: 'Level 34',
         },
       ],
     ],
@@ -4814,109 +4814,121 @@ export const evolutions = [
   [
     {
       id: 840,
-      cond: "",
+      cond: '',
     },
     [
       {
+        id: 1011,
+        cond: '',
+      },
+      [
+        {
+          id: 1019,
+          cond: '',
+        },
+      ],
+    ],
+    [
+      {
         id: 841,
-        cond: "Use Tart Apple",
+        cond: 'Use Tart Apple',
       },
       {
         id: 842,
-        cond: "Use Sweet Apple",
+        cond: 'Use Sweet Apple',
       },
     ],
   ],
   [
     {
       id: 843,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 844,
-        cond: "Level 36",
+        cond: 'Level 36',
       },
     ],
   ],
   {
     id: 845,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 846,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 847,
-        cond: "Level 26",
+        cond: 'Level 26',
       },
     ],
   ],
   [
     {
       id: 848,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 849,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
     ],
   ],
   [
     {
       id: 850,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 851,
-        cond: "Level 28",
+        cond: 'Level 28',
       },
     ],
   ],
   [
     {
       id: 852,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 853,
-        cond: "Level up while knowing Taunt",
+        cond: 'Level up while knowing Taunt',
       },
     ],
   ],
   [
     {
       id: 854,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 855,
-        cond: "Use Cracked Pot",
+        cond: 'Use Cracked Pot',
       },
     ],
   ],
   [
     {
       id: 856,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 857,
-        cond: "Level 32",
+        cond: 'Level 32',
       },
       [
         {
           id: 858,
-          cond: "Level 42",
+          cond: 'Level 42',
         },
       ],
     ],
@@ -4924,17 +4936,17 @@ export const evolutions = [
   [
     {
       id: 859,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 860,
-        cond: "Level 32",
+        cond: 'Level 32',
       },
       [
         {
           id: 861,
-          cond: "Level 42",
+          cond: 'Level 42',
         },
       ],
     ],
@@ -4942,167 +4954,175 @@ export const evolutions = [
   [
     {
       id: 868,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 869,
-        cond: "Spin while holding a sweet",
+        cond: 'Spin while holding a sweet',
       },
     ],
   ],
   {
     id: 870,
-    cond: "",
+    cond: '',
   },
   {
     id: 871,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 872,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 873,
-        cond: "Level up with affection of at least 160 during the Night",
+        cond: 'Level up with affection of at least 160 during the Night',
       },
     ],
   ],
   {
     id: 874,
-    cond: "",
+    cond: '',
   },
   {
     id: 875,
-    cond: "",
+    cond: '',
   },
   {
     id: 876,
-    cond: "",
+    cond: '',
   },
   {
     id: 877,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 878,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 879,
-        cond: "Level 34",
+        cond: 'Level 34',
       },
     ],
   ],
   {
     id: 880,
-    cond: "",
+    cond: '',
   },
   {
     id: 881,
-    cond: "",
+    cond: '',
   },
   {
     id: 882,
-    cond: "",
+    cond: '',
   },
   {
     id: 883,
-    cond: "",
-  },
-  {
-    id: 884,
-    cond: "",
+    cond: '',
   },
   [
     {
+      id: 884,
+      cond: '',
+    },
+    [
+      {
+        id: 1018,
+        cond: '',
+      },
+    ],
+  ],
+  [
+    {
       id: 885,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 886,
-        cond: "Level 50",
+        cond: 'Level 50',
       },
       [
         {
           id: 887,
-          cond: "Level 60",
+          cond: 'Level 60',
         },
       ],
     ],
   ],
   {
     id: 888,
-    cond: "",
+    cond: '',
   },
   {
     id: 889,
-    cond: "",
+    cond: '',
   },
   {
     id: 890,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 891,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 892,
-        cond: "Train in the Tower of Darkness or Waters",
+        cond: 'Train in the Tower of Darkness or Waters',
       },
     ],
   ],
   {
     id: 893,
-    cond: "",
+    cond: '',
   },
   {
     id: 894,
-    cond: "",
+    cond: '',
   },
   {
     id: 895,
-    cond: "",
+    cond: '',
   },
   {
     id: 896,
-    cond: "",
+    cond: '',
   },
   {
     id: 897,
-    cond: "",
+    cond: '',
   },
   {
     id: 898,
-    cond: "",
+    cond: '',
   },
   {
     id: 905,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 906,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 907,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 908,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -5110,17 +5130,17 @@ export const evolutions = [
   [
     {
       id: 909,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 910,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 911,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -5128,17 +5148,17 @@ export const evolutions = [
   [
     {
       id: 912,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 913,
-        cond: "Level 16",
+        cond: 'Level 16',
       },
       [
         {
           id: 914,
-          cond: "Level 36",
+          cond: 'Level 36',
         },
       ],
     ],
@@ -5146,48 +5166,48 @@ export const evolutions = [
   [
     {
       id: 915,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 916,
-        cond: "Level 18",
+        cond: 'Level 18',
       },
     ],
   ],
   [
     {
       id: 917,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 918,
-        cond: "Level 15",
+        cond: 'Level 15',
       },
     ],
   ],
   [
     {
       id: 919,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 920,
-        cond: "Level 24",
+        cond: 'Level 24',
       },
     ],
   ],
   [
     {
       id: 921,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 922,
-        cond: "Level 18",
+        cond: 'Level 18',
       },
       [
         {
@@ -5200,63 +5220,63 @@ export const evolutions = [
   [
     {
       id: 924,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 925,
-        cond: "Reach level 25+ while in battle. Has a 1/100 chance to evolve into Family of Three",
+        cond: 'Reach level 25+ while in battle. Has a 1/100 chance to evolve into Family of Three',
       },
     ],
   ],
   [
     {
       id: 926,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 927,
-        cond: "Level 26",
+        cond: 'Level 26',
       },
     ],
   ],
   [
     {
       id: 928,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 929,
-        cond: "Level 25",
+        cond: 'Level 25',
       },
       [
         {
           id: 930,
-          cond: "Level 35",
+          cond: 'Level 35',
         },
       ],
     ],
   ],
   {
     id: 931,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 932,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 933,
-        cond: "Level 24",
+        cond: 'Level 24',
       },
       [
         {
           id: 934,
-          cond: "Level 38",
+          cond: 'Level 38',
         },
       ],
     ],
@@ -5264,71 +5284,71 @@ export const evolutions = [
   [
     {
       id: 935,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 936,
-        cond: "Use Auspicious Armor",
+        cond: 'Use Auspicious Armor',
       },
       {
         id: 937,
-        cond: "Use Malicious Armor",
+        cond: 'Use Malicious Armor',
       },
     ],
   ],
   [
     {
       id: 938,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 939,
-        cond: "Use Thunder Stone",
+        cond: 'Use Thunder Stone',
       },
     ],
   ],
   [
     {
       id: 940,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 941,
-        cond: "Level 25",
+        cond: 'Level 25',
       },
     ],
   ],
   [
     {
       id: 942,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 943,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
     ],
   ],
   [
     {
       id: 944,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 945,
-        cond: "Level 28",
+        cond: 'Level 28',
       },
     ],
   ],
   [
     {
       id: 946,
-      cond: "",
+      cond: '',
     },
     [
       {
@@ -5340,35 +5360,35 @@ export const evolutions = [
   [
     {
       id: 948,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 949,
-        cond: "Level 30",
+        cond: 'Level 30',
       },
     ],
   ],
   {
     id: 950,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 951,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 952,
-        cond: "Use Fire Stone",
+        cond: 'Use Fire Stone',
       },
     ],
   ],
   [
     {
       id: 953,
-      cond: "",
+      cond: '',
     },
     [
       {
@@ -5380,29 +5400,29 @@ export const evolutions = [
   [
     {
       id: 955,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 956,
-        cond: "Level 35",
+        cond: 'Level 35',
       },
     ],
   ],
   [
     {
       id: 957,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 958,
-        cond: "Level 24",
+        cond: 'Level 24',
       },
       [
         {
           id: 959,
-          cond: "Level 38",
+          cond: 'Level 38',
         },
       ],
     ],
@@ -5410,165 +5430,165 @@ export const evolutions = [
   [
     {
       id: 960,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 961,
-        cond: "Level 26",
+        cond: 'Level 26',
       },
     ],
   ],
   {
     id: 962,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 963,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 964,
-        cond: "Reach level 38+ while connected with another player via the Union Circle",
+        cond: 'Reach level 38+ while connected with another player via the Union Circle',
       },
     ],
   ],
   [
     {
       id: 965,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 966,
-        cond: "Level 40",
+        cond: 'Level 40',
       },
     ],
   ],
   {
     id: 967,
-    cond: "",
+    cond: '',
   },
   {
     id: 968,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 969,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 970,
-        cond: "Level 35",
+        cond: 'Level 35',
       },
     ],
   ],
   [
     {
       id: 971,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 972,
-        cond: "Level 30 during the Night",
+        cond: 'Level 30 during the Night',
       },
     ],
   ],
   {
     id: 973,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 974,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 975,
-        cond: "Use Ice Stone",
+        cond: 'Use Ice Stone',
       },
     ],
   ],
   {
     id: 976,
-    cond: "",
+    cond: '',
   },
   {
     id: 977,
-    cond: "",
+    cond: '',
   },
   {
     id: 978,
-    cond: "",
+    cond: '',
   },
   {
     id: 984,
-    cond: "",
+    cond: '',
   },
   {
     id: 985,
-    cond: "",
+    cond: '',
   },
   {
     id: 986,
-    cond: "",
+    cond: '',
   },
   {
     id: 987,
-    cond: "",
+    cond: '',
   },
   {
     id: 988,
-    cond: "",
+    cond: '',
   },
   {
     id: 989,
-    cond: "",
+    cond: '',
   },
   {
     id: 990,
-    cond: "",
+    cond: '',
   },
   {
     id: 991,
-    cond: "",
+    cond: '',
   },
   {
     id: 992,
-    cond: "",
+    cond: '',
   },
   {
     id: 993,
-    cond: "",
+    cond: '',
   },
   {
     id: 994,
-    cond: "",
+    cond: '',
   },
   {
     id: 995,
-    cond: "",
+    cond: '',
   },
   [
     {
       id: 996,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 997,
-        cond: "Level 35",
+        cond: 'Level 35',
       },
       [
         {
           id: 998,
-          cond: "Level 54",
+          cond: 'Level 54',
         },
       ],
     ],
@@ -5576,53 +5596,105 @@ export const evolutions = [
   [
     {
       id: 999,
-      cond: "",
+      cond: '',
     },
     [
       {
         id: 1000,
-        cond: "Level up after obtaining 999 Gimmighoul Coins",
+        cond: 'Level up after obtaining 999 Gimmighoul Coins',
       },
     ],
   ],
   {
     id: 1001,
-    cond: "",
+    cond: '',
   },
   {
     id: 1002,
-    cond: "",
+    cond: '',
   },
   {
     id: 1003,
-    cond: "",
+    cond: '',
   },
   {
     id: 1004,
-    cond: "",
+    cond: '',
   },
   {
     id: 1005,
-    cond: "",
+    cond: '',
   },
   {
     id: 1006,
-    cond: "",
+    cond: '',
   },
   {
     id: 1007,
-    cond: "",
+    cond: '',
   },
   {
     id: 1008,
-    cond: "",
+    cond: '',
   },
   {
     id: 1009,
-    cond: "",
+    cond: '',
   },
   {
     id: 1010,
-    cond: "",
+    cond: '',
+  },
+  [
+    {
+      id: 1012,
+      cond: '',
+    },
+    [
+      {
+        id: 1013,
+        cond: '',
+      },
+    ],
+  ],
+  {
+    id: 1014,
+    cond: '',
+  },
+  {
+    id: 1015,
+    cond: '',
+  },
+  {
+    id: 1016,
+    cond: '',
+  },
+  {
+    id: 1017,
+    cond: '',
+  },
+  {
+    id: 1020,
+    cond: '',
+  },
+  {
+    id: 1021,
+    cond: '',
+  },
+  {
+    id: 1023,
+    cond: '',
+  },
+  {
+    id: 1022,
+    cond: '',
+  },
+  {
+    id: 1024,
+    cond: '',
+  },
+  {
+    id: 1025,
+    cond: '',
   },
 ];

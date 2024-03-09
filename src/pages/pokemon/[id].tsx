@@ -21,7 +21,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const pokePaths = [];
-  for (let i = 1; i < 1011; i++) {
+  for (let i = 1; i <= 1025; i++) {
     pokePaths.push({ params: { id: i.toString() } });
   }
 

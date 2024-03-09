@@ -1,4 +1,4 @@
-import { allPokemon, abilities, forms, pokeTypes, stats } from "../assets";
+import { allPokemon, abilities, forms, pokeTypes, stats } from '../assets';
 
 interface IAbility {
   hidden: boolean;
@@ -13,7 +13,7 @@ interface IStat {
 }
 
 export function parseAllPokemon() {
-  const MAX_POKEMON = 1010;
+  const MAX_POKEMON = 1025;
   const parsed = [];
 
   for (let i = 0; i < MAX_POKEMON; i++) {
