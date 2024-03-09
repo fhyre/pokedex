@@ -4,12 +4,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
   @include fade-in(500ms);
-  padding-inline: var(--size-3);
 }
 
 @include media-query($small) {
   .container {
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    padding-inline: var(--size-3);
   }
 }
 
