@@ -92,7 +92,7 @@ export function PokemonDetails({ id }) {
         </div>
         <div className={styles.pokeImgWrapper}>
           <ImageWrapper
-            imagePath={`https://poke-images.pages.dev/images/${strId}.png`}
+            imagePath={`https://poke-images.pages.dev/full-size/${strId}.png`}
             imageAlt={pokemon.name}
             quality={100}
             width={600}

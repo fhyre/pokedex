@@ -27,7 +27,7 @@ export function PokemonListCard({ id, name, types, style }: IPokeListCard) {
       </div>
       <div className={styles.rightContainer}>
         <ImageWrapper
-          imagePath={`/compressed-pokemon/${strId}.png`}
+          imagePath={`https://poke-images.pages.dev/compressed/${strId}.png`}
           imageAlt={name}
           styles={[styles.pokeImg]}
           width={160}
