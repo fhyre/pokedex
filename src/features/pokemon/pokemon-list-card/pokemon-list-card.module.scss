@@ -6,7 +6,7 @@
   justify-content: space-between;
   background-color: var(--card-bg);
   width: 100%;
-  transition: background-color ease-in-out 300ms;
+  transition: background-color var(--ease-in-out-3) 1500ms;
   user-select: none;
   border: 1px solid var(--darker-card-bg);
   overflow: hidden;
@@ -14,6 +14,7 @@
 
 .container:hover {
   background-color: var(--darker-card-bg);
+  transition-duration: 300ms;
 }
 
 .container:hover .pokeImg {
@@ -24,7 +25,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 0.25rem 0.25rem 0.25rem;
+  padding: var(--size-2);
 }
 
 .headContainer {
@@ -34,7 +35,7 @@
 }
 
 .pokeName {
-  font-size: 1.2rem;
+  font-size: var(--font-size-3);
   font-weight: var(--font-weight-2);
   color: var(--text);
   align-self: flex-start;
@@ -42,25 +43,24 @@
 
 .pokeId {
   color: var(--pid);
-  font-size: 2.25rem;
-  font-weight: 500;
-  line-height: initial;
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-3);
+  line-height: var(--size-6);
 }
 
 .typeContainer {
   display: flex;
-  margin-top: 0.3rem;
+  margin-top: var(--size-1);
 }
 
 .typeContainer {
   *:not(:last-child) {
-    margin-right: 0.5rem;
+    margin-right: var(--size-2);
   }
 }
 
 .rightContainer {
   @extend %flex-center;
-  flex: 1;
   position: relative;
 }
 
@@ -68,21 +68,19 @@
   height: auto;
   position: absolute;
   right: 0;
-  max-width: 5rem;
-  transition: transform ease-in-out 100ms;
+  max-width: var(--size-9);
+  transition: transform var(--ease-in-out-2) 200ms;
 }
 
 @include media-query($small) {
+  .pokeId {
+    font-size: var(--font-size-6);
+    line-height: var(--size-8);
+  }
   .pokeName {
-    font-size: 1.25rem;
+    font-size: var(--font-size-4);
   }
   .pokeImg {
     max-width: 6rem;
-  }
-  .pokeId {
-    font-size: 3rem;
-  }
-  .typeContainer {
-    margin-top: 0.5rem;
   }
 }

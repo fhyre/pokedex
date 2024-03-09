@@ -1,4 +1,4 @@
-@use "@/styles/sass/abstracts" as *;
+@use '@/styles/sass/abstracts' as *;
 
 .smallType {
   width: 3.75rem;
@@ -7,11 +7,6 @@
 
 .mediumType {
   width: 6rem;
-  height: auto;
-}
-
-.bigType {
-  width: 10rem;
   height: auto;
 }
 
