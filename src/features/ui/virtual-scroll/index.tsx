@@ -1,5 +1,5 @@
 import styles from './virtual-scroll.module.css';
-import { memo, useEffect, useRef, useState } from 'react';
+import { memo, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { formatNodeData } from './format-node-data';
 import { useScrollListen } from './use-scroll-listen';
 
@@ -19,11 +19,15 @@ const VirtualScroll = memo(
       endIndex: 1,
     });
     const [nodeDetails, setNodeDetails] = useState<any>({});
+    const nodeClientWidth =
+      nodeContainerRef.current &&
+      nodeContainerRef.current.children[0] &&
+      nodeContainerRef.current.children[0].clientWidth;
 
     // Set node data
     useEffect(() => {
       setNodeDetails(formatNodeData(nodeContainerRef, data.length));
-    }, [nodeContainerRef, data]);
+    }, [nodeClientWidth, data]);
 
     // Reset to top when resizing
     useEffect(() => {
