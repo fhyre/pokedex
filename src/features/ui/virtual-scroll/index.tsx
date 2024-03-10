@@ -1,8 +1,7 @@
 import styles from './virtual-scroll.module.css';
-import { memo, useEffect, useRef, useState } from 'react';
+import { memo, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { formatNodeData } from './format-node-data';
 import { useScrollListen } from './use-scroll-listen';
-import { useScrollRestore } from './use-scroll-restore';
 
 const VirtualScroll = memo(
   ({
@@ -15,11 +14,29 @@ const VirtualScroll = memo(
     const nodeContainerRef = useRef<HTMLDivElement>(null);
     const [containerRef, scrollTop] = useScrollListen();
     const [virtStyles, setVirtStyles] = useState<IVirtStyles>({});
-    const [nodePos, setNodePos] = useState<IStartEndPos>({
-      startPos: 0,
-      endPos: 10,
+    const [nodeRange, setNodeRange] = useState<IStartEndIndex>({
+      startIndex: 0,
+      endIndex: 1,
     });
     const [nodeDetails, setNodeDetails] = useState<any>({});
+    const nodeClientWidth =
+      nodeContainerRef.current &&
+      nodeContainerRef.current.children[0] &&
+      nodeContainerRef.current.children[0].clientWidth;
+
+    // Set node data
+    useLayoutEffect(() => {
+      setNodeDetails(formatNodeData(nodeContainerRef, data.length));
+    }, [containerRef, nodeClientWidth, data.length]);
+
+    // Reset to top when resizing
+    useEffect(() => {
+      const onResize = () => containerRef.current.scroll(0, 0);
+
+      window.addEventListener('resize', onResize);
+
+      return () => window.removeEventListener('resize', onResize);
+    }, [containerRef]);
 
     // Set scroll position on reload
     useEffect(() => {
@@ -35,30 +52,6 @@ const VirtualScroll = memo(
       };
     }, [containerRef, prevScrollPos]);
 
-    // Set node data
-    useEffect(() => {
-      setNodeDetails(formatNodeData(nodeContainerRef, data.length));
-    }, [nodeContainerRef, data.length]);
-
-    useEffect(() => {
-      const onResize = (_e: Event) => {
-        const oldTotalHeight = containerRef.current.scrollHeight;
-        const scrollPos = containerRef.current.scrollTop;
-        const percent = scrollPos / oldTotalHeight;
-
-        setNodeDetails(formatNodeData(nodeContainerRef, data.length));
-
-        const scrollToPos = nodeDetails.totalHeight * percent;
-        containerRef.current.scroll(0, scrollToPos);
-      };
-
-      window.addEventListener('resize', onResize);
-
-      return () => {
-        window.removeEventListener('resize', onResize);
-      };
-    }, [containerRef, data.length, nodeDetails]);
-
     useEffect(() => {
       const calcData = (): void => {
         setVirtStyles((prev) => ({
@@ -68,7 +61,7 @@ const VirtualScroll = memo(
       };
 
       const nodesInView = (): void => {
-        const renderAhead = 3;
+        const renderAhead = 2;
 
         const rowsInView = Math.ceil(
           containerRef.current.clientHeight / nodeDetails.nodeHeight
@@ -80,16 +73,16 @@ const VirtualScroll = memo(
           Math.floor(scrollTop / nodeDetails.nodeHeight) - renderAhead
         );
 
-        const startingNode = startingRow * nodeDetails.nodesPerRow;
+        const startingIndex = startingRow * nodeDetails.nodesPerRow;
 
-        const endingNode = Math.min(
-          startingNode + nodesInView * renderAhead,
+        const endingIndex = Math.min(
+          startingIndex + nodesInView * renderAhead,
           data.length
         );
 
-        setNodePos({
-          startPos: startingNode,
-          endPos: endingNode,
+        setNodeRange({
+          startIndex: startingIndex,
+          endIndex: endingIndex,
         });
 
         setVirtStyles((prev) => ({
@@ -118,7 +111,7 @@ const VirtualScroll = memo(
             ref={nodeContainerRef}
           >
             {data.length > 0 ? (
-              data.slice(nodePos.startPos, nodePos.endPos)
+              data.slice(nodeRange.startIndex, nodeRange.endIndex)
             ) : (
               <FallbackComp />
             )}
@@ -134,16 +127,12 @@ interface IVirtualScroll {
   data: JSX.Element[];
   offset: number;
   FallbackComp: React.FunctionComponent;
-  scrollProps?: {
-    scrollCb: (e: number) => void;
-    scrollPercent: number;
-  };
   prevScrollPos?: number;
 }
 
-interface IStartEndPos {
-  startPos: number;
-  endPos: number;
+interface IStartEndIndex {
+  startIndex: number;
+  endIndex: number;
 }
 
 interface IVirtStyles {

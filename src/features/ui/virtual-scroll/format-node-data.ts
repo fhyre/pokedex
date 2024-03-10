@@ -1,13 +1,15 @@
-import { MutableRefObject } from "react";
+import { MutableRefObject } from 'react';
 
 export function formatNodeData(
   containerRef: MutableRefObject<HTMLDivElement>,
   dataLength: number
 ) {
-  const childNodes: HTMLCollection = containerRef.current.children;
+  const childNodes = containerRef.current.children;
 
-  const nodeWidth = childNodes[0] ? childNodes[0].clientWidth : 100;
-  const nodeHeight = childNodes[0] ? childNodes[0].clientHeight : 100;
+  const childNode = childNodes[0] ? (childNodes[0] as HTMLElement) : null;
+
+  const nodeWidth = childNode ? childNode.clientWidth : null;
+  const nodeHeight = childNode ? childNode.clientHeight : null;
   const nodeContainerWidth = containerRef.current.clientWidth;
   const nodesPerRow = Math.round(nodeContainerWidth / nodeWidth);
   const totalNumRows = Math.ceil(dataLength / nodesPerRow);
