@@ -1,5 +1,5 @@
 import styles from './virtual-scroll.module.css';
-import { memo, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { memo, useEffect, useRef, useState } from 'react';
 import { formatNodeData } from './format-node-data';
 import { useScrollListen } from './use-scroll-listen';
 
@@ -19,15 +19,11 @@ const VirtualScroll = memo(
       endIndex: 1,
     });
     const [nodeDetails, setNodeDetails] = useState<any>({});
-    const nodeClientWidth =
-      nodeContainerRef.current &&
-      nodeContainerRef.current.children[0] &&
-      nodeContainerRef.current.children[0].clientWidth;
 
     // Set node data
-    useLayoutEffect(() => {
+    useEffect(() => {
       setNodeDetails(formatNodeData(nodeContainerRef, data.length));
-    }, [containerRef, nodeClientWidth, data.length]);
+    }, [nodeContainerRef, data]);
 
     // Reset to top when resizing
     useEffect(() => {
@@ -41,7 +37,12 @@ const VirtualScroll = memo(
     // Set scroll position on reload
     useEffect(() => {
       let timer: NodeJS.Timeout | null;
-      if (containerRef.current && prevScrollPos && prevScrollPos != 0) {
+      if (
+        containerRef.current &&
+        prevScrollPos !== null &&
+        prevScrollPos !== undefined &&
+        prevScrollPos >= 0
+      ) {
         timer = setTimeout(() => {
           containerRef.current.scroll(0, prevScrollPos);
         }, 50);
@@ -93,7 +94,7 @@ const VirtualScroll = memo(
 
       calcData();
       nodesInView();
-    }, [data.length, scrollTop, containerRef, nodeDetails]);
+    }, [data, scrollTop, containerRef, nodeDetails]);
 
     return (
       <div

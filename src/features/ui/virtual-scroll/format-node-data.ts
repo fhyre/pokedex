@@ -8,8 +8,8 @@ export function formatNodeData(
 
   const childNode = childNodes[0] ? (childNodes[0] as HTMLElement) : null;
 
-  const nodeWidth = childNode ? childNode.clientWidth : null;
-  const nodeHeight = childNode ? childNode.clientHeight : null;
+  const nodeWidth = childNode ? childNode.clientWidth : 200;
+  const nodeHeight = childNode ? childNode.clientHeight : 200;
   const nodeContainerWidth = containerRef.current.clientWidth;
   const nodesPerRow = Math.round(nodeContainerWidth / nodeWidth);
   const totalNumRows = Math.ceil(dataLength / nodesPerRow);

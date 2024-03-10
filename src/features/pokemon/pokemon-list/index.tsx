@@ -6,7 +6,6 @@ import { useSelector } from 'react-redux';
 import { NotFound } from '@/features/ui';
 import { PokemonListCard } from '../pokemon-list-card';
 import { useScrollRestore } from '@/features/ui/virtual-scroll/use-scroll-restore';
-import { useEffect } from 'react';
 
 export function PokemonList() {
   const searchQ = useSelector((state: RootState) => state.allPokemon.query);
@@ -49,7 +48,7 @@ export function PokemonList() {
       data={filtered}
       offset={48}
       FallbackComp={NotFound}
-      prevScrollPos={prevScrollPos}
+      prevScrollPos={searchQ.length > 0 ? 1 : prevScrollPos}
     />
   );
 }
