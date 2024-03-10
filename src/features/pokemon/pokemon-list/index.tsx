@@ -6,12 +6,19 @@ import { useSelector } from 'react-redux';
 import { NotFound } from '@/features/ui';
 import { PokemonListCard } from '../pokemon-list-card';
 import { useScrollRestore } from '@/features/ui/virtual-scroll/use-scroll-restore';
+import { useEffect } from 'react';
 
 export function PokemonList() {
   const searchQ = useSelector((state: RootState) => state.allPokemon.query);
   const allPokemon = useSelector((state: RootState) => state.allPokemon.all);
 
-  const [prevScrollPos] = useScrollRestore();
+  const [clearSessionStorage, prevScrollPos] = useScrollRestore();
+
+  useEffect(() => {
+    if (searchQ.length > 0) {
+      clearSessionStorage();
+    }
+  }, [searchQ, clearSessionStorage]);
 
   const handleNodeClick = () => {
     const virtualScrollContainer = document.getElementById('virtual-scroll');
@@ -48,7 +55,7 @@ export function PokemonList() {
       data={filtered}
       offset={48}
       FallbackComp={NotFound}
-      prevScrollPos={searchQ.length > 0 ? 1 : prevScrollPos}
+      prevScrollPos={searchQ.length > 0 ? Math.random() : prevScrollPos}
     />
   );
 }
