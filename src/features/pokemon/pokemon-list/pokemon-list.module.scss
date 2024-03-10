@@ -12,9 +12,3 @@
     padding-inline: var(--size-6);
   }
 }
-
-@include media-query($two-large) {
-  .container {
-    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-  }
-}
