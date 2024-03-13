@@ -50,6 +50,7 @@
 }
 
 .pokeImg {
+  @include fade-in(300ms);
   width: 55%;
   height: auto;
   max-width: 15rem;

@@ -9,17 +9,18 @@ import {
   MovesTab,
   StatsTab,
 } from './tabs';
-import ArrowLeft from '@/public/icons/arrow-left';
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store/index';
 import { ImageWrapper } from '@/features/ui/image-wrapper';
+import { Icon } from '@iconify/react';
 
 export function PokemonDetails({ id }) {
   const [selectedTab, setSelectedTab] = useState<TabNames>('general');
   const pokemon = useSelector((state: RootState) => state.allPokemon.all)[
     id - 1
   ];
+  const [imageLoading, setImageLoading] = useState(true);
 
   //*Variables
   const strId = convertId(pokemon.id.toString());
@@ -76,10 +77,10 @@ export function PokemonDetails({ id }) {
         className={styles.returnArrow}
         style={{
           color: type1,
-          mixBlendMode: 'multiply',
+          mixBlendMode: 'color-dodge',
         }}
       >
-        <ArrowLeft />
+        <Icon icon="ic:twotone-arrow-back" />
       </Link>
       <h1 className={styles.heading}>{`about ${pokemon.name}`}</h1>
       <div className={styles.pokeImgContainer}>
@@ -91,6 +92,17 @@ export function PokemonDetails({ id }) {
           {pokemon.name.toUpperCase()}
         </div>
         <div className={styles.pokeImgWrapper}>
+          {imageLoading && (
+            <Icon
+              icon="line-md:loading-loop"
+              style={{
+                width: 50,
+                height: 50,
+                color: type1,
+                mixBlendMode: 'color-dodge',
+              }}
+            />
+          )}
           <ImageWrapper
             imagePath={`https://poke-images.pages.dev/full-size/${strId}.png`}
             imageAlt={pokemon.name}
@@ -98,6 +110,8 @@ export function PokemonDetails({ id }) {
             width={600}
             height={600}
             styles={[styles.pokeImg]}
+            onLoaded={() => setImageLoading(false)}
+            loading={imageLoading}
             priority
           />
         </div>

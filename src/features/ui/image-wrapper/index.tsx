@@ -10,6 +10,8 @@ export function ImageWrapper({
   width = 0,
   title,
   quality,
+  onLoaded,
+  loading,
 }: IImageWrapper) {
   return (
     <Image
@@ -23,6 +25,8 @@ export function ImageWrapper({
       priority={priority}
       aria-hidden={ariaHidden}
       title={title}
+      onLoad={onLoaded}
+      style={{ display: loading ? 'none' : 'block' }}
     />
   );
 }
@@ -37,4 +41,6 @@ interface IImageWrapper {
   width?: number;
   title?: string;
   quality?: number;
+  onLoaded?: () => void;
+  loading?: boolean;
 }
