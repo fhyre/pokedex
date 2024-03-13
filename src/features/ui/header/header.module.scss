@@ -1,4 +1,4 @@
-@use "@/styles/sass/abstracts" as *;
+@use '@/styles/sass/abstracts' as *;
 
 .container {
   position: sticky;
@@ -31,8 +31,8 @@
 }
 
 .mainIcon {
-  width: 3rem;
-  width: 3rem;
+  width: var(--size-8);
+  height: auto;
 }
 
 .searchBar {

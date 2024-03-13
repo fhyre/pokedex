@@ -1,7 +1,7 @@
 import styles from './search-bar.module.css';
-import SearchIcon from '@/public/icons/search-icon';
 import { CSSProperties } from 'react';
 import { useDebounce } from './use-debounce';
+import { Icon } from '@iconify/react';
 
 interface ISearchBar {
   cb: (res: string) => object;
@@ -19,7 +19,7 @@ export function SearchBar({ cb, style, className }: ISearchBar) {
       style={style}
       tabIndex={0}
     >
-      <SearchIcon style={{ overflow: 'initial' }} />
+      <Icon icon="jam:search" width={24} height={24} />
       <input
         type="text"
         placeholder="Search"

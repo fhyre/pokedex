@@ -1,9 +1,9 @@
 import styles from './header.module.scss';
-import Hamburger from '@/public/icons/hamburger';
-import Pokeball from '@/public/icons/pokeball';
 import { modifyQuery } from '@/store/slices/all-pokemon-slice';
 import { useDispatch } from 'react-redux';
 import { SearchBar } from '@/features/ui';
+import { Icon } from '@iconify/react';
+import { ImageWrapper } from '../image-wrapper';
 
 export function Header() {
   const dispatch = useDispatch();
@@ -14,9 +14,13 @@ export function Header() {
         Pokédex
       </h1>
       <div className={styles.drawerWrapper} aria-hidden="true">
-        <Hamburger className={styles.hamburgerIcon} />
+        <Icon icon="mdi:hamburger-menu" className={styles.hamburgerIcon} />
       </div>
-      <Pokeball className={styles.mainIcon} />
+      <ImageWrapper
+        imagePath="/icons/pokeball.svg"
+        imageAlt="Pokeball"
+        styles={[styles.mainIcon]}
+      />
       <div className={styles.searchBarWrapper}>
         <SearchBar
           className={styles.searchBar}
