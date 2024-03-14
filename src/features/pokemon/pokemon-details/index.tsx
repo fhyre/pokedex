@@ -14,6 +14,7 @@ import { useSelector } from 'react-redux';
 import { RootState } from '@/store/index';
 import { ImageWrapper } from '@/features/ui/image-wrapper';
 import { Icon } from '@iconify/react';
+import Head from 'next/head';
 
 export function PokemonDetails({ id }) {
   const [selectedTab, setSelectedTab] = useState<TabNames>('general');
@@ -66,63 +67,70 @@ export function PokemonDetails({ id }) {
   );
 
   return (
-    <div
-      className={styles.container}
-      style={{
-        background: gradientStr,
-      }}
-    >
-      <Link
-        href="/"
-        className={styles.returnArrow}
+    <>
+      <Head>
+        <title>{`${id} | ${pokemon.name.replace(/[a-z]/, (l) =>
+          l.toUpperCase()
+        )}`}</title>
+      </Head>
+      <div
+        className={styles.container}
         style={{
-          color: type1,
-          mixBlendMode: 'color-dodge',
+          background: gradientStr,
         }}
       >
-        <Icon icon="ic:twotone-arrow-back" />
-      </Link>
-      <h1 className={styles.heading}>{`about ${pokemon.name}`}</h1>
-      <div className={styles.pokeImgContainer}>
-        <div
+        <Link
+          href="/"
+          className={styles.returnArrow}
           style={{
             color: type1,
+            mixBlendMode: 'color-dodge',
           }}
         >
-          {pokemon.name.toUpperCase()}
-        </div>
-        <div className={styles.pokeImgWrapper}>
-          {imageLoading && (
-            <Icon
-              icon="line-md:loading-loop"
-              style={{
-                width: 50,
-                height: 50,
-                color: type1,
-                mixBlendMode: 'color-dodge',
-              }}
+          <Icon icon="tabler:arrow-back-up" />
+        </Link>
+        <h1 className={styles.heading}>{`about ${pokemon.name}`}</h1>
+        <div className={styles.pokeImgContainer}>
+          <div
+            style={{
+              color: type1,
+            }}
+          >
+            {pokemon.name.toUpperCase()}
+          </div>
+          <div className={styles.pokeImgWrapper}>
+            {imageLoading && (
+              <Icon
+                icon="line-md:loading-loop"
+                style={{
+                  width: 50,
+                  height: 50,
+                  color: type1,
+                  mixBlendMode: 'color-dodge',
+                }}
+              />
+            )}
+            <ImageWrapper
+              imagePath={`https://poke-images.pages.dev/full-size/${strId}.png`}
+              imageAlt={pokemon.name}
+              quality={100}
+              width={600}
+              height={600}
+              styles={[styles.pokeImg]}
+              onLoaded={() => setImageLoading(false)}
+              loading={imageLoading}
+              priority
             />
-          )}
-          <ImageWrapper
-            imagePath={`https://poke-images.pages.dev/full-size/${strId}.png`}
-            imageAlt={pokemon.name}
-            quality={100}
-            width={600}
-            height={600}
-            styles={[styles.pokeImg]}
-            onLoaded={() => setImageLoading(false)}
-            loading={imageLoading}
-            priority
-          />
+          </div>
         </div>
+        <section className={styles.detailsContainer}>
+          <div className={styles.tabsContainer}>
+            <ul>{tabItems}</ul>
+          </div>
+          <div>{tabMapping.get(selectedTab)}</div>
+        </section>
       </div>
-      <section className={styles.detailsContainer}>
-        <div className={styles.tabsContainer}>
-          <ul>{tabItems}</ul>
-        </div>
-        <div>{tabMapping.get(selectedTab)}</div>
-      </section>
-    </div>
+    </>
   );
 }
 
