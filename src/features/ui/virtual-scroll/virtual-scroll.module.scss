@@ -1,0 +1,25 @@
+@use '@/styles/sass/abstracts' as *;
+
+.container {
+  overflow: auto;
+}
+
+@include media-query($medium) {
+  .container {
+    &::-webkit-scrollbar {
+      width: 0.6rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--gray-6);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: var(--gray-7);
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: var(--gray-4);
+    }
+  }
+}

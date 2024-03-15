@@ -1,13 +1,13 @@
-import styles from './styles/general-tab.module.scss';
+import styles from './styles/general.module.scss';
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store/index';
 import { species } from '../../assets';
 import { TypeIcon } from '../../pokemon-type-icon';
 
-export function GeneralTab({ id, grdColor, typeClr }: IGenTab): JSX.Element {
+export function General({ id, gradientColor, typeColor }: GeneralProps) {
   const { abilities, gen, height, weight, name, types } = useSelector(
-    (state: RootState) => state.allPokemon.all
+    (state: RootState) => state.allPokemon.data
   )[id];
 
   const speciesData = species[id];
@@ -16,10 +16,6 @@ export function GeneralTab({ id, grdColor, typeClr }: IGenTab): JSX.Element {
     const dataFields = document.querySelectorAll(`.${styles.container} > div`);
     dataFields.forEach((dataField) => {
       dataField.classList.add(`${styles.dataField}`);
-      dataField.children[0].setAttribute(
-        'style',
-        `background-image: ${grdColor}`
-      );
     });
 
     const abilities = document.querySelectorAll(
@@ -28,15 +24,15 @@ export function GeneralTab({ id, grdColor, typeClr }: IGenTab): JSX.Element {
 
     abilities.forEach((abilityWrapper: HTMLElement) => {
       abilityWrapper.classList.add(`${styles.abilityWrapper}`);
-      abilityWrapper.setAttribute('style', `background-color: ${typeClr}`);
+      abilityWrapper.setAttribute('style', `background-color: ${typeColor}`);
       if (abilityWrapper.dataset.hidden === 'true') {
-        abilityWrapper.style['filter'] = 'opacity(0.6)';
+        abilityWrapper.style['filter'] = 'opacity(0.7)';
       }
     });
-  }, [grdColor, typeClr]);
+  }, [gradientColor, typeColor]);
 
   return (
-    <div className={styles.container} style={{ color: typeClr }}>
+    <section className={styles.container} style={{ color: typeColor }}>
       <div>
         <h2>ID</h2>
         <p>{'#' + (id + 1)}</p>
@@ -89,12 +85,12 @@ export function GeneralTab({ id, grdColor, typeClr }: IGenTab): JSX.Element {
         <h2>Weight</h2>
         <p>{`${weight / 10} kg`} </p>
       </div>
-    </div>
+    </section>
   );
 }
 
-interface IGenTab {
+interface GeneralProps {
   id: number;
-  grdColor: string;
-  typeClr: string;
+  gradientColor: string;
+  typeColor: string;
 }

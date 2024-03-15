@@ -1,4 +1,4 @@
-import styles from './virtual-scroll.module.css';
+import styles from './virtual-scroll.module.scss';
 import { memo, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { formatNodeData } from './format-node-data';
 import { useScrollListen } from './use-scroll-listen';

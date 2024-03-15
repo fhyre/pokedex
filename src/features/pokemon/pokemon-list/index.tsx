@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 
 export function PokemonList() {
   const searchQ = useSelector((state: RootState) => state.allPokemon.query);
-  const allPokemon = useSelector((state: RootState) => state.allPokemon.all);
+  const allPokemon = useSelector((state: RootState) => state.allPokemon.data);
 
   const [clearSessionStorage, prevScrollPos] = useScrollRestore();
 

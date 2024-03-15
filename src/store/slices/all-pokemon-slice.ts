@@ -1,18 +1,13 @@
-import { IPokemon, parseAllPokemon } from "@/features/pokemon";
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
-interface IAllPokemon {
-  all: IPokemon[];
-  query: string;
-}
+import { IPokemon, parseAllPokemon } from '@/features/pokemon';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 const initialState: IAllPokemon = {
-  all: parseAllPokemon(),
-  query: "",
+  data: parseAllPokemon(),
+  query: '',
 };
 
 export const allPokemonSlice = createSlice({
-  name: "allPokemon",
+  name: 'allPokemon',
   initialState,
   reducers: {
     modifyQuery: (state, action: PayloadAction<string>) => {
@@ -20,6 +15,10 @@ export const allPokemonSlice = createSlice({
     },
   },
 });
+interface IAllPokemon {
+  data: IPokemon[];
+  query: string;
+}
 
 export const { modifyQuery } = allPokemonSlice.actions;
 

@@ -1,17 +1,5 @@
 import { allPokemon, abilities, forms, pokeTypes, stats } from '../assets';
 
-interface IAbility {
-  hidden: boolean;
-  id: number;
-}
-
-interface IStat {
-  base_stat: number;
-  effort: number;
-  id?: number;
-  name?: string;
-}
-
 export function parseAllPokemon() {
   const MAX_POKEMON = 1025;
   const parsed = [];
@@ -57,4 +45,16 @@ export function parseAllPokemon() {
   }
 
   return parsed;
+}
+
+interface IAbility {
+  hidden: boolean;
+  id: number;
+}
+
+interface IStat {
+  base_stat: number;
+  effort: number;
+  id?: number;
+  name?: string;
 }

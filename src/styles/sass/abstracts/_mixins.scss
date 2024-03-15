@@ -4,6 +4,11 @@
   flex-direction: column;
 }
 
+@mixin white-transparent-card {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: var(--size-3);
+}
+
 // Fade In Animation
 @mixin fade-in($delay) {
   animation: fade-in #{$delay} ease-in;
