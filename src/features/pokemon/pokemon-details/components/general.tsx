@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { RootState } from '@/store/index';
 import { species } from '../../assets';
 import { TypeIcon } from '../../pokemon-type-icon';
+import { upperCaseFirstLetter } from '@/utils';
 
 export function General({ id, gradientColor, typeColor }: GeneralProps) {
   const { abilities, gen, height, weight, name, types } = useSelector(
@@ -39,7 +40,7 @@ export function General({ id, gradientColor, typeColor }: GeneralProps) {
       </div>
       <div>
         <h2>Name</h2>
-        <p>{name.replace(/[a-z]/, (l) => l.toUpperCase())}</p>
+        <p>{upperCaseFirstLetter(name)}</p>
       </div>
       <div>
         <h2>Species</h2>

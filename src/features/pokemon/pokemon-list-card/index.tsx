@@ -4,6 +4,7 @@ import { ImageWrapper } from '@/features/ui/image-wrapper';
 import { IPokemon } from '../types';
 import { convertId } from '../utils';
 import { TypeIcon } from '../pokemon-type-icon';
+import { upperCaseFirstLetter } from '@/utils';
 
 export function PokemonListCard({ id, name, types, style }: IPokeListCard) {
   const strId = convertId(id.toString());
@@ -15,9 +16,7 @@ export function PokemonListCard({ id, name, types, style }: IPokeListCard) {
           <p className={`${styles.pokeId}`} aria-label={`Number ${id}`}>
             {strId}
           </p>
-          <p className={`${styles.pokeName}`}>
-            {name?.replace(/[a-z]/, (x) => x.toUpperCase())}
-          </p>
+          <p className={`${styles.pokeName}`}>{upperCaseFirstLetter(name)}</p>
         </div>
         <section className={`${styles.typeContainer}`}>
           {types.map((type, i: number) => (

@@ -1,4 +1,4 @@
-import { jsonFetch } from '@/lib';
+import { jsonFetch } from '@/utils';
 
 const BASE_URL = 'https://pokeapi.co/api/v2/';
 

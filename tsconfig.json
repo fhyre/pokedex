@@ -19,7 +19,7 @@
       "@/public/*": ["public/*"],
       "@/styles/*": ["src/styles/*"],
       "@/features/*": ["src/features/*"],
-      "@/lib": ["src/lib"],
+      "@/utils": ["src/utils"],
       "@/store/*": ["src/store/*"]
     }
   },
