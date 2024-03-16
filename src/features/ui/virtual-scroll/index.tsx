@@ -18,7 +18,7 @@ const VirtualScroll = memo(
       startIndex: 0,
       endIndex: 1,
     });
-    const [nodeDetails, setNodeDetails] = useState<any>({});
+    const [nodeDetails, setNodeDetails] = useState<INodeDetails>({});
     const nodeClientWidth =
       nodeContainerRef.current &&
       nodeContainerRef.current.children[0] &&
@@ -29,14 +29,14 @@ const VirtualScroll = memo(
       setNodeDetails(formatNodeData(nodeContainerRef, data.length));
     }, [nodeClientWidth, data]);
 
-    // Reset to top when resizing
     useEffect(() => {
-      const onResize = () => containerRef.current.scroll(0, 0);
+      const onResize = () =>
+        setNodeDetails(formatNodeData(nodeContainerRef, data.length));
 
       window.addEventListener('resize', onResize);
 
       return () => window.removeEventListener('resize', onResize);
-    }, [containerRef]);
+    }, [containerRef, nodeDetails, data]);
 
     // Set scroll position on reload
     useEffect(() => {
@@ -143,6 +143,14 @@ interface IStartEndIndex {
 interface IVirtStyles {
   height?: number;
   offsetY?: number;
+}
+
+interface INodeDetails {
+  nodeWidth?: number;
+  nodeHeight?: number;
+  nodesPerRow?: number;
+  totalNumRows?: number;
+  totalHeight?: number;
 }
 
 VirtualScroll.displayName = 'VirtualScroll';
