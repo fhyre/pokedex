@@ -8,6 +8,7 @@ import { ImageWrapper } from '@/features/ui/image-wrapper';
 import { Icon } from '@iconify/react';
 import Head from 'next/head';
 import { General } from './components';
+import { upperCaseFirstLetter } from '@/utils';
 
 export function PokemonDetails({ id }) {
   const pokemon = useSelector((state: RootState) => state.allPokemon.data)[
@@ -19,30 +20,29 @@ export function PokemonDetails({ id }) {
   const strId = convertId(pokemon.id.toString());
   const type1 = getTypeColor(pokemon.types[0]);
   const type2 = getTypeColor(pokemon.types[1] && pokemon.types[1]);
-  const gradientStr = `linear-gradient(45deg, ${type1}, ${type2})`;
+  const gradientStr = `linear-gradient(180deg, ${type1}, ${type2})`;
 
   return (
     <>
       <Head>
-        <title>{`${id} | ${pokemon.name.replace(/[a-z]/, (l) =>
-          l.toUpperCase()
-        )}`}</title>
+        <title>{`${id} | ${upperCaseFirstLetter(pokemon.name)}`}</title>
       </Head>
       <div
-        className={styles.container}
+        className={styles.gradientBg}
         style={{
           background: gradientStr,
         }}
-      >
+      />
+      <div className={styles.container}>
         <Link
           href="/"
           className={styles.returnArrow}
           style={{
             color: type1,
-            mixBlendMode: 'color-dodge',
+            mixBlendMode: 'screen',
           }}
         >
-          <Icon icon="tabler:arrow-back-up" />
+          <Icon icon="mdi:arrow-left" />
         </Link>
         <h1 className={styles.heading}>{`about ${pokemon.name}`}</h1>
         <div className={styles.pokeImgContainer}>
