@@ -11,7 +11,7 @@ import { General } from './components';
 import { upperCaseFirstLetter } from '@/utils';
 
 export function PokemonDetails({ id }) {
-  const pokemon = useSelector((state: RootState) => state.allPokemon.data)[
+  const pokemon = useSelector((state: RootState) => state.pokemonData.data)[
     id - 1
   ];
   const [imageLoading, setImageLoading] = useState(true);

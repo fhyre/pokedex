@@ -1,5 +1,5 @@
 import styles from './header.module.scss';
-import { modifyQuery } from '@/store/slices/all-pokemon-slice';
+import { modifyQuery } from '@/store/slices/pokemon-data-slice';
 import { useDispatch } from 'react-redux';
 import { SearchBar } from '@/features/ui';
 import { Icon } from '@iconify/react';

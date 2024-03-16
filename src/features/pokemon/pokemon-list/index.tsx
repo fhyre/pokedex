@@ -9,8 +9,8 @@ import { useScrollRestore } from '@/features/ui/virtual-scroll/use-scroll-restor
 import { useEffect } from 'react';
 
 export function PokemonList() {
-  const searchQ = useSelector((state: RootState) => state.allPokemon.query);
-  const allPokemon = useSelector((state: RootState) => state.allPokemon.data);
+  const searchQ = useSelector((state: RootState) => state.pokemonData.query);
+  const allPokemon = useSelector((state: RootState) => state.pokemonData.data);
 
   const [clearSessionStorage, prevScrollPos] = useScrollRestore();
 

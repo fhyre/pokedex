@@ -8,7 +8,7 @@ import { upperCaseFirstLetter } from '@/utils';
 
 export function General({ id, gradientColor, typeColor }: GeneralProps) {
   const { abilities, gen, height, weight, name, types } = useSelector(
-    (state: RootState) => state.allPokemon.data
+    (state: RootState) => state.pokemonData.data
   )[id];
 
   const speciesData = species[id];
