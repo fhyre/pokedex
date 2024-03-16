@@ -1,4 +1,4 @@
-export const stats = [
+[
   "hp",
   "attack",
   "defense",
@@ -6,5 +6,5 @@ export const stats = [
   "special-defense",
   "speed",
   "accuracy",
-  "evasion",
-];
+  "evasion"
+]

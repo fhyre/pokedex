@@ -2,7 +2,7 @@ import styles from './styles/general.module.scss';
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store/index';
-import { species } from '../../assets';
+import species from '../../assets/species.json';
 import { TypeIcon } from '../../pokemon-type-icon';
 import { upperCaseFirstLetter } from '@/utils';
 

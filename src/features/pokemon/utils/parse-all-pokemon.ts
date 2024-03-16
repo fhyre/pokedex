@@ -1,17 +1,22 @@
-import { allPokemon, abilities, forms, pokeTypes, stats } from '../assets';
+import pokemonData from '../assets/all-pokemon.json';
+import abilities from '../assets/abilities.json';
+import forms from '../assets/forms.json';
+import stats from '../assets/stats.json';
+import pokeTypes from '../assets/types.json';
 
 export function parseAllPokemon() {
   const MAX_POKEMON = 1025;
   const parsed = [];
 
   for (let i = 0; i < MAX_POKEMON; i++) {
-    const toAdd = { ...allPokemon[i] };
+    const currPokemon = pokemonData[i];
+    const toAdd = { ...currPokemon };
     toAdd.abilities = [];
     toAdd.forms = [];
     toAdd.stats = [];
     toAdd.types = [];
 
-    allPokemon[i].abilities.forEach((ability: IAbility) => {
+    currPokemon.abilities.forEach((ability: IAbility) => {
       const { hidden, id } = ability;
       toAdd.abilities.push({
         hidden,
@@ -21,7 +26,7 @@ export function parseAllPokemon() {
       });
     });
 
-    allPokemon[i].forms.forEach((formId: number) => {
+    pokemonData[i].forms.forEach((formId: number) => {
       if (formId === i + 1) return;
       const tempForm = forms[formId];
       tempForm.types = [];
@@ -31,13 +36,13 @@ export function parseAllPokemon() {
       toAdd.forms.push(tempForm);
     });
 
-    allPokemon[i].stats.forEach((stat: IStat) => {
+    pokemonData[i].stats.forEach((stat: IStat) => {
       const { id, ...tempStat } = stat;
       tempStat.name = stats[stat.id - 1];
       toAdd.stats.push(tempStat);
     });
 
-    allPokemon[i].types.forEach((typeId: number) => {
+    pokemonData[i].types.forEach((typeId: number) => {
       toAdd.types.push(pokeTypes[typeId - 1]);
     });
 

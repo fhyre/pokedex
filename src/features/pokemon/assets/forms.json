@@ -1,0 +1,3953 @@
+{
+  "1011": {
+    "name": "dipplin",
+    "types": [
+      12,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "1012": {
+    "name": "poltchageist-counterfeit",
+    "types": [
+      12,
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "1013": {
+    "name": "sinistcha-unremarkable",
+    "types": [
+      12,
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "1014": {
+    "name": "okidogi",
+    "types": [
+      4,
+      2
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "1015": {
+    "name": "munkidori",
+    "types": [
+      4,
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "1016": {
+    "name": "fezandipiti",
+    "types": [
+      4,
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "1017": {
+    "name": "ogerpon",
+    "types": [
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "1018": {
+    "name": "archaludon",
+    "types": [
+      9,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "1019": {
+    "name": "hydrapple",
+    "types": [
+      12,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "1020": {
+    "name": "gouging-fire",
+    "types": [
+      10,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "1021": {
+    "name": "raging-bolt",
+    "types": [
+      13,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "1022": {
+    "name": "iron-boulder",
+    "types": [
+      6,
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "1023": {
+    "name": "iron-crown",
+    "types": [
+      9,
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "1024": {
+    "name": "terapagos",
+    "types": [
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "1025": {
+    "name": "pecharunt",
+    "types": [
+      4,
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10001": {
+    "name": "unown-b",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10002": {
+    "name": "unown-c",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10003": {
+    "name": "unown-d",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10004": {
+    "name": "unown-e",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10005": {
+    "name": "unown-f",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10006": {
+    "name": "unown-g",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10007": {
+    "name": "unown-h",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10008": {
+    "name": "unown-i",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10009": {
+    "name": "unown-j",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10010": {
+    "name": "unown-k",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10011": {
+    "name": "unown-l",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10012": {
+    "name": "unown-m",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10013": {
+    "name": "unown-n",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10014": {
+    "name": "unown-o",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10015": {
+    "name": "unown-p",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10016": {
+    "name": "unown-q",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10017": {
+    "name": "unown-r",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10018": {
+    "name": "unown-s",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10019": {
+    "name": "unown-t",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10020": {
+    "name": "unown-u",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10021": {
+    "name": "unown-v",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10022": {
+    "name": "unown-w",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10023": {
+    "name": "unown-x",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10024": {
+    "name": "unown-y",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10025": {
+    "name": "unown-z",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10026": {
+    "name": "unown-exclamation",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10027": {
+    "name": "unown-question",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10028": {
+    "name": "castform-sunny",
+    "types": [
+      10
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10029": {
+    "name": "castform-rainy",
+    "types": [
+      11
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10030": {
+    "name": "castform-snowy",
+    "types": [
+      15
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10031": {
+    "name": "deoxys-attack",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10032": {
+    "name": "deoxys-defense",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10033": {
+    "name": "deoxys-speed",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10034": {
+    "name": "burmy-sandy",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10035": {
+    "name": "burmy-trash",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10036": {
+    "name": "wormadam-sandy",
+    "types": [
+      7,
+      5
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10037": {
+    "name": "wormadam-trash",
+    "types": [
+      7,
+      9
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10038": {
+    "name": "cherrim-sunshine",
+    "types": [
+      12
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10039": {
+    "name": "shellos-east",
+    "types": [
+      11
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10040": {
+    "name": "gastrodon-east",
+    "types": [
+      11,
+      5
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10041": {
+    "name": "arceus-bug",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10042": {
+    "name": "arceus-dark",
+    "types": [
+      17
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10043": {
+    "name": "arceus-dragon",
+    "types": [
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10044": {
+    "name": "arceus-electric",
+    "types": [
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10045": {
+    "name": "arceus-fighting",
+    "types": [
+      2
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10046": {
+    "name": "arceus-fire",
+    "types": [
+      10
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10047": {
+    "name": "arceus-flying",
+    "types": [
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10048": {
+    "name": "arceus-ghost",
+    "types": [
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10049": {
+    "name": "arceus-grass",
+    "types": [
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10050": {
+    "name": "arceus-ground",
+    "types": [
+      5
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10051": {
+    "name": "arceus-ice",
+    "types": [
+      15
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10052": {
+    "name": "arceus-poison",
+    "types": [
+      4
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10053": {
+    "name": "arceus-psychic",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10054": {
+    "name": "arceus-rock",
+    "types": [
+      6
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10055": {
+    "name": "arceus-steel",
+    "types": [
+      9
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10056": {
+    "name": "arceus-water",
+    "types": [
+      11
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10057": {
+    "name": "arceus-unknown",
+    "types": [
+      10001
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10058": {
+    "name": "rotom-heat",
+    "types": [
+      13,
+      10
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10059": {
+    "name": "rotom-wash",
+    "types": [
+      13,
+      11
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10060": {
+    "name": "rotom-frost",
+    "types": [
+      13,
+      15
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10061": {
+    "name": "rotom-fan",
+    "types": [
+      13,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10062": {
+    "name": "rotom-mow",
+    "types": [
+      13,
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10063": {
+    "name": "giratina-origin",
+    "types": [
+      8,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10064": {
+    "name": "shaymin-sky",
+    "types": [
+      12,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10065": {
+    "name": "pichu-spiky-eared",
+    "types": [
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10066": {
+    "name": "basculin-blue-striped",
+    "types": [
+      11
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10067": {
+    "name": "darmanitan-zen",
+    "types": [
+      10,
+      14
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10068": {
+    "name": "deerling-summer",
+    "types": [
+      1,
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10069": {
+    "name": "deerling-autumn",
+    "types": [
+      1,
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10070": {
+    "name": "deerling-winter",
+    "types": [
+      1,
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10071": {
+    "name": "sawsbuck-summer",
+    "types": [
+      1,
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10072": {
+    "name": "sawsbuck-autumn",
+    "types": [
+      1,
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10073": {
+    "name": "sawsbuck-winter",
+    "types": [
+      1,
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10074": {
+    "name": "meloetta-pirouette",
+    "types": [
+      1,
+      2
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10075": {
+    "name": "genesect-douse",
+    "types": [
+      7,
+      9
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10076": {
+    "name": "genesect-shock",
+    "types": [
+      7,
+      9
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10077": {
+    "name": "genesect-burn",
+    "types": [
+      7,
+      9
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10078": {
+    "name": "genesect-chill",
+    "types": [
+      7,
+      9
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10079": {
+    "name": "tornadus-therian",
+    "types": [
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10080": {
+    "name": "thundurus-therian",
+    "types": [
+      13,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10081": {
+    "name": "landorus-therian",
+    "types": [
+      5,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10082": {
+    "name": "kyurem-black",
+    "types": [
+      16,
+      15
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10083": {
+    "name": "kyurem-white",
+    "types": [
+      16,
+      15
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10084": {
+    "name": "keldeo-resolute",
+    "types": [
+      11,
+      2
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10085": {
+    "name": "arceus-fairy",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10086": {
+    "name": "vivillon-icy-snow",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10087": {
+    "name": "vivillon-polar",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10088": {
+    "name": "vivillon-tundra",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10089": {
+    "name": "vivillon-continental",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10090": {
+    "name": "vivillon-garden",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10091": {
+    "name": "vivillon-elegant",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10092": {
+    "name": "vivillon-modern",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10093": {
+    "name": "vivillon-marine",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10094": {
+    "name": "vivillon-archipelago",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10095": {
+    "name": "vivillon-high-plains",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10096": {
+    "name": "vivillon-sandstorm",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10097": {
+    "name": "vivillon-river",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10098": {
+    "name": "vivillon-monsoon",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10099": {
+    "name": "vivillon-savanna",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10100": {
+    "name": "vivillon-sun",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10101": {
+    "name": "vivillon-ocean",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10102": {
+    "name": "vivillon-jungle",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10103": {
+    "name": "flabebe-yellow",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10104": {
+    "name": "flabebe-orange",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10105": {
+    "name": "flabebe-blue",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10106": {
+    "name": "flabebe-white",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10107": {
+    "name": "floette-yellow",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10108": {
+    "name": "floette-orange",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10109": {
+    "name": "floette-blue",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10110": {
+    "name": "floette-white",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10111": {
+    "name": "florges-yellow",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10112": {
+    "name": "florges-orange",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10113": {
+    "name": "florges-blue",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10114": {
+    "name": "florges-white",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10115": {
+    "name": "furfrou-heart",
+    "types": [
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10116": {
+    "name": "furfrou-star",
+    "types": [
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10117": {
+    "name": "furfrou-diamond",
+    "types": [
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10118": {
+    "name": "furfrou-debutante",
+    "types": [
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10119": {
+    "name": "furfrou-matron",
+    "types": [
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10120": {
+    "name": "furfrou-dandy",
+    "types": [
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10121": {
+    "name": "furfrou-la-reine",
+    "types": [
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10122": {
+    "name": "furfrou-kabuki",
+    "types": [
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10123": {
+    "name": "furfrou-pharaoh",
+    "types": [
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10124": {
+    "name": "meowstic-female",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10125": {
+    "name": "aegislash-blade",
+    "types": [
+      9,
+      8
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10126": {
+    "name": "pumpkaboo-small",
+    "types": [
+      8,
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10127": {
+    "name": "pumpkaboo-large",
+    "types": [
+      8,
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10128": {
+    "name": "pumpkaboo-super",
+    "types": [
+      8,
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10129": {
+    "name": "gourgeist-small",
+    "types": [
+      8,
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10130": {
+    "name": "gourgeist-large",
+    "types": [
+      8,
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10131": {
+    "name": "gourgeist-super",
+    "types": [
+      8,
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10132": {
+    "name": "xerneas-neutral",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10133": {
+    "name": "venusaur-mega",
+    "types": [
+      12,
+      4
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10134": {
+    "name": "charizard-mega-x",
+    "types": [
+      10,
+      16
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10135": {
+    "name": "charizard-mega-y",
+    "types": [
+      10,
+      3
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10136": {
+    "name": "blastoise-mega",
+    "types": [
+      11
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10137": {
+    "name": "alakazam-mega",
+    "types": [
+      14
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10138": {
+    "name": "gengar-mega",
+    "types": [
+      8,
+      4
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10139": {
+    "name": "kangaskhan-mega",
+    "types": [
+      1
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10140": {
+    "name": "pinsir-mega",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10141": {
+    "name": "gyarados-mega",
+    "types": [
+      11,
+      17
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10142": {
+    "name": "aerodactyl-mega",
+    "types": [
+      6,
+      3
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10143": {
+    "name": "mewtwo-mega-x",
+    "types": [
+      14,
+      2
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10144": {
+    "name": "mewtwo-mega-y",
+    "types": [
+      14
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10145": {
+    "name": "ampharos-mega",
+    "types": [
+      13,
+      16
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10146": {
+    "name": "scizor-mega",
+    "types": [
+      7,
+      9
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10147": {
+    "name": "heracross-mega",
+    "types": [
+      7,
+      2
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10148": {
+    "name": "houndoom-mega",
+    "types": [
+      17,
+      10
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10149": {
+    "name": "tyranitar-mega",
+    "types": [
+      6,
+      17
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10150": {
+    "name": "blaziken-mega",
+    "types": [
+      10,
+      2
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10151": {
+    "name": "gardevoir-mega",
+    "types": [
+      14,
+      18
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10152": {
+    "name": "mawile-mega",
+    "types": [
+      9,
+      18
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10153": {
+    "name": "aggron-mega",
+    "types": [
+      9
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10154": {
+    "name": "medicham-mega",
+    "types": [
+      2,
+      14
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10155": {
+    "name": "manectric-mega",
+    "types": [
+      13
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10156": {
+    "name": "banette-mega",
+    "types": [
+      8
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10157": {
+    "name": "absol-mega",
+    "types": [
+      17
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10158": {
+    "name": "garchomp-mega",
+    "types": [
+      16,
+      5
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10159": {
+    "name": "lucario-mega",
+    "types": [
+      2,
+      9
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10160": {
+    "name": "abomasnow-mega",
+    "types": [
+      12,
+      15
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10161": {
+    "name": "vivillon-fancy",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10162": {
+    "name": "vivillon-poke-ball",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10163": {
+    "name": "floette-eternal",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10164": {
+    "name": "latias-mega",
+    "types": [
+      16,
+      14
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10165": {
+    "name": "latios-mega",
+    "types": [
+      16,
+      14
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10166": {
+    "name": "swampert-mega",
+    "types": [
+      11,
+      5
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10167": {
+    "name": "sceptile-mega",
+    "types": [
+      12,
+      16
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10168": {
+    "name": "sableye-mega",
+    "types": [
+      17,
+      8
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10169": {
+    "name": "altaria-mega",
+    "types": [
+      16,
+      18
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10170": {
+    "name": "gallade-mega",
+    "types": [
+      14,
+      2
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10171": {
+    "name": "audino-mega",
+    "types": [
+      1,
+      18
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10172": {
+    "name": "sharpedo-mega",
+    "types": [
+      11,
+      17
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10173": {
+    "name": "slowbro-mega",
+    "types": [
+      11,
+      14
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10174": {
+    "name": "steelix-mega",
+    "types": [
+      9,
+      5
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10175": {
+    "name": "pidgeot-mega",
+    "types": [
+      1,
+      3
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10176": {
+    "name": "glalie-mega",
+    "types": [
+      15
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10177": {
+    "name": "diancie-mega",
+    "types": [
+      6,
+      18
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10178": {
+    "name": "metagross-mega",
+    "types": [
+      9,
+      14
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10179": {
+    "name": "kyogre-primal",
+    "types": [
+      11
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10180": {
+    "name": "groudon-primal",
+    "types": [
+      5,
+      10
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10181": {
+    "name": "rayquaza-mega",
+    "types": [
+      16,
+      3
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10182": {
+    "name": "pikachu-rock-star",
+    "types": [
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10183": {
+    "name": "pikachu-belle",
+    "types": [
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10184": {
+    "name": "pikachu-pop-star",
+    "types": [
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10185": {
+    "name": "pikachu-phd",
+    "types": [
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10186": {
+    "name": "pikachu-libre",
+    "types": [
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10187": {
+    "name": "pikachu-cosplay",
+    "types": [
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10188": {
+    "name": "hoopa-unbound",
+    "types": [
+      14,
+      17
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10189": {
+    "name": "camerupt-mega",
+    "types": [
+      10,
+      5
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10190": {
+    "name": "lopunny-mega",
+    "types": [
+      1,
+      2
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10191": {
+    "name": "salamence-mega",
+    "types": [
+      16,
+      3
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10192": {
+    "name": "beedrill-mega",
+    "types": [
+      7,
+      4
+    ],
+    "battle_only": true,
+    "mega": true
+  },
+  "10193": {
+    "name": "rattata-alola",
+    "types": [
+      17,
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10194": {
+    "name": "raticate-alola",
+    "types": [
+      17,
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10195": {
+    "name": "raticate-totem-alola",
+    "types": [
+      17,
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10196": {
+    "name": "pikachu-original-cap",
+    "types": [
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10197": {
+    "name": "pikachu-hoenn-cap",
+    "types": [
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10198": {
+    "name": "pikachu-sinnoh-cap",
+    "types": [
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10199": {
+    "name": "pikachu-unova-cap",
+    "types": [
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10200": {
+    "name": "pikachu-kalos-cap",
+    "types": [
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10201": {
+    "name": "pikachu-alola-cap",
+    "types": [
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10202": {
+    "name": "raichu-alola",
+    "types": [
+      13,
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10203": {
+    "name": "sandshrew-alola",
+    "types": [
+      15,
+      9
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10204": {
+    "name": "sandslash-alola",
+    "types": [
+      15,
+      9
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10205": {
+    "name": "vulpix-alola",
+    "types": [
+      15
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10206": {
+    "name": "ninetales-alola",
+    "types": [
+      15,
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10207": {
+    "name": "diglett-alola",
+    "types": [
+      5,
+      9
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10208": {
+    "name": "dugtrio-alola",
+    "types": [
+      5,
+      9
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10209": {
+    "name": "meowth-alola",
+    "types": [
+      17
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10210": {
+    "name": "persian-alola",
+    "types": [
+      17
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10211": {
+    "name": "geodude-alola",
+    "types": [
+      6,
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10212": {
+    "name": "graveler-alola",
+    "types": [
+      6,
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10213": {
+    "name": "golem-alola",
+    "types": [
+      6,
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10214": {
+    "name": "grimer-alola",
+    "types": [
+      4,
+      17
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10215": {
+    "name": "muk-alola",
+    "types": [
+      4,
+      17
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10216": {
+    "name": "exeggutor-alola",
+    "types": [
+      12,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10217": {
+    "name": "marowak-alola",
+    "types": [
+      10,
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10218": {
+    "name": "greninja-battle-bond",
+    "types": [
+      11,
+      17
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10219": {
+    "name": "greninja-ash",
+    "types": [
+      11,
+      17
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10220": {
+    "name": "zygarde-10-power-construct",
+    "types": [
+      16,
+      5
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10221": {
+    "name": "zygarde-50-power-construct",
+    "types": [
+      16,
+      5
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10222": {
+    "name": "zygarde-complete",
+    "types": [
+      16,
+      5
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10223": {
+    "name": "gumshoos-totem",
+    "types": [
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10224": {
+    "name": "vikavolt-totem",
+    "types": [
+      7,
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10225": {
+    "name": "oricorio-pom-pom",
+    "types": [
+      13,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10226": {
+    "name": "oricorio-pau",
+    "types": [
+      14,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10227": {
+    "name": "oricorio-sensu",
+    "types": [
+      8,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10228": {
+    "name": "lycanroc-midnight",
+    "types": [
+      6
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10229": {
+    "name": "wishiwashi-school",
+    "types": [
+      11
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10230": {
+    "name": "lurantis-totem",
+    "types": [
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10231": {
+    "name": "salazzle-totem",
+    "types": [
+      4,
+      10
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10232": {
+    "name": "silvally-fighting",
+    "types": [
+      2
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10233": {
+    "name": "silvally-flying",
+    "types": [
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10234": {
+    "name": "silvally-poison",
+    "types": [
+      4
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10235": {
+    "name": "silvally-ground",
+    "types": [
+      5
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10236": {
+    "name": "silvally-rock",
+    "types": [
+      6
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10237": {
+    "name": "silvally-bug",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10238": {
+    "name": "silvally-ghost",
+    "types": [
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10239": {
+    "name": "silvally-steel",
+    "types": [
+      9
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10240": {
+    "name": "silvally-fire",
+    "types": [
+      10
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10241": {
+    "name": "silvally-water",
+    "types": [
+      11
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10242": {
+    "name": "silvally-grass",
+    "types": [
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10243": {
+    "name": "silvally-electric",
+    "types": [
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10244": {
+    "name": "silvally-psychic",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10245": {
+    "name": "silvally-ice",
+    "types": [
+      15
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10246": {
+    "name": "silvally-dragon",
+    "types": [
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10247": {
+    "name": "silvally-dark",
+    "types": [
+      17
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10248": {
+    "name": "silvally-fairy",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10249": {
+    "name": "minior-orange-meteor",
+    "types": [
+      6,
+      3
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10250": {
+    "name": "minior-yellow-meteor",
+    "types": [
+      6,
+      3
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10251": {
+    "name": "minior-green-meteor",
+    "types": [
+      6,
+      3
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10252": {
+    "name": "minior-blue-meteor",
+    "types": [
+      6,
+      3
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10253": {
+    "name": "minior-indigo-meteor",
+    "types": [
+      6,
+      3
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10254": {
+    "name": "minior-violet-meteor",
+    "types": [
+      6,
+      3
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10255": {
+    "name": "minior-red",
+    "types": [
+      6,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10256": {
+    "name": "minior-orange",
+    "types": [
+      6,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10257": {
+    "name": "minior-yellow",
+    "types": [
+      6,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10258": {
+    "name": "minior-green",
+    "types": [
+      6,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10259": {
+    "name": "minior-blue",
+    "types": [
+      6,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10260": {
+    "name": "minior-indigo",
+    "types": [
+      6,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10261": {
+    "name": "minior-violet",
+    "types": [
+      6,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10262": {
+    "name": "mimikyu-busted",
+    "types": [
+      8,
+      18
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10263": {
+    "name": "mimikyu-totem-disguised",
+    "types": [
+      8,
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10264": {
+    "name": "mimikyu-totem-busted",
+    "types": [
+      8,
+      18
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10265": {
+    "name": "kommo-o-totem",
+    "types": [
+      16,
+      2
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10266": {
+    "name": "magearna-original",
+    "types": [
+      9,
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10267": {
+    "name": "pikachu-partner-cap",
+    "types": [
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10268": {
+    "name": "marowak-totem",
+    "types": [
+      10,
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10269": {
+    "name": "mothim-sandy",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10270": {
+    "name": "mothim-trash",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10271": {
+    "name": "scatterbug-polar",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10272": {
+    "name": "scatterbug-tundra",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10273": {
+    "name": "scatterbug-continental",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10274": {
+    "name": "scatterbug-garden",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10275": {
+    "name": "scatterbug-elegant",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10276": {
+    "name": "scatterbug-meadow",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10277": {
+    "name": "scatterbug-modern",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10278": {
+    "name": "scatterbug-marine",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10279": {
+    "name": "scatterbug-archipelago",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10280": {
+    "name": "scatterbug-high-plains",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10281": {
+    "name": "scatterbug-sandstorm",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10282": {
+    "name": "scatterbug-river",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10283": {
+    "name": "scatterbug-monsoon",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10284": {
+    "name": "scatterbug-savanna",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10285": {
+    "name": "scatterbug-sun",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10286": {
+    "name": "scatterbug-ocean",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10287": {
+    "name": "scatterbug-jungle",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10288": {
+    "name": "scatterbug-fancy",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10289": {
+    "name": "scatterbug-poke-ball",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10290": {
+    "name": "spewpa-polar",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10291": {
+    "name": "spewpa-tundra",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10292": {
+    "name": "spewpa-continental",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10293": {
+    "name": "spewpa-garden",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10294": {
+    "name": "spewpa-elegant",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10295": {
+    "name": "spewpa-meadow",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10296": {
+    "name": "spewpa-modern",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10297": {
+    "name": "spewpa-marine",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10298": {
+    "name": "spewpa-archipelago",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10299": {
+    "name": "spewpa-high-plains",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10300": {
+    "name": "spewpa-sandstorm",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10301": {
+    "name": "spewpa-river",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10302": {
+    "name": "spewpa-monsoon",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10303": {
+    "name": "spewpa-savanna",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10304": {
+    "name": "spewpa-sun",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10305": {
+    "name": "spewpa-ocean",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10306": {
+    "name": "spewpa-jungle",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10307": {
+    "name": "spewpa-fancy",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10308": {
+    "name": "spewpa-poke-ball",
+    "types": [
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10309": {
+    "name": "ribombee-totem",
+    "types": [
+      7,
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10310": {
+    "name": "rockruff-own-tempo",
+    "types": [
+      6
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10311": {
+    "name": "lycanroc-dusk",
+    "types": [
+      6
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10312": {
+    "name": "araquanid-totem",
+    "types": [
+      11,
+      7
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10313": {
+    "name": "togedemaru-totem",
+    "types": [
+      13,
+      9
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10314": {
+    "name": "necrozma-dusk",
+    "types": [
+      14,
+      9
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10315": {
+    "name": "necrozma-dawn",
+    "types": [
+      14,
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10316": {
+    "name": "necrozma-ultra",
+    "types": [
+      14,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10317": {
+    "name": "pikachu-starter",
+    "types": [
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10318": {
+    "name": "eevee-starter",
+    "types": [
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10319": {
+    "name": "pikachu-world-cap",
+    "types": [
+      13
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10320": {
+    "name": "meowth-galar",
+    "types": [
+      9
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10321": {
+    "name": "ponyta-galar",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10322": {
+    "name": "rapidash-galar",
+    "types": [
+      14,
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10323": {
+    "name": "slowpoke-galar",
+    "types": [
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10324": {
+    "name": "slowbro-galar",
+    "types": [
+      4,
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10325": {
+    "name": "farfetchd-galar",
+    "types": [
+      2
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10326": {
+    "name": "weezing-galar",
+    "types": [
+      4,
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10327": {
+    "name": "mr-mime-galar",
+    "types": [
+      15,
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10328": {
+    "name": "articuno-galar",
+    "types": [
+      14,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10329": {
+    "name": "zapdos-galar",
+    "types": [
+      2,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10330": {
+    "name": "moltres-galar",
+    "types": [
+      17,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10331": {
+    "name": "slowking-galar",
+    "types": [
+      4,
+      14
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10332": {
+    "name": "corsola-galar",
+    "types": [
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10333": {
+    "name": "zigzagoon-galar",
+    "types": [
+      17,
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10334": {
+    "name": "linoone-galar",
+    "types": [
+      17,
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10335": {
+    "name": "darumaka-galar",
+    "types": [
+      15
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10336": {
+    "name": "darmanitan-galar-standard",
+    "types": [
+      15
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10337": {
+    "name": "darmanitan-galar-zen",
+    "types": [
+      15,
+      10
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10338": {
+    "name": "yamask-galar",
+    "types": [
+      5,
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10339": {
+    "name": "stunfisk-galar",
+    "types": [
+      5,
+      9
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10340": {
+    "name": "zygarde-10",
+    "types": [
+      16,
+      5
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10341": {
+    "name": "cramorant-gulping",
+    "types": [
+      3,
+      11
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10342": {
+    "name": "cramorant-gorging",
+    "types": [
+      3,
+      11
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10343": {
+    "name": "toxtricity-low-key",
+    "types": [
+      13,
+      4
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10344": {
+    "name": "sinistea-antique",
+    "types": [
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10345": {
+    "name": "polteageist-antique",
+    "types": [
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10346": {
+    "name": "alcremie-ruby-cream",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10347": {
+    "name": "alcremie-matcha-cream",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10348": {
+    "name": "alcremie-mint-cream",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10349": {
+    "name": "alcremie-lemon-cream",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10350": {
+    "name": "alcremie-salted-cream",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10351": {
+    "name": "alcremie-ruby-swirl",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10352": {
+    "name": "alcremie-caramel-swirl",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10353": {
+    "name": "alcremie-rainbow-swirl",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10354": {
+    "name": "eiscue-noice",
+    "types": [
+      15
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10355": {
+    "name": "indeedee-female",
+    "types": [
+      14,
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10356": {
+    "name": "morpeko-hangry",
+    "types": [
+      13,
+      17
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10357": {
+    "name": "zacian-crowned",
+    "types": [
+      18,
+      9
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10358": {
+    "name": "zamazenta-crowned",
+    "types": [
+      2,
+      9
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10359": {
+    "name": "eternatus-eternamax",
+    "types": [
+      4,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10360": {
+    "name": "urshifu-rapid-strike",
+    "types": [
+      2,
+      11
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10361": {
+    "name": "zarude-dada",
+    "types": [
+      17,
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10362": {
+    "name": "calyrex-ice",
+    "types": [
+      14,
+      15
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10363": {
+    "name": "calyrex-shadow",
+    "types": [
+      14,
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10364": {
+    "name": "venusaur-gmax",
+    "types": [
+      12,
+      4
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10365": {
+    "name": "charizard-gmax",
+    "types": [
+      10,
+      3
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10366": {
+    "name": "blastoise-gmax",
+    "types": [
+      11
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10367": {
+    "name": "butterfree-gmax",
+    "types": [
+      7,
+      3
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10368": {
+    "name": "pikachu-gmax",
+    "types": [
+      13
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10369": {
+    "name": "meowth-gmax",
+    "types": [
+      1
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10370": {
+    "name": "machamp-gmax",
+    "types": [
+      2
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10371": {
+    "name": "gengar-gmax",
+    "types": [
+      8,
+      4
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10372": {
+    "name": "kingler-gmax",
+    "types": [
+      11
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10373": {
+    "name": "lapras-gmax",
+    "types": [
+      11,
+      15
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10374": {
+    "name": "eevee-gmax",
+    "types": [
+      1
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10375": {
+    "name": "snorlax-gmax",
+    "types": [
+      1
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10376": {
+    "name": "garbodor-gmax",
+    "types": [
+      4
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10377": {
+    "name": "melmetal-gmax",
+    "types": [
+      9
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10378": {
+    "name": "rillaboom-gmax",
+    "types": [
+      12
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10379": {
+    "name": "cinderace-gmax",
+    "types": [
+      10
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10380": {
+    "name": "inteleon-gmax",
+    "types": [
+      11
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10381": {
+    "name": "corviknight-gmax",
+    "types": [
+      3,
+      9
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10382": {
+    "name": "orbeetle-gmax",
+    "types": [
+      7,
+      14
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10383": {
+    "name": "drednaw-gmax",
+    "types": [
+      11,
+      6
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10384": {
+    "name": "coalossal-gmax",
+    "types": [
+      6,
+      10
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10385": {
+    "name": "flapple-gmax",
+    "types": [
+      12,
+      16
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10386": {
+    "name": "appletun-gmax",
+    "types": [
+      12,
+      16
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10387": {
+    "name": "sandaconda-gmax",
+    "types": [
+      5
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10388": {
+    "name": "toxtricity-amped-gmax",
+    "types": [
+      13,
+      4
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10389": {
+    "name": "centiskorch-gmax",
+    "types": [
+      10,
+      7
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10390": {
+    "name": "hatterene-gmax",
+    "types": [
+      14,
+      18
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10391": {
+    "name": "grimmsnarl-gmax",
+    "types": [
+      17,
+      18
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10392": {
+    "name": "alcremie-gmax",
+    "types": [
+      18
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10393": {
+    "name": "copperajah-gmax",
+    "types": [
+      9
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10394": {
+    "name": "duraludon-gmax",
+    "types": [
+      9,
+      16
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10395": {
+    "name": "urshifu-single-strike-gmax",
+    "types": [
+      2,
+      17
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10396": {
+    "name": "urshifu-rapid-strike-gmax",
+    "types": [
+      2,
+      11
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10397": {
+    "name": "toxtricity-low-key-gmax",
+    "types": [
+      13,
+      4
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10398": {
+    "name": "growlithe-hisui",
+    "types": [
+      10,
+      6
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10399": {
+    "name": "arcanine-hisui",
+    "types": [
+      10,
+      6
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10400": {
+    "name": "voltorb-hisui",
+    "types": [
+      13,
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10401": {
+    "name": "electrode-hisui",
+    "types": [
+      13,
+      12
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10402": {
+    "name": "typhlosion-hisui",
+    "types": [
+      10,
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10403": {
+    "name": "qwilfish-hisui",
+    "types": [
+      17,
+      4
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10404": {
+    "name": "sneasel-hisui",
+    "types": [
+      2,
+      4
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10405": {
+    "name": "samurott-hisui",
+    "types": [
+      11,
+      17
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10406": {
+    "name": "lilligant-hisui",
+    "types": [
+      12,
+      2
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10407": {
+    "name": "zorua-hisui",
+    "types": [
+      1,
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10408": {
+    "name": "zoroark-hisui",
+    "types": [
+      1,
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10409": {
+    "name": "braviary-hisui",
+    "types": [
+      14,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10410": {
+    "name": "sliggoo-hisui",
+    "types": [
+      9,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10411": {
+    "name": "goodra-hisui",
+    "types": [
+      9,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10412": {
+    "name": "avalugg-hisui",
+    "types": [
+      15,
+      6
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10413": {
+    "name": "decidueye-hisui",
+    "types": [
+      12,
+      2
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10414": {
+    "name": "dialga-origin",
+    "types": [
+      9,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10415": {
+    "name": "palkia-origin",
+    "types": [
+      11,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10416": {
+    "name": "basculin-white-striped",
+    "types": [
+      11
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10417": {
+    "name": "basculegion-female",
+    "types": [
+      11,
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10418": {
+    "name": "enamorus-therian",
+    "types": [
+      18,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10419": {
+    "name": "tauros-paldea-combat-breed",
+    "types": [
+      2
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10420": {
+    "name": "tauros-paldea-blaze-breed",
+    "types": [
+      2,
+      10
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10421": {
+    "name": "tauros-paldea-aqua-breed",
+    "types": [
+      2,
+      11
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10422": {
+    "name": "wooper-paldea",
+    "types": [
+      4,
+      5
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10423": {
+    "name": "oinkologne-female",
+    "types": [
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10424": {
+    "name": "dudunsparce-three-segment",
+    "types": [
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10425": {
+    "name": "palafin-hero",
+    "types": [
+      11
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10426": {
+    "name": "maushold-family-of-three",
+    "types": [
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10427": {
+    "name": "tatsugiri-droopy",
+    "types": [
+      16,
+      11
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10428": {
+    "name": "tatsugiri-stretchy",
+    "types": [
+      16,
+      11
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10429": {
+    "name": "squawkabilly-blue-plumage",
+    "types": [
+      1,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10430": {
+    "name": "squawkabilly-yellow-plumage",
+    "types": [
+      1,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10431": {
+    "name": "squawkabilly-white-plumage",
+    "types": [
+      1,
+      3
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10432": {
+    "name": "gimmighoul-roaming",
+    "types": [
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10433": {
+    "name": "koraidon-limited-build",
+    "types": [
+      2,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10434": {
+    "name": "koraidon-sprinting-build",
+    "types": [
+      2,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10435": {
+    "name": "koraidon-swimming-build",
+    "types": [
+      2,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10436": {
+    "name": "koraidon-gliding-build",
+    "types": [
+      2,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10437": {
+    "name": "miraidon-low-power-mode",
+    "types": [
+      13,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10438": {
+    "name": "miraidon-drive-mode",
+    "types": [
+      13,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10439": {
+    "name": "miraidon-aquatic-mode",
+    "types": [
+      13,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10440": {
+    "name": "miraidon-glide-mode",
+    "types": [
+      13,
+      16
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10441": {
+    "name": "ursaluna-bloodmoon",
+    "types": [
+      5,
+      1
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10442": {
+    "name": "ogerpon-wellspring-mask",
+    "types": [
+      12,
+      11
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10443": {
+    "name": "ogerpon-hearthflame-mask",
+    "types": [
+      12,
+      10
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10444": {
+    "name": "ogerpon-cornerstone-mask",
+    "types": [
+      12,
+      6
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10445": {
+    "name": "terapagos-terastal",
+    "types": [
+      1
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10446": {
+    "name": "terapagos-stellar",
+    "types": [
+      1
+    ],
+    "battle_only": true,
+    "mega": false
+  },
+  "10447": {
+    "name": "poltchageist-artisan",
+    "types": [
+      12,
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10448": {
+    "name": "sinistcha-masterpiece",
+    "types": [
+      12,
+      8
+    ],
+    "battle_only": false,
+    "mega": false
+  }
+}
