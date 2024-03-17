@@ -1,10 +1,10 @@
 [
-  "hp",
-  "attack",
-  "defense",
-  "special-attack",
-  "special-defense",
-  "speed",
-  "accuracy",
-  "evasion"
+  "HP",
+  "Atk",
+  "Def",
+  "Sp.Atk",
+  "Sp.Def",
+  "Speed",
+  "Accuracy",
+  "Evasion"
 ]

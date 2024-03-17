@@ -2,6 +2,7 @@
 
 .container {
   @include flex-column;
+  @include white-transparent-card;
   align-items: center;
   justify-content: center;
 
