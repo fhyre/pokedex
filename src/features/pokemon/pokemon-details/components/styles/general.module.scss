@@ -1,9 +1,8 @@
 @use '@/styles/sass/abstracts' as *;
 
 .container {
-  @include fade-in(200ms);
-  @include flex-column;
-  @include white-transparent-card;
+  @extend %flex-column;
+  @extend %white-transparent-card;
   padding: var(--size-3);
   color: var(--text);
   font-size: var(--size-4);
@@ -29,11 +28,11 @@
   h2 {
     font-size: var(--size-4);
     font-weight: var(--font-weight-5);
-    filter: brightness(0.4);
+    filter: brightness(0.5);
   }
 
   p {
-    filter: brightness(0.4);
+    filter: brightness(0.5);
   }
 }
 
@@ -62,7 +61,7 @@
   }
 }
 
-@include media-query($small) {
+@include media-query($medium) {
   .container {
     font-size: var(--size-5);
     margin-inline-start: initial;

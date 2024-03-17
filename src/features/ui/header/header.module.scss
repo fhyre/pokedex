@@ -43,9 +43,3 @@
   height: 1.75rem;
   width: 1.75rem;
 }
-
-@include media-query($small) {
-  .searchBar {
-    margin-right: 1rem;
-  }
-}

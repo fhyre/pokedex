@@ -1,7 +1,7 @@
 @use '@/styles/sass/abstracts' as *;
 
 .container {
-  @include flex-column;
+  @extend %flex-column;
   align-items: center;
   justify-content: center;
 

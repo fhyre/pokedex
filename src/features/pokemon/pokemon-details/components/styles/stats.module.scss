@@ -1,8 +1,8 @@
 @use '@/styles/sass/abstracts' as *;
 
 .container {
-  @include flex-column;
-  @include white-transparent-card;
+  @extend %flex-column;
+  @extend %white-transparent-card;
   font-size: var(--font-size-4);
 }
 
@@ -14,11 +14,11 @@
   h2 {
     font-size: var(--size-4);
     font-weight: var(--font-weight-5);
-    filter: brightness(0.4);
+    filter: brightness(0.5);
   }
 
   p {
-    filter: brightness(0.4);
+    filter: brightness(0.5);
   }
 }
 
@@ -30,10 +30,10 @@
   height: var(--size-3);
   border-radius: var(--size-10);
   margin-inline: var(--size-3);
-  filter: brightness(0.8);
+  filter: brightness(0.9);
 }
 
-@include media-query($small) {
+@include media-query($medium) {
   .statRowContainer {
     h2 {
       font-size: var(--size-5);

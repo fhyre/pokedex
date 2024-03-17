@@ -22,92 +22,95 @@ export function PokemonDetails({ id }) {
   const strId = convertId(pokemon.id.toString());
   const type1 = getTypeColor(pokemon.types[0]);
   const type2 = getTypeColor(pokemon.types[1] && pokemon.types[1]);
-  const gradientStr = `linear-gradient(0deg, ${type1}, ${type2})`;
+  const gradientStr = `linear-gradient(90deg, ${type1}, ${type2})`;
 
   return (
     <>
       <Head>
         <title>{`${id} | ${upperCaseFirstLetter(pokemon.name)}`}</title>
       </Head>
-      <div
-        className={styles.gradientBg}
-        style={{
-          background: gradientStr,
-        }}
-      />
       <div className={styles.container}>
-        <Link
-          href="/"
-          className={styles.returnArrow}
+        <div
+          className={styles.gradientBg}
           style={{
-            color: type1,
-            mixBlendMode: 'screen',
+            background: gradientStr,
           }}
-        >
-          <Icon icon="mdi:arrow-left" />
-        </Link>
-        <h1 className={styles.heading}>{`about ${pokemon.name}`}</h1>
-        <div className={styles.pokeImgContainer}>
-          <div className={styles.pokeImgWrapper}>
-            {!imageLoading && (
-              <div
-                style={{
-                  color: type1,
-                }}
-              >
-                {pokemon.name.toUpperCase()}
-              </div>
-            )}
-            {imageLoading && (
-              <Icon
-                icon="line-md:loading-loop"
-                style={{
-                  width: 50,
-                  height: 50,
-                  color: type1,
-                  mixBlendMode: 'color-dodge',
-                }}
-              />
-            )}
+        />
+        {imageLoading ? (
+          <div className={styles.loadingContainer}>
+            <Icon
+              icon="line-md:loading-loop"
+              style={{
+                width: '50px',
+                height: '50px',
+                color: type1,
+                mixBlendMode: 'color-dodge',
+              }}
+            />
             <ImageWrapper
               imagePath={`https://poke-images.pages.dev/full-size/${strId}.png`}
               imageAlt={pokemon.name}
               quality={100}
-              width={600}
-              height={600}
-              styles={[styles.pokeImg]}
               onLoaded={() => setImageLoading(false)}
               loading={imageLoading}
               priority
             />
           </div>
-        </div>
-        <section className={styles.detailsContainer}>
-          <General
-            pokemon={pokemon}
-            gradientColor={gradientStr}
-            typeColor={type1}
-          />
-          <Stats pokemon={pokemon} typeColor={type1} />
-        </section>
+        ) : (
+          <div className={styles.contentContainer}>
+            <Link
+              href="/"
+              className={styles.returnArrow}
+              style={{
+                color: type1,
+                mixBlendMode: 'multiply',
+              }}
+            >
+              <Icon icon="mdi:arrow-left" />
+            </Link>
+            <h1 className={styles.heading}>{`about ${pokemon.name}`}</h1>
+            <div className={styles.pokeImgContainer}>
+              <div className={styles.pokeImgWrapper}>
+                <div
+                  style={{
+                    color: type1,
+                  }}
+                >
+                  {pokemon.name.toUpperCase()}
+                </div>
+                {imageLoading && (
+                  <Icon
+                    icon="line-md:loading-loop"
+                    style={{
+                      width: '50px',
+                      height: '50px',
+                      color: type1,
+                      mixBlendMode: 'color-dodge',
+                    }}
+                  />
+                )}
+                <ImageWrapper
+                  imagePath={`https://poke-images.pages.dev/full-size/${strId}.png`}
+                  imageAlt={pokemon.name}
+                  quality={100}
+                  styles={[styles.pokeImg]}
+                  onLoaded={() => setImageLoading(false)}
+                  loading={imageLoading}
+                  priority
+                />
+              </div>
+            </div>
+            <div className={styles.detailsContainer}>
+              <General
+                pokemon={pokemon}
+                gradientColor={gradientStr}
+                typeColor={type1}
+              />
+              <Stats pokemon={pokemon} typeColor={type1} />
+            </div>
+          </div>
+        )}
       </div>
     </>
   );
 }
-
-type TabNames =
-  | 'general'
-  | 'stats'
-  | 'moves'
-  | 'evolutions'
-  | 'forms'
-  | 'locations';
-
-const tabs: TabNames[] = [
-  'general',
-  'stats',
-  'moves',
-  'evolutions',
-  'forms',
-  'locations',
-];
