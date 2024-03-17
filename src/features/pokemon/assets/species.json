@@ -16632,7 +16632,8 @@
     "growth_rate": "slow",
     "switch_form": false,
     "varieties": [],
-    "egg_groups": ""
+    "egg_groups": "Plant Dragon",
+    "genus": "Candy Apple Pok\u00e9mon"
   },
   {
     "base_happiness": 0,
@@ -16647,7 +16648,8 @@
     "growth_rate": "slow",
     "switch_form": false,
     "varieties": [],
-    "egg_groups": ""
+    "egg_groups": "Mineral Indeterminate",
+    "genus": "Matcha Pok\u00e9mon"
   },
   {
     "base_happiness": 0,
@@ -16662,7 +16664,8 @@
     "growth_rate": "slow",
     "switch_form": false,
     "varieties": [],
-    "egg_groups": ""
+    "egg_groups": "Mineral Indeterminate",
+    "genus": "Matcha Pok\u00e9mon"
   },
   {
     "base_happiness": 0,
@@ -16677,7 +16680,8 @@
     "growth_rate": "slow",
     "switch_form": false,
     "varieties": [],
-    "egg_groups": ""
+    "egg_groups": "No-eggs",
+    "genus": "Retainer Pok\u00e9mon"
   },
   {
     "base_happiness": 0,
@@ -16692,7 +16696,8 @@
     "growth_rate": "slow",
     "switch_form": false,
     "varieties": [],
-    "egg_groups": ""
+    "egg_groups": "No-eggs",
+    "genus": "Retainer Pok\u00e9mon"
   },
   {
     "base_happiness": 0,
@@ -16707,7 +16712,8 @@
     "growth_rate": "slow",
     "switch_form": false,
     "varieties": [],
-    "egg_groups": ""
+    "egg_groups": "No-eggs",
+    "genus": "Retainer Pok\u00e9mon"
   },
   {
     "base_happiness": 0,
@@ -16726,7 +16732,8 @@
       10274,
       10275
     ],
-    "egg_groups": ""
+    "egg_groups": "No-eggs",
+    "genus": "Mask Pok\u00e9mon"
   },
   {
     "base_happiness": 50,

@@ -3,6 +3,8 @@ import abilities from '../assets/abilities.json';
 import forms from '../assets/forms.json';
 import stats from '../assets/stats.json';
 import pokeTypes from '../assets/types.json';
+import species from '../assets/species.json';
+import { IPokemon } from '../types';
 
 export function parseAllPokemon() {
   const MAX_POKEMON = 1025;
@@ -46,10 +48,12 @@ export function parseAllPokemon() {
       toAdd.types.push(pokeTypes[typeId - 1]);
     });
 
+    toAdd.species = species[i];
+
     parsed.push(toAdd);
   }
 
-  return parsed;
+  return parsed as IPokemon[];
 }
 
 interface IAbility {

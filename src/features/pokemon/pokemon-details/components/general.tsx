@@ -1,17 +1,11 @@
 import styles from './styles/general.module.scss';
 import { useEffect } from 'react';
-import { useSelector } from 'react-redux';
-import { RootState } from '@/store/index';
-import species from '../../assets/species.json';
 import { TypeIcon } from '../../pokemon-type-icon';
 import { upperCaseFirstLetter } from '@/utils';
+import { IPokemon } from '../../types';
 
-export function General({ id, gradientColor, typeColor }: GeneralProps) {
-  const { abilities, gen, height, weight, name, types } = useSelector(
-    (state: RootState) => state.pokemonData.data
-  )[id];
-
-  const speciesData = species[id];
+export function General({ pokemon, gradientColor, typeColor }: GeneralProps) {
+  const { id, abilities, gen, height, weight, name, types, species } = pokemon;
 
   useEffect(() => {
     const dataFields = document.querySelectorAll(`.${styles.container} > div`);
@@ -44,7 +38,7 @@ export function General({ id, gradientColor, typeColor }: GeneralProps) {
       </div>
       <div>
         <h2>Species</h2>
-        <p>{speciesData.genus}</p>
+        <p>{species.genus}</p>
       </div>
       <div>
         <h2>Type</h2>
@@ -91,7 +85,7 @@ export function General({ id, gradientColor, typeColor }: GeneralProps) {
 }
 
 interface GeneralProps {
-  id: number;
+  pokemon: IPokemon;
   gradientColor: string;
   typeColor: string;
 }

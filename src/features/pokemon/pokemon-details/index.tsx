@@ -14,6 +14,7 @@ export function PokemonDetails({ id }) {
   const pokemon = useSelector((state: RootState) => state.pokemonData.data)[
     id - 1
   ];
+
   const [imageLoading, setImageLoading] = useState(true);
 
   //*Variables
@@ -79,7 +80,11 @@ export function PokemonDetails({ id }) {
           </div>
         </div>
         <section className={styles.detailsContainer}>
-          <General id={id - 1} gradientColor={gradientStr} typeColor={type1} />
+          <General
+            pokemon={pokemon}
+            gradientColor={gradientStr}
+            typeColor={type1}
+          />
         </section>
       </div>
     </>
