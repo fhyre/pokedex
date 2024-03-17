@@ -37,6 +37,11 @@
   position: relative;
   width: 100%;
   min-height: 25vh;
+}
+
+.pokeImgWrapper {
+  @extend %flex-center;
+  position: relative;
 
   & div:first-child {
     position: absolute;
@@ -52,13 +57,9 @@
   }
 }
 
-.pokeImgWrapper {
-  @extend %flex-center;
-  position: relative;
-}
-
 .pokeImg {
   @include fade-in(300ms);
+  position: relative;
   width: 50%;
   height: auto;
   margin-block: var(--size-2);
@@ -81,8 +82,11 @@
   .pokeImgContainer {
     align-self: center;
     height: 100%;
+  }
+
+  .pokeImgWrapper {
     & div:first-child {
-      bottom: 5%;
+      bottom: -10%;
       letter-spacing: var(--font-letterspacing-5);
       font-size: var(--font-size-7);
     }
