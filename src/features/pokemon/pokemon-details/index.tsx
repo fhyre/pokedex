@@ -9,6 +9,7 @@ import { Icon } from '@iconify/react';
 import Head from 'next/head';
 import { General } from './components';
 import { upperCaseFirstLetter } from '@/utils';
+import { Stats } from './components/stats';
 
 export function PokemonDetails({ id }) {
   const pokemon = useSelector((state: RootState) => state.pokemonData.data)[
@@ -48,13 +49,15 @@ export function PokemonDetails({ id }) {
         <h1 className={styles.heading}>{`about ${pokemon.name}`}</h1>
         <div className={styles.pokeImgContainer}>
           <div className={styles.pokeImgWrapper}>
-            <div
-              style={{
-                color: type1,
-              }}
-            >
-              {pokemon.name.toUpperCase()}
-            </div>
+            {!imageLoading && (
+              <div
+                style={{
+                  color: type1,
+                }}
+              >
+                {pokemon.name.toUpperCase()}
+              </div>
+            )}
             {imageLoading && (
               <Icon
                 icon="line-md:loading-loop"
@@ -85,6 +88,7 @@ export function PokemonDetails({ id }) {
             gradientColor={gradientStr}
             typeColor={type1}
           />
+          <Stats pokemon={pokemon} />
         </section>
       </div>
     </>
