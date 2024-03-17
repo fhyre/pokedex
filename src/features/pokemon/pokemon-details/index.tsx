@@ -47,14 +47,14 @@ export function PokemonDetails({ id }) {
         </Link>
         <h1 className={styles.heading}>{`about ${pokemon.name}`}</h1>
         <div className={styles.pokeImgContainer}>
-          <div
-            style={{
-              color: type1,
-            }}
-          >
-            {pokemon.name.toUpperCase()}
-          </div>
           <div className={styles.pokeImgWrapper}>
+            <div
+              style={{
+                color: type1,
+              }}
+            >
+              {pokemon.name.toUpperCase()}
+            </div>
             {imageLoading && (
               <Icon
                 icon="line-md:loading-loop"
