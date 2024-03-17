@@ -4,7 +4,6 @@
   @include fade-in(200ms);
   @include flex-column;
   @include white-transparent-card;
-  margin-inline: var(--size-2);
   padding: var(--size-3);
   color: var(--text);
   font-size: var(--size-4);

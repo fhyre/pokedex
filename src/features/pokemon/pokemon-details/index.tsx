@@ -22,7 +22,7 @@ export function PokemonDetails({ id }) {
   const strId = convertId(pokemon.id.toString());
   const type1 = getTypeColor(pokemon.types[0]);
   const type2 = getTypeColor(pokemon.types[1] && pokemon.types[1]);
-  const gradientStr = `linear-gradient(180deg, ${type1}, ${type2})`;
+  const gradientStr = `linear-gradient(0deg, ${type1}, ${type2})`;
 
   return (
     <>
@@ -88,7 +88,7 @@ export function PokemonDetails({ id }) {
             gradientColor={gradientStr}
             typeColor={type1}
           />
-          <Stats pokemon={pokemon} />
+          <Stats pokemon={pokemon} typeColor={type1} />
         </section>
       </div>
     </>

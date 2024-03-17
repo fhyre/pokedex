@@ -71,6 +71,7 @@
   width: 100%;
   overflow: auto;
   padding-block-end: var(--size-2);
+  padding-inline: var(--size-2);
 }
 
 @include media-query($small) {
