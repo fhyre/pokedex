@@ -30,7 +30,7 @@ export function General({ pokemon, gradientColor, typeColor }: GeneralProps) {
     <section className={styles.container} style={{ color: typeColor }}>
       <div>
         <h2>ID</h2>
-        <p>{'#' + (id + 1)}</p>
+        <p>{'#' + id}</p>
       </div>
       <div>
         <h2>Name</h2>
