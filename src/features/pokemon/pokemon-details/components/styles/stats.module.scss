@@ -4,12 +4,14 @@
   @extend %flex-column;
   @extend %white-transparent-card;
   font-size: var(--font-size-4);
+  padding: var(--size-3);
+  gap: var(--size-7);
+  justify-content: center;
 }
 
 .statRowContainer {
   display: flex;
   align-items: center;
-  padding: var(--size-3);
 
   h2 {
     font-size: var(--size-4);
@@ -28,7 +30,7 @@
 
 .statProgress {
   height: var(--size-3);
-  border-radius: var(--size-10);
+  border-radius: var(--size-15);
   margin-inline: var(--size-3);
   filter: brightness(0.9);
 }
