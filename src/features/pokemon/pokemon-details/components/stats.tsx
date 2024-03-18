@@ -1,4 +1,4 @@
-import { useLayoutEffect } from 'react';
+import { useEffect, useLayoutEffect } from 'react';
 import { IPokemon } from '../../types';
 import styles from './styles/stats.module.scss';
 
@@ -24,7 +24,7 @@ export function Stats({ pokemon, typeColor }: StatsProps): JSX.Element {
       `.${styles.statProgress}`
     );
     stats.forEach((stat, i) => {
-      const growPercent = (stat.base_stat / maxBaseStat) * 94;
+      const growPercent = (stat.base_stat / maxBaseStat) * 91;
       (statProgressBars[i] as HTMLElement).setAttribute(
         'style',
         `
@@ -32,22 +32,25 @@ export function Stats({ pokemon, typeColor }: StatsProps): JSX.Element {
         background-color: ${typeColor};
         `
       );
-      const style: HTMLElement = document.createElement('style');
-      style.innerHTML = `
-        @keyframes progress-bar-grow {
+      const statAnimation = document.createElement('style');
+      statAnimation.className = 'statAnimation';
+
+      statAnimation.innerHTML = `
+        @keyframes progress-bar-grow-${i} {
           0% {
             width: 0;
           }
           100% {
-            width: ${growPercent};
+            width: ${growPercent}%;
           }
         }
         
-        .progress-bar-animation-${i} {
-          animation: progress-bar-grow 1s var(--ease-2);
+        .progress-bar-animation-${i}{
+          animation: progress-bar-grow-${i} 500ms var(--ease-1);
         }
       `;
-      document.head.appendChild(style);
+      document.head.appendChild(statAnimation);
+
       statProgressBars[i].classList.add(`progress-bar-animation-${i}`);
     });
   }, [maxBaseStat, stats, typeColor]);

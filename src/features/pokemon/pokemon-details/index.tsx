@@ -24,6 +24,13 @@ export function PokemonDetails({ id }) {
   const type2 = getTypeColor(pokemon.types[1] && pokemon.types[1]);
   const gradientStr = `linear-gradient(90deg, ${type1}, ${type2})`;
 
+  const handleNavigateBack = () => {
+    const classNamesToRemove = ['.statAnimation'];
+    document
+      .querySelectorAll(classNamesToRemove.join(' '))
+      .forEach((ele) => ele.remove());
+  };
+
   return (
     <>
       <Head>
@@ -65,6 +72,7 @@ export function PokemonDetails({ id }) {
                 color: type1,
                 mixBlendMode: 'multiply',
               }}
+              onClick={handleNavigateBack}
             >
               <Icon icon="mdi:arrow-left" />
             </Link>
