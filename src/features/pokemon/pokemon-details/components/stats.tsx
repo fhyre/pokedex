@@ -8,9 +8,7 @@ export function Stats({ pokemon, typeColor }: StatsProps): JSX.Element {
   const maxBaseStat = Math.max(...stats.map((stat) => stat.base_stat));
 
   useLayoutEffect(() => {
-    const statHeaders = document.querySelectorAll(
-      `.${styles.statRowContainer} h2`
-    );
+    const statHeaders = document.querySelectorAll(`.${styles.prefix}`);
     const largestWidth = Math.max(
       ...Array.from(statHeaders).map(
         (header) => header.getBoundingClientRect().width
@@ -24,7 +22,7 @@ export function Stats({ pokemon, typeColor }: StatsProps): JSX.Element {
       `.${styles.statProgress}`
     );
     stats.forEach((stat, i) => {
-      const growPercent = (stat.base_stat / maxBaseStat) * 91;
+      const growPercent = (stat.base_stat / maxBaseStat) * 100;
       (statProgressBars[i] as HTMLElement).setAttribute(
         'style',
         `
@@ -59,11 +57,13 @@ export function Stats({ pokemon, typeColor }: StatsProps): JSX.Element {
     <section className={styles.container}>
       {stats.map((stat) => (
         <div key={stat.name} className={styles.statRowContainer}>
-          <h2 style={{ color: typeColor }}>{stat.name}</h2>
+          <div className={styles.prefix}>
+            <h2 style={{ color: typeColor }}>{stat.name}</h2>
+            <p style={{ color: typeColor }}>{stat.base_stat}</p>
+          </div>
           <div className={styles.statProgressContainer}>
             <div className={styles.statProgress} />
           </div>
-          <p style={{ color: typeColor }}>{stat.base_stat}</p>
         </div>
       ))}
     </section>

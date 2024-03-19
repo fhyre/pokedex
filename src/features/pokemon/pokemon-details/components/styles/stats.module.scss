@@ -5,24 +5,32 @@
   @extend %white-transparent-card;
   font-size: var(--font-size-4);
   padding: var(--size-3);
-  gap: var(--size-7);
-  justify-content: center;
+  gap: var(--size-4);
 }
 
 .statRowContainer {
   display: flex;
   align-items: center;
+  gap: var(--size-4);
 
   h2 {
-    font-size: var(--size-4);
-    font-weight: var(--font-weight-5);
     filter: brightness(0.5);
     text-align: right;
+    font-size: var(--size-4);
+    font-weight: var(--font-weight-5);
   }
 
   p {
     filter: brightness(0.5);
+    font-size: var(--size-4);
+    font-weight: var(--font-weight-5);
   }
+}
+
+.prefix {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--size-3);
 }
 
 .statProgressContainer {
@@ -32,13 +40,16 @@
 .statProgress {
   height: var(--size-3);
   border-radius: var(--size-15);
-  margin-inline: var(--size-3);
   filter: brightness(0.9);
 }
 
 @include media-query($medium) {
   .statRowContainer {
     h2 {
+      font-size: var(--size-5);
+    }
+
+    p {
       font-size: var(--size-5);
     }
   }
