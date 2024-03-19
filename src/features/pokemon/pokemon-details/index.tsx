@@ -1,5 +1,5 @@
 import styles from './pokemon-details.module.scss';
-import { convertId, getTypeColor } from '../utils';
+import { convertId, electric, getTypeColor } from '../utils';
 import { useState } from 'react';
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
@@ -20,9 +20,12 @@ export function PokemonDetails({ id }) {
 
   //*Variables
   const strId = convertId(pokemon.id.toString());
-  const type1 = getTypeColor(pokemon.types[0]);
-  const type2 = getTypeColor(pokemon.types[1] && pokemon.types[1]);
-  const gradientStr = `linear-gradient(90deg, ${type1}, ${type2})`;
+  const type1Color = getTypeColor(pokemon.types[0]);
+  const type2Color = getTypeColor(pokemon.types[1] && pokemon.types[1]);
+  const gradientStr = `linear-gradient(90deg, ${type1Color}, ${type2Color})`;
+  const electricIndex = [type1Color, type2Color].indexOf(electric);
+  const textColor =
+    electricIndex === -1 || electricIndex === 1 ? type1Color : type2Color;
 
   return (
     <>
@@ -43,7 +46,7 @@ export function PokemonDetails({ id }) {
               style={{
                 width: '50px',
                 height: '50px',
-                color: type1,
+                color: type1Color,
                 mixBlendMode: 'color-dodge',
               }}
             />
@@ -62,7 +65,7 @@ export function PokemonDetails({ id }) {
               href="/"
               className={styles.returnArrow}
               style={{
-                color: type1,
+                color: type1Color,
                 mixBlendMode: 'multiply',
               }}
             >
@@ -73,7 +76,7 @@ export function PokemonDetails({ id }) {
               <div className={styles.pokeImgWrapper}>
                 <div
                   style={{
-                    color: type1,
+                    color: type1Color,
                   }}
                 >
                   {pokemon.name.toUpperCase()}
@@ -84,7 +87,7 @@ export function PokemonDetails({ id }) {
                     style={{
                       width: '50px',
                       height: '50px',
-                      color: type1,
+                      color: type1Color,
                       mixBlendMode: 'color-dodge',
                     }}
                   />
@@ -104,9 +107,9 @@ export function PokemonDetails({ id }) {
               <General
                 pokemon={pokemon}
                 gradientColor={gradientStr}
-                typeColor={type1}
+                typeColor={textColor}
               />
-              <Stats pokemon={pokemon} typeColor={type1} />
+              <Stats pokemon={pokemon} typeColor={textColor} />
             </div>
           </div>
         )}

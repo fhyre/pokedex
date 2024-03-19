@@ -1,61 +1,61 @@
-const normal = "#929ca2";
-const fighting = "#ce406a";
-const flying = "#8fa9de";
-const poison = "#ab6ac8";
-const ground = "#d97845";
-const rock = "#c5b68d";
-const bug = "#91c02e";
-const ghost = "#5269ad";
-const steel = "#5b8ea3";
-const fire = "#ff9c54";
-const water = "#5191d6";
-const grass = "#62bc5b";
-const electric = "#f5d23d";
-const psychic = "#fa7078";
-const ice = "#72cfc0";
-const dragon = "#0a6cc3";
-const dark = "#5a5564";
-const fairy = "#ec8fe6";
+const normal = '#929ca2';
+const fighting = '#ce406a';
+const flying = '#8fa9de';
+const poison = '#ab6ac8';
+const ground = '#d97845';
+const rock = '#c5b68d';
+const bug = '#91c02e';
+const ghost = '#5269ad';
+const steel = '#5b8ea3';
+const fire = '#ff9c54';
+const water = '#5191d6';
+const grass = '#62bc5b';
+export const electric = '#f5d23d';
+const psychic = '#fa7078';
+const ice = '#72cfc0';
+const dragon = '#0a6cc3';
+const dark = '#5a5564';
+const fairy = '#ec8fe6';
 
 export const getTypeColor = (typing: string): string => {
   switch (typing) {
-    case "normal":
+    case 'normal':
       return normal;
-    case "fighting":
+    case 'fighting':
       return fighting;
-    case "flying":
+    case 'flying':
       return flying;
-    case "poison":
+    case 'poison':
       return poison;
-    case "ground":
+    case 'ground':
       return ground;
-    case "rock":
+    case 'rock':
       return rock;
-    case "bug":
+    case 'bug':
       return bug;
-    case "ghost":
+    case 'ghost':
       return ghost;
-    case "steel":
+    case 'steel':
       return steel;
-    case "fire":
+    case 'fire':
       return fire;
-    case "water":
+    case 'water':
       return water;
-    case "grass":
+    case 'grass':
       return grass;
-    case "electric":
+    case 'electric':
       return electric;
-    case "psychic":
+    case 'psychic':
       return psychic;
-    case "ice":
+    case 'ice':
       return ice;
-    case "dragon":
+    case 'dragon':
       return dragon;
-    case "dark":
+    case 'dark':
       return dark;
-    case "fairy":
+    case 'fairy':
       return fairy;
     default:
-      return "#d4d4d4";
+      return '#adb5bd';
   }
 };
