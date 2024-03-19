@@ -24,7 +24,7 @@ export function PokemonDetails({ id }) {
   const type2Color = getTypeColor(pokemon.types[1] && pokemon.types[1]);
   const gradientStr = `linear-gradient(90deg, ${type1Color}, ${type2Color})`;
   const electricIndex = [type1Color, type2Color].indexOf(electric);
-  const textColor =
+  const readableColor =
     electricIndex === -1 || electricIndex === 1 ? type1Color : type2Color;
 
   return (
@@ -39,21 +39,30 @@ export function PokemonDetails({ id }) {
             background: gradientStr,
           }}
         />
+        <nav className={styles.returnArrowContainer}>
+          <Link
+            href="/"
+            style={{
+              color: readableColor,
+              mixBlendMode: 'color-burn',
+            }}
+            about="Return to home page"
+          >
+            <Icon icon="mdi:arrow-left" />
+          </Link>
+        </nav>
         {imageLoading ? (
           <div className={styles.loadingContainer}>
             <Icon
               icon="line-md:loading-loop"
               style={{
-                width: '50px',
-                height: '50px',
-                color: type1Color,
-                mixBlendMode: 'color-dodge',
+                color: readableColor,
               }}
             />
             <ImageWrapper
               imagePath={`https://poke-images.pages.dev/full-size/${strId}.png`}
               imageAlt={pokemon.name}
-              quality={100}
+              quality={0}
               onLoaded={() => setImageLoading(false)}
               loading={imageLoading}
               priority
@@ -61,16 +70,6 @@ export function PokemonDetails({ id }) {
           </div>
         ) : (
           <div className={styles.contentContainer}>
-            <Link
-              href="/"
-              className={styles.returnArrow}
-              style={{
-                color: type1Color,
-                mixBlendMode: 'multiply',
-              }}
-            >
-              <Icon icon="mdi:arrow-left" />
-            </Link>
             <h1 className={styles.heading}>{`about ${pokemon.name}`}</h1>
             <div className={styles.pokeImgContainer}>
               <div className={styles.pokeImgWrapper}>
@@ -107,9 +106,9 @@ export function PokemonDetails({ id }) {
               <General
                 pokemon={pokemon}
                 gradientColor={gradientStr}
-                typeColor={textColor}
+                typeColor={readableColor}
               />
-              <Stats pokemon={pokemon} typeColor={textColor} />
+              <Stats pokemon={pokemon} typeColor={readableColor} />
             </div>
           </div>
         )}
