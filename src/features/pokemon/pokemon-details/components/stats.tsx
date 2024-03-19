@@ -10,9 +10,9 @@ export function Stats({ pokemon, typeColor }: StatsProps): JSX.Element {
   useLayoutEffect(() => {
     const statHeaders = document.querySelectorAll(`.${styles.prefix}`);
     const largestWidth = Math.max(
-      ...Array.from(statHeaders).map(
-        (header) => header.getBoundingClientRect().width
-      )
+      ...Array.from(statHeaders)
+        .slice(0, statHeaders.length - 1)
+        .map((header) => header.getBoundingClientRect().width)
     );
     statHeaders.forEach(
       (header) => ((header as HTMLElement).style.width = `${largestWidth}px`)
@@ -66,6 +66,12 @@ export function Stats({ pokemon, typeColor }: StatsProps): JSX.Element {
           </div>
         </div>
       ))}
+      <div className={styles.prefix}>
+        <h2 style={{ color: typeColor }}>Total</h2>
+        <p style={{ color: typeColor }}>
+          {pokemon.stats.reduce((accu, curr) => accu + curr.base_stat, 0)}
+        </p>
+      </div>
     </section>
   );
 }

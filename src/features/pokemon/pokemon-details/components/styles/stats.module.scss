@@ -12,10 +12,15 @@
   display: flex;
   align-items: center;
   gap: var(--size-4);
+}
+
+.prefix {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--size-4);
 
   h2 {
     filter: brightness(0.5);
-    text-align: right;
     font-size: var(--size-4);
     font-weight: var(--font-weight-5);
   }
@@ -25,12 +30,6 @@
     font-size: var(--size-4);
     font-weight: var(--font-weight-5);
   }
-}
-
-.prefix {
-  display: flex;
-  justify-content: space-between;
-  gap: var(--size-3);
 }
 
 .statProgressContainer {
@@ -44,7 +43,7 @@
 }
 
 @include media-query($medium) {
-  .statRowContainer {
+  .prefix {
     h2 {
       font-size: var(--size-5);
     }
