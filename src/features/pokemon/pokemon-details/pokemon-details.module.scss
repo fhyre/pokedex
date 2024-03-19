@@ -67,7 +67,7 @@
 
 .pokeImg {
   position: relative;
-  width: 50%;
+  width: 40%;
   height: auto;
   user-select: none;
 }
@@ -96,5 +96,9 @@
     & > section {
       flex-basis: 35%;
     }
+  }
+
+  .pokeImg {
+    width: 50%;
   }
 }
