@@ -1,1 +1,2 @@
-export { General } from './general';
+export * from './general';
+export * from './stats';

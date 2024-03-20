@@ -1,24 +1,20 @@
 import styles from './pokemon-details.module.scss';
 import { convertId, electric, getTypeColor } from '../utils';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store/index';
 import { ImageWrapper } from '@/features/ui/image-wrapper';
 import { Icon } from '@iconify/react';
 import Head from 'next/head';
-import { General } from './components';
+import { General, Stats } from './components';
 import { upperCaseFirstLetter } from '@/utils';
-import { Stats } from './components/stats';
 
 export function PokemonDetails({ id }) {
   const pokemon = useSelector((state: RootState) => state.pokemonData.data)[
     id - 1
   ];
 
-  const [imageLoading, setImageLoading] = useState(true);
-
-  //*Variables
   const strId = convertId(pokemon.id.toString());
   const type1Color = getTypeColor(pokemon.types[0]);
   const type2Color = getTypeColor(pokemon.types[1] && pokemon.types[1]);
@@ -26,6 +22,20 @@ export function PokemonDetails({ id }) {
   const electricIndex = [type1Color, type2Color].indexOf(electric);
   const readableColor =
     electricIndex === -1 || electricIndex === 1 ? type1Color : type2Color;
+
+  const [imageLoading, setImageLoading] = useState(true);
+
+  useEffect(() => {
+    if (!imageLoading) {
+      document
+        .querySelectorAll(`.${styles.detailsContainer} > section`)
+        .forEach((el) => {
+          (
+            el as HTMLElement
+          ).style.boxShadow = `${readableColor} 0px 0px 5px 0px`;
+        });
+    }
+  }, [imageLoading]);
 
   return (
     <>
