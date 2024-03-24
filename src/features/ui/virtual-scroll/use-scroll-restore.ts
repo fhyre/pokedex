@@ -1,20 +1,24 @@
 import { useEffect, useState } from 'react';
 
-export function useScrollRestore(): [() => void, number] {
+export function useScrollRestore(): [number] {
   const [scrollPos, setScrollPos] = useState(0);
-  const onBeforeUnload = () => {
+
+  const resetScroll = () => {
     sessionStorage.clear();
     setScrollPos(0);
   };
 
   useEffect(() => {
-    const scrollPos = sessionStorage.getItem('scrollPos');
-    if (scrollPos) setScrollPos(Number(scrollPos));
+    setScrollPos(Number(sessionStorage.getItem('scrollPos') || 0));
+  });
 
-    window.addEventListener('beforeunload', onBeforeUnload);
+  useEffect(() => {
+    if (scrollPos) setScrollPos(scrollPos);
 
-    return () => window.removeEventListener('beforeunload', onBeforeUnload);
-  }, []);
+    window.addEventListener('beforeunload', resetScroll);
 
-  return [onBeforeUnload, scrollPos];
+    return () => window.removeEventListener('beforeunload', resetScroll);
+  }, [scrollPos]);
+
+  return [scrollPos];
 }

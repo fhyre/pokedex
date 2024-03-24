@@ -70,3 +70,10 @@ export interface IPokeTypes {
   type: Types;
   status?: 'physical' | 'special' | 'status';
 }
+
+// TODO: base stats below or over a range
+export interface IFilters {
+  query: string;
+  generations: number[];
+  types: Types[];
+}

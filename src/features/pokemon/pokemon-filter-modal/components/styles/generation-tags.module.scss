@@ -1,0 +1,18 @@
+@use '@/styles/sass/abstracts' as *;
+
+.container {
+  @extend %flex-column;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-2);
+
+  & > button {
+    border-radius: var(--size-5);
+    padding-inline: var(--size-2);
+    padding-block: var(--size-1);
+    border: 1px solid var(--gray-5);
+  }
+}

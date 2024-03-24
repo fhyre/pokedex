@@ -6,21 +6,18 @@ import { useSelector } from 'react-redux';
 import { NotFound } from '@/features/ui';
 import { PokemonListCard } from '../pokemon-list-card';
 import { useScrollRestore } from '@/features/ui/virtual-scroll/use-scroll-restore';
-import { useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 
 export function PokemonList() {
-  const searchQ = useSelector((state: RootState) => state.pokemonData.query);
-  const allPokemon = useSelector((state: RootState) => state.pokemonData.data);
+  const { data } = useSelector((state: RootState) => state.pokemonData);
 
-  const [clearSessionStorage, prevScrollPos] = useScrollRestore();
+  const params = useSearchParams();
+  const searchQuery = params.get('query') || '';
+  const generations = JSON.parse(params.get('generations')) || [];
 
-  useEffect(() => {
-    if (searchQ.length > 0) {
-      clearSessionStorage();
-    }
-  }, [searchQ, clearSessionStorage]);
+  const [prevScrollPos] = useScrollRestore();
 
-  const handleNodeClick = () => {
+  const handlePokemonClick = () => {
     const virtualScrollContainer = document.getElementById('virtual-scroll');
 
     sessionStorage.setItem(
@@ -29,19 +26,22 @@ export function PokemonList() {
     );
   };
 
-  const filtered = allPokemon
-    .filter(
-      (poke) =>
-        poke.name.includes(searchQ.toLowerCase()) ||
-        poke.id.toString().includes(searchQ)
-    )
+  const filtered = data
+    .filter(({ gen }) => {
+      if (generations.length === 0) return true;
+      return generations.includes(gen);
+    })
+    .filter(({ name }) => {
+      if (searchQuery.length === 0) return true;
+      return name.includes(searchQuery);
+    })
     .map((poke) => {
       return (
         <Link
           href={`/pokemon/${poke.id}`}
           style={{ textDecoration: 'none' }}
           key={poke.id + ' ' + poke.name}
-          onClick={handleNodeClick}
+          onClick={handlePokemonClick}
           tabIndex={-1}
         >
           <PokemonListCard {...poke} />
@@ -55,7 +55,7 @@ export function PokemonList() {
       data={filtered}
       offset={48}
       FallbackComp={NotFound}
-      prevScrollPos={searchQ.length > 0 ? Math.random() : prevScrollPos}
+      prevScrollPos={prevScrollPos}
     />
   );
 }

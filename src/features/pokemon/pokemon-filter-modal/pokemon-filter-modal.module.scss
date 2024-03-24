@@ -1,0 +1,61 @@
+@use '@/styles/sass/abstracts' as *;
+
+.container {
+  width: 600px;
+  background-color: var(--card-bg);
+  border-radius: var(--size-3);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  padding: var(--size-3);
+
+  h2 {
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-5);
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  svg {
+    width: var(--size-5);
+    height: auto;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--red-7);
+      transition: color 300ms;
+    }
+  }
+}
+
+.content {
+  @extend %flex-column;
+  margin-block: var(--size-3);
+}
+
+.innerContent {
+  @extend %flex-column;
+  padding-block-start: var(--size-3);
+  gap: var(--size-3);
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--size-3);
+
+  button:first-child {
+    background-color: var(--gray-2);
+    color: var(--gray-7);
+  }
+
+  button {
+    border-radius: var(--size-5);
+    padding-inline: var(--size-3);
+    padding-block: var(--size-1);
+    background-color: var(--blue-5);
+    color: var(--gray-1);
+  }
+}

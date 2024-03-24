@@ -27,7 +27,7 @@ const VirtualScroll = memo(
     // Set node data
     useEffect(() => {
       setNodeDetails(formatNodeData(nodeContainerRef, data.length));
-    }, [nodeClientWidth, data]);
+    }, [nodeClientWidth, data.length]);
 
     useEffect(() => {
       const onResize = () =>
@@ -36,26 +36,22 @@ const VirtualScroll = memo(
       window.addEventListener('resize', onResize);
 
       return () => window.removeEventListener('resize', onResize);
-    }, [containerRef, nodeDetails, data]);
+    }, [containerRef, data.length]);
 
     // Set scroll position on reload
     useEffect(() => {
       let timer: NodeJS.Timeout | null;
-      if (
-        containerRef.current &&
-        prevScrollPos !== null &&
-        prevScrollPos !== undefined &&
-        prevScrollPos >= 0
-      ) {
-        timer = setTimeout(() => {
+      if (containerRef.current) {
+        if (prevScrollPos > virtStyles.height) {
+          containerRef.current.scroll(0, 0);
+        } else {
           containerRef.current.scroll(0, prevScrollPos);
-        }, 50);
+        }
       }
-
       return () => {
         if (timer) clearTimeout(timer);
       };
-    }, [containerRef, prevScrollPos]);
+    }, [containerRef, prevScrollPos, virtStyles.height]);
 
     useEffect(() => {
       const calcData = (): void => {
@@ -92,13 +88,13 @@ const VirtualScroll = memo(
 
         setVirtStyles((prev) => ({
           ...prev,
-          offsetY: startingRow * nodeDetails.nodeHeight,
+          offsetY: startingRow * nodeDetails.nodeHeight || 0,
         }));
       };
 
       calcData();
       nodesInView();
-    }, [data, scrollTop, containerRef, nodeDetails]);
+    }, [data.length, scrollTop, containerRef, nodeDetails]);
 
     return (
       <div

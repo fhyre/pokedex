@@ -17,7 +17,7 @@ export function UrlChangeListener() {
     return () => {
       router.events.off('routeChangeStart', handleRouteChangeStart);
     };
-  }, []);
+  }, [router.events]);
 
   return <></>;
 }

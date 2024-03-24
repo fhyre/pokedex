@@ -1,7 +1,6 @@
 import styles from './pokemon-details.module.scss';
 import { convertId, electric, getTypeColor } from '../utils';
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store/index';
 import { ImageWrapper } from '@/features/ui/image-wrapper';
@@ -9,8 +8,10 @@ import { Icon } from '@iconify/react';
 import Head from 'next/head';
 import { General, Stats } from './components';
 import { upperCaseFirstLetter } from '@/utils';
+import { useRouter } from 'next/router';
 
 export function PokemonDetails({ id }) {
+  const router = useRouter();
   const pokemon = useSelector((state: RootState) => state.pokemonData.data)[
     id - 1
   ];
@@ -35,7 +36,17 @@ export function PokemonDetails({ id }) {
           ).style.boxShadow = `${readableColor} 0px 0px 5px 0px`;
         });
     }
-  }, [imageLoading]);
+  }, [imageLoading, readableColor]);
+
+  const handleBack = () => {
+    const history = window.history;
+    console.log(history[-1]);
+    if (history.length === 0 || (history.length === 2 && history[-2] !== '/')) {
+      router.push('/');
+    } else {
+      router.back();
+    }
+  };
 
   return (
     <>
@@ -50,16 +61,16 @@ export function PokemonDetails({ id }) {
           }}
         />
         <nav className={styles.returnArrowContainer}>
-          <Link
-            href="/"
+          <button
+            onClick={handleBack}
             style={{
               color: readableColor,
               mixBlendMode: 'color-burn',
             }}
-            about="Return to home page"
+            about="Return to previous page"
           >
             <Icon icon="mdi:arrow-left" />
-          </Link>
+          </button>
         </nav>
         {imageLoading ? (
           <div className={styles.loadingContainer}>

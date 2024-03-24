@@ -1,17 +1,15 @@
-import styles from './search-bar.module.css';
+import styles from './search-bar.module.scss';
 import { CSSProperties } from 'react';
-import { useDebounce } from './use-debounce';
 import { Icon } from '@iconify/react';
 
 interface ISearchBar {
-  cb: (res: string) => object;
+  currentValue: string;
+  cb: (res: string) => void;
   style?: CSSProperties;
   className?: string;
 }
 
-export function SearchBar({ cb, style, className }: ISearchBar) {
-  const [setDebounce] = useDebounce({ cb: cb });
-
+export function SearchBar({ currentValue, cb, style, className }: ISearchBar) {
   return (
     <div
       role="search"
@@ -23,8 +21,9 @@ export function SearchBar({ cb, style, className }: ISearchBar) {
       <input
         type="text"
         placeholder="Search"
-        onChange={(e) => setDebounce(e.target.value)}
+        onChange={(e) => cb(e.target.value)}
         tabIndex={0}
+        value={currentValue}
       />
     </div>
   );

@@ -1,45 +1,64 @@
 @use '@/styles/sass/abstracts' as *;
 
 .container {
-  position: sticky;
   display: flex;
-  align-items: center;
-  text-align: center;
-  padding: 0.25rem;
+  justify-self: center;
+  position: sticky;
   top: 0;
   z-index: 1;
+  text-align: center;
+  padding: 0.25rem;
   user-select: none;
   height: 3rem;
   background-color: var(--background);
-  box-shadow: $blue-gray-shadow;
+  box-shadow: $black-box-shadow;
 }
 
 .hideText {
   @extend %hide-text;
 }
 
-.drawerWrapper {
-  display: flex;
-  flex: 1;
-  visibility: hidden;
-}
-
-.searchBarWrapper {
-  display: flex;
-  flex: 1;
-  justify-content: flex-end;
-}
-
 .mainIcon {
+  margin-inline: auto;
   width: var(--size-8);
   height: auto;
+
+  &:hover {
+    animation: var(--animation-shake-x);
+  }
 }
 
-.searchBar {
-  margin-left: 1rem;
+.filterIconContainer {
+  position: absolute;
+  right: 0;
+
+  button {
+    position: relative;
+    position: absolute;
+    top: var(--size-1);
+    right: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--blue-1);
+    padding: var(--size-2);
+    border-radius: var(--size-3);
+    margin-inline-end: var(--size-2);
+
+    svg {
+      width: var(--size-3);
+      height: auto;
+      color: var(--blue-10);
+    }
+  }
 }
 
-.hamburgerIcon {
-  height: 1.75rem;
-  width: 1.75rem;
+.dotIcon {
+  position: absolute;
+  right: 0;
+  top: 1px;
+  width: var(--size-2);
+  height: var(--size-2);
+  background-color: var(--red-5);
+  border-radius: var(--size-15);
 }

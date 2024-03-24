@@ -1,15 +1,15 @@
 .container {
-  border-radius: var(--size-1);
+  border-radius: var(--size-15);
   display: flex;
   padding: var(--size-1);
-  background-color: var(--gray-3);
+  background-color: var(--gray-2);
   align-items: center;
 }
 
 .container > input {
   border-style: hidden;
   background-color: transparent;
-  font-weight: 300;
+  font-weight: var(--font-weight-3);
   font-size: var(--size-3);
   font-family: inherit;
   margin-inline: var(--size-1);
@@ -21,12 +21,12 @@
 }
 
 .container:has(input:hover) {
-  transition: background-color ease-in-out 300ms;
-  background-color: var(--gray-4);
+  transition: background-color 300ms var(--ease-2);
+  background-color: var(--gray-3);
 }
 
 .container:has(input:focus) {
-  background-color: var(--gray-4);
+  background-color: var(--gray-3);
 }
 
 .container > input::placeholder {
