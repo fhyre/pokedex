@@ -31,9 +31,12 @@ export function PokemonList() {
       if (generations.length === 0) return true;
       return generations.includes(gen);
     })
-    .filter(({ name }) => {
+    .filter(({ id, name }) => {
       if (searchQuery.length === 0) return true;
-      return name.includes(searchQuery);
+      return (
+        id.toString().includes(searchQuery) ||
+        name.includes(searchQuery.toLowerCase())
+      );
     })
     .map((poke) => {
       return (
