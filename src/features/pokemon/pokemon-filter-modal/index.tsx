@@ -7,6 +7,7 @@ import { IFilters } from '../types';
 import { GenerationTags } from './components/generation-tags';
 import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/router';
+import { EFilterAction } from '../enums';
 
 export function PokemonFilterModal({
   setModalVisible,
@@ -42,19 +43,23 @@ export function PokemonFilterModal({
         <div className={styles.content}>
           <SearchBar
             currentValue={state.query}
-            cb={(val) => dispatch({ type: 'setSearchQuery', payload: val })}
+            cb={(val) =>
+              dispatch({ type: EFilterAction.SET_SEARCH_QUERY, payload: val })
+            }
           />
           <div className={styles.innerContent}>
             <GenerationTags
               setGeneration={(gen) =>
-                dispatch({ type: 'setGenerations', payload: gen })
+                dispatch({ type: EFilterAction.SET_GENERATION, payload: gen })
               }
               currSelectedGenerations={state.generations}
             />
           </div>
         </div>
         <div className={styles.footer}>
-          <button onClick={() => dispatch({ type: 'clearFilters' })}>
+          <button
+            onClick={() => dispatch({ type: EFilterAction.CLEAR_FILTERS })}
+          >
             Clear Filters
           </button>
           <button onClick={handleApply}>Apply</button>
@@ -66,9 +71,9 @@ export function PokemonFilterModal({
 
 function filterReducer(state: IFilters, action: FilterAction) {
   switch (action.type) {
-    case 'setSearchQuery':
+    case EFilterAction.SET_SEARCH_QUERY:
       return { ...state, query: action.payload };
-    case 'setGenerations':
+    case EFilterAction.SET_GENERATION:
       const newGenerations = new Set(state.generations);
       if (newGenerations.has(action.payload)) {
         newGenerations.delete(action.payload);
@@ -76,7 +81,7 @@ function filterReducer(state: IFilters, action: FilterAction) {
         newGenerations.add(action.payload);
       }
       return { ...state, generations: Array.from(newGenerations) };
-    case 'clearFilters':
+    case EFilterAction.CLEAR_FILTERS:
       return { ...state, generations: [], query: '' };
     default:
       return state;
@@ -103,13 +108,13 @@ interface IPokemonFilterModalProps {
 
 type FilterAction =
   | {
-      type: 'setSearchQuery';
+      type: EFilterAction.SET_SEARCH_QUERY;
       payload: string;
     }
   | {
-      type: 'setGenerations';
+      type: EFilterAction.SET_GENERATION;
       payload: number;
     }
   | {
-      type: 'clearFilters';
+      type: EFilterAction.CLEAR_FILTERS;
     };

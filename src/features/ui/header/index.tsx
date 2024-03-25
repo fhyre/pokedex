@@ -21,7 +21,7 @@ export function Header() {
           styles={[styles.mainIcon]}
         />
         <div className={styles.filterIconContainer}>
-          <button onClick={() => setModalVisible(true)} about="Open Filters">
+          <button onClick={() => setModalVisible(true)} title="Open Filters">
             {searchParams.size > 0 && <div className={styles.dotIcon} />}
             <Icon icon="iconoir:filter-solid" />
           </button>

@@ -2,11 +2,6 @@ import styles from './type-icon.module.scss';
 import { IPokeTypes } from '../types';
 import { ImageWrapper } from '@/features/ui/image-wrapper';
 
-interface ITypeIcon extends IPokeTypes {
-  size: 'small' | 'medium' | 'large';
-  prio?: boolean;
-}
-
 export function TypeIcon({ type, status, size, prio }: ITypeIcon) {
   return (
     <ImageWrapper
@@ -24,3 +19,8 @@ export function TypeIcon({ type, status, size, prio }: ITypeIcon) {
 TypeIcon.defaultProps = {
   prio: false,
 };
+
+interface ITypeIcon extends IPokeTypes {
+  size: 'small' | 'medium' | 'large';
+  prio?: boolean;
+}

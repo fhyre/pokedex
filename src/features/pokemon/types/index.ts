@@ -1,3 +1,5 @@
+import { EPokeTypes, EStatusType } from '../enums';
+
 export interface INameURL {
   name: string;
   url: string;
@@ -47,28 +49,28 @@ export interface IPokemon {
 }
 
 export type Types =
-  | 'normal'
-  | 'fighting'
-  | 'flying'
-  | 'poison'
-  | 'ground'
-  | 'rock'
-  | 'bug'
-  | 'ghost'
-  | 'steel'
-  | 'fire'
-  | 'water'
-  | 'grass'
-  | 'electric'
-  | 'psychic'
-  | 'ice'
-  | 'dragon'
-  | 'dark'
-  | 'fairy';
+  | EPokeTypes.NORMAL
+  | EPokeTypes.FIGHTING
+  | EPokeTypes.FLYING
+  | EPokeTypes.POISON
+  | EPokeTypes.GROUND
+  | EPokeTypes.ROCK
+  | EPokeTypes.BUG
+  | EPokeTypes.GHOST
+  | EPokeTypes.STEEL
+  | EPokeTypes.FIRE
+  | EPokeTypes.WATER
+  | EPokeTypes.GRASS
+  | EPokeTypes.ELECTRIC
+  | EPokeTypes.PSYCHIC
+  | EPokeTypes.ICE
+  | EPokeTypes.DRAGON
+  | EPokeTypes.DARK
+  | EPokeTypes.FAIRY;
 
 export interface IPokeTypes {
   type: Types;
-  status?: 'physical' | 'special' | 'status';
+  status?: EStatusType.PHYSICAL | EStatusType.SPECIAL | EStatusType.STATUS;
 }
 
 // TODO: base stats below or over a range

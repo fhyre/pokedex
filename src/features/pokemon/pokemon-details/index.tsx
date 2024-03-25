@@ -10,7 +10,7 @@ import { General, Stats } from './components';
 import { upperCaseFirstLetter } from '@/utils';
 import { useRouter } from 'next/router';
 
-export function PokemonDetails({ id }) {
+export function PokemonDetails({ id }: IPokemonDetailsProps) {
   const router = useRouter();
   const pokemon = useSelector((state: RootState) => state.pokemonData.data)[
     id - 1
@@ -136,4 +136,8 @@ export function PokemonDetails({ id }) {
       </div>
     </>
   );
+}
+
+interface IPokemonDetailsProps {
+  id: number;
 }

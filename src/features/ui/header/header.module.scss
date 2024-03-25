@@ -34,7 +34,6 @@
 
   button {
     position: relative;
-    position: absolute;
     top: var(--size-1);
     right: 0;
     display: flex;
@@ -55,7 +54,7 @@
 
 .dotIcon {
   position: absolute;
-  right: 0;
+  right: 1px;
   top: 1px;
   width: var(--size-2);
   height: var(--size-2);
