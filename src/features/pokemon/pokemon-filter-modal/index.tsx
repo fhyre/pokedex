@@ -7,7 +7,8 @@ import { IFilters } from '../types';
 import { GenerationTags } from './components/generation-tags';
 import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/router';
-import { EFilterAction } from '../enums';
+import { EFilterAction, EPokeTypes } from '../enums';
+import { TypeTags } from './components/type-tags';
 
 export function PokemonFilterModal({
   setModalVisible,
@@ -19,6 +20,7 @@ export function PokemonFilterModal({
       ? JSON.parse(params.get('generations'))
       : [],
     query: params.get('query') || '',
+    types: JSON.parse(params.get('types')) || [],
   } as IFilters);
 
   const handleApply = () => {
@@ -54,6 +56,12 @@ export function PokemonFilterModal({
               }
               currSelectedGenerations={state.generations}
             />
+            <TypeTags
+              setType={(type) =>
+                dispatch({ type: EFilterAction.SET_TYPE, payload: type })
+              }
+              currSelectedTypes={state.types}
+            />
           </div>
         </div>
         <div className={styles.footer}>
@@ -81,8 +89,16 @@ function filterReducer(state: IFilters, action: FilterAction) {
         newGenerations.add(action.payload);
       }
       return { ...state, generations: Array.from(newGenerations) };
+    case EFilterAction.SET_TYPE:
+      const newTypes = new Set(state.types);
+      if (newTypes.has(action.payload)) {
+        newTypes.delete(action.payload);
+      } else {
+        newTypes.add(action.payload);
+      }
+      return { ...state, types: Array.from(newTypes) };
     case EFilterAction.CLEAR_FILTERS:
-      return { ...state, generations: [], query: '' };
+      return { ...state, generations: [], query: '', types: [] };
     default:
       return state;
   }
@@ -96,6 +112,8 @@ const buildSearchParams = (state: IFilters) => {
     searchParamBuilder.push(
       `generations=${JSON.stringify(state.generations.sort())}`
     );
+  if (state.types.length > 0)
+    searchParamBuilder.push(`types=${JSON.stringify(state.types)}`);
 
   if (searchParamBuilder.length === 0) return '';
 
@@ -117,4 +135,8 @@ type FilterAction =
     }
   | {
       type: EFilterAction.CLEAR_FILTERS;
+    }
+  | {
+      type: EFilterAction.SET_TYPE;
+      payload: EPokeTypes;
     };

@@ -1,4 +1,4 @@
-import { EPokeTypes, EStatusType } from '../enums';
+import { EPokeTypes, EStatusTypes } from '../enums';
 
 export interface INameURL {
   name: string;
@@ -18,7 +18,7 @@ export interface IPokemon {
     battle_only: boolean;
     mega: boolean;
     name: string;
-    types: Types[];
+    types: EPokeTypes[];
   }[];
   gen: number;
   height: number;
@@ -29,7 +29,7 @@ export interface IPokemon {
   }[];
   name: string;
   stats: { base_stat: number; effort: number; name: string }[];
-  types: Types[];
+  types: EPokeTypes[];
   species: {
     base_happiness: number;
     capture_rate: number;
@@ -48,34 +48,14 @@ export interface IPokemon {
   };
 }
 
-export type Types =
-  | EPokeTypes.NORMAL
-  | EPokeTypes.FIGHTING
-  | EPokeTypes.FLYING
-  | EPokeTypes.POISON
-  | EPokeTypes.GROUND
-  | EPokeTypes.ROCK
-  | EPokeTypes.BUG
-  | EPokeTypes.GHOST
-  | EPokeTypes.STEEL
-  | EPokeTypes.FIRE
-  | EPokeTypes.WATER
-  | EPokeTypes.GRASS
-  | EPokeTypes.ELECTRIC
-  | EPokeTypes.PSYCHIC
-  | EPokeTypes.ICE
-  | EPokeTypes.DRAGON
-  | EPokeTypes.DARK
-  | EPokeTypes.FAIRY;
-
 export interface IPokeTypes {
-  type: Types;
-  status?: EStatusType.PHYSICAL | EStatusType.SPECIAL | EStatusType.STATUS;
+  type: EPokeTypes;
+  status?: EStatusTypes;
 }
 
 // TODO: base stats below or over a range
 export interface IFilters {
   query: string;
   generations: number[];
-  types: Types[];
+  types: EPokeTypes[];
 }

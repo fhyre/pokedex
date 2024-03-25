@@ -1,5 +1,5 @@
 import styles from './pokemon-details.module.scss';
-import { convertId, electric, getTypeColor } from '../utils';
+import { convertId, getTypeColor } from '../utils';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store/index';
@@ -9,6 +9,7 @@ import Head from 'next/head';
 import { General, Stats } from './components';
 import { upperCaseFirstLetter } from '@/utils';
 import { useRouter } from 'next/router';
+import { EPokeTypeColors } from '../enums';
 
 export function PokemonDetails({ id }: IPokemonDetailsProps) {
   const router = useRouter();
@@ -20,7 +21,9 @@ export function PokemonDetails({ id }: IPokemonDetailsProps) {
   const type1Color = getTypeColor(pokemon.types[0]);
   const type2Color = getTypeColor(pokemon.types[1] && pokemon.types[1]);
   const gradientStr = `linear-gradient(90deg, ${type1Color}, ${type2Color})`;
-  const electricIndex = [type1Color, type2Color].indexOf(electric);
+  const electricIndex = [type1Color, type2Color].indexOf(
+    EPokeTypeColors.ELECTRIC
+  );
   const readableColor =
     electricIndex === -1 || electricIndex === 1 ? type1Color : type2Color;
 

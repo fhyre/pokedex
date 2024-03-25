@@ -1,60 +1,43 @@
-const normal = '#929ca2';
-const fighting = '#ce406a';
-const flying = '#8fa9de';
-const poison = '#ab6ac8';
-const ground = '#d97845';
-const rock = '#c5b68d';
-const bug = '#91c02e';
-const ghost = '#5269ad';
-const steel = '#5b8ea3';
-const fire = '#ff9c54';
-const water = '#5191d6';
-const grass = '#62bc5b';
-export const electric = '#f5d23d';
-const psychic = '#fa7078';
-const ice = '#72cfc0';
-const dragon = '#0a6cc3';
-const dark = '#5a5564';
-const fairy = '#ec8fe6';
+import { EPokeTypeColors } from '../enums';
 
 export const getTypeColor = (typing: string): string => {
   switch (typing) {
     case 'normal':
-      return normal;
+      return EPokeTypeColors.NORMAL;
     case 'fighting':
-      return fighting;
+      return EPokeTypeColors.FIGHTING;
     case 'flying':
-      return flying;
+      return EPokeTypeColors.FLYING;
     case 'poison':
-      return poison;
+      return EPokeTypeColors.POISON;
     case 'ground':
-      return ground;
+      return EPokeTypeColors.GROUND;
     case 'rock':
-      return rock;
+      return EPokeTypeColors.ROCK;
     case 'bug':
-      return bug;
+      return EPokeTypeColors.BUG;
     case 'ghost':
-      return ghost;
+      return EPokeTypeColors.GHOST;
     case 'steel':
-      return steel;
+      return EPokeTypeColors.STEEL;
     case 'fire':
-      return fire;
+      return EPokeTypeColors.FIRE;
     case 'water':
-      return water;
+      return EPokeTypeColors.WATER;
     case 'grass':
-      return grass;
+      return EPokeTypeColors.GRASS;
     case 'electric':
-      return electric;
+      return EPokeTypeColors.ELECTRIC;
     case 'psychic':
-      return psychic;
+      return EPokeTypeColors.PSYCHIC;
     case 'ice':
-      return ice;
+      return EPokeTypeColors.ICE;
     case 'dragon':
-      return dragon;
+      return EPokeTypeColors.DRAGON;
     case 'dark':
-      return dark;
+      return EPokeTypeColors.DARK;
     case 'fairy':
-      return fairy;
+      return EPokeTypeColors.FAIRY;
     default:
       return '#adb5bd';
   }
