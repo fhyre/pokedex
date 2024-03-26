@@ -40,7 +40,6 @@ const VirtualScroll = memo(
 
     // Set scroll position on reload
     useEffect(() => {
-      let timer: NodeJS.Timeout | null;
       if (containerRef.current) {
         if (prevScrollPos > virtStyles.height) {
           containerRef.current.scroll(0, 0);
@@ -48,9 +47,6 @@ const VirtualScroll = memo(
           containerRef.current.scroll(0, prevScrollPos);
         }
       }
-      return () => {
-        if (timer) clearTimeout(timer);
-      };
     }, [containerRef, prevScrollPos, virtStyles.height]);
 
     useEffect(() => {
