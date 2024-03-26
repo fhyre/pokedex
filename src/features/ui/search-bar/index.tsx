@@ -2,14 +2,12 @@ import styles from './search-bar.module.scss';
 import { CSSProperties } from 'react';
 import { Icon } from '@iconify/react';
 
-interface ISearchBar {
-  currentValue: string;
-  cb: (res: string) => void;
-  style?: CSSProperties;
-  className?: string;
-}
-
-export function SearchBar({ currentValue, cb, style, className }: ISearchBar) {
+export function SearchBar({
+  currentValue,
+  cb,
+  style,
+  className,
+}: SearchBarProps) {
   return (
     <div
       role="search"
@@ -28,3 +26,10 @@ export function SearchBar({ currentValue, cb, style, className }: ISearchBar) {
     </div>
   );
 }
+
+type SearchBarProps = {
+  currentValue: string;
+  cb: (res: string) => void;
+  style?: CSSProperties;
+  className?: string;
+};

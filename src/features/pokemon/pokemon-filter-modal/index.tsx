@@ -2,8 +2,8 @@ import styles from './pokemon-filter-modal.module.scss';
 import { SearchBar } from '@/features/ui';
 import { Dialog } from '@/features/ui/dialog';
 import { Icon } from '@iconify/react';
-import { useReducer } from 'react';
-import { IFilters } from '../types';
+import { useCallback, useReducer } from 'react';
+import { Filters } from '../types';
 import { GenerationTags } from './components/generation-tags';
 import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/router';
@@ -12,7 +12,7 @@ import { TypeTags } from './components/type-tags';
 
 export function PokemonFilterModal({
   setModalVisible,
-}: IPokemonFilterModalProps) {
+}: PokemonFilterModalProps) {
   const router = useRouter();
   const params = useSearchParams();
   const [state, dispatch] = useReducer(filterReducer, {
@@ -21,13 +21,29 @@ export function PokemonFilterModal({
       : [],
     query: params.get('query') || '',
     types: JSON.parse(params.get('types')) || [],
-  } as IFilters);
+  } as Filters);
+
+  const buildSearchParams = useCallback(() => {
+    const searchParamBuilder = [];
+
+    if (state.query) searchParamBuilder.push(`query=${state.query}`);
+    if (state.generations.length > 0)
+      searchParamBuilder.push(
+        `generations=${JSON.stringify(state.generations.sort())}`
+      );
+    if (state.types.length > 0)
+      searchParamBuilder.push(`types=${JSON.stringify(state.types)}`);
+
+    if (searchParamBuilder.length === 0) return '';
+
+    return `?${searchParamBuilder.join('&')}`;
+  }, [state]);
 
   const handleApply = () => {
-    const searchParams = buildSearchParams(state);
+    const searchParams = buildSearchParams();
     if (`/${searchParams}` === router.asPath) return;
     router.push(searchParams);
-    router.push(buildSearchParams(state));
+    router.push(buildSearchParams());
     sessionStorage.setItem('scrollPos', '0');
     setModalVisible(false);
   };
@@ -77,7 +93,7 @@ export function PokemonFilterModal({
   );
 }
 
-function filterReducer(state: IFilters, action: FilterAction) {
+function filterReducer(state: Filters, action: FilterAction) {
   switch (action.type) {
     case EFilterAction.SET_SEARCH_QUERY:
       return { ...state, query: action.payload };
@@ -104,25 +120,9 @@ function filterReducer(state: IFilters, action: FilterAction) {
   }
 }
 
-const buildSearchParams = (state: IFilters) => {
-  const searchParamBuilder = [];
-
-  if (state.query) searchParamBuilder.push(`query=${state.query}`);
-  if (state.generations.length > 0)
-    searchParamBuilder.push(
-      `generations=${JSON.stringify(state.generations.sort())}`
-    );
-  if (state.types.length > 0)
-    searchParamBuilder.push(`types=${JSON.stringify(state.types)}`);
-
-  if (searchParamBuilder.length === 0) return '';
-
-  return `?${searchParamBuilder.join('&')}`;
-};
-
-interface IPokemonFilterModalProps {
+type PokemonFilterModalProps = {
   setModalVisible: (a: boolean) => void;
-}
+};
 
 type FilterAction =
   | {

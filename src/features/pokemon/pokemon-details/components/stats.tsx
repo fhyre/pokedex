@@ -1,5 +1,5 @@
 import { useEffect, useLayoutEffect } from 'react';
-import { IPokemon } from '../../types';
+import { Pokemon } from '../../types';
 import styles from './styles/stats.module.scss';
 
 export function Stats({ pokemon, typeColor }: StatsProps): JSX.Element {
@@ -76,7 +76,7 @@ export function Stats({ pokemon, typeColor }: StatsProps): JSX.Element {
   );
 }
 
-interface StatsProps {
-  pokemon: IPokemon;
+type StatsProps = {
+  pokemon: Pokemon;
   typeColor: string;
-}
+};

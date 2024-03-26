@@ -2,7 +2,7 @@ import styles from './styles/general.module.scss';
 import { useEffect } from 'react';
 import { TypeIcon } from '../../pokemon-type-icon';
 import { upperCaseFirstLetter } from '@/utils';
-import { IPokemon } from '../../types';
+import { Pokemon } from '../../types';
 
 export function General({ pokemon, gradientColor, typeColor }: GeneralProps) {
   const { id, abilities, gen, height, weight, name, types, species } = pokemon;
@@ -84,8 +84,8 @@ export function General({ pokemon, gradientColor, typeColor }: GeneralProps) {
   );
 }
 
-interface GeneralProps {
-  pokemon: IPokemon;
+type GeneralProps = {
+  pokemon: Pokemon;
   gradientColor: string;
   typeColor: string;
-}
+};

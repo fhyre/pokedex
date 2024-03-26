@@ -1,7 +1,7 @@
-import { IPokemon, parseAllPokemon, IFilters } from '@/features/pokemon';
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { Pokemon, parseAllPokemon } from '@/features/pokemon';
+import { createSlice } from '@reduxjs/toolkit';
 
-const initialState: IPokemonData = {
+const initialState: PokemonData = {
   data: parseAllPokemon(),
 };
 
@@ -10,8 +10,8 @@ export const pokemonDataSlice = createSlice({
   initialState,
   reducers: {},
 });
-interface IPokemonData {
-  data: IPokemon[];
-}
+type PokemonData = {
+  data: Pokemon[];
+};
 
 export default pokemonDataSlice.reducer;

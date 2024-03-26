@@ -4,7 +4,7 @@ import forms from '../assets/forms.json';
 import stats from '../assets/stats.json';
 import pokeTypes from '../assets/types.json';
 import species from '../assets/species.json';
-import { IPokemon } from '../types';
+import { Pokemon } from '../types';
 
 export function parseAllPokemon() {
   const MAX_POKEMON = 1025;
@@ -18,7 +18,7 @@ export function parseAllPokemon() {
     toAdd.stats = [];
     toAdd.types = [];
 
-    currPokemon.abilities.forEach((ability: IAbility) => {
+    currPokemon.abilities.forEach((ability: Ability) => {
       const { hidden, id } = ability;
       toAdd.abilities.push({
         hidden,
@@ -38,7 +38,7 @@ export function parseAllPokemon() {
       toAdd.forms.push(tempForm);
     });
 
-    pokemonData[i].stats.forEach((stat: IStat) => {
+    pokemonData[i].stats.forEach((stat: Stat) => {
       const { id, ...tempStat } = stat;
       tempStat.name = stats[stat.id - 1];
       toAdd.stats.push(tempStat);
@@ -53,17 +53,17 @@ export function parseAllPokemon() {
     parsed.push(toAdd);
   }
 
-  return parsed as IPokemon[];
+  return parsed as Pokemon[];
 }
 
-interface IAbility {
+type Ability = {
   hidden: boolean;
   id: number;
-}
+};
 
-interface IStat {
+type Stat = {
   base_stat: number;
   effort: number;
   id?: number;
   name?: string;
-}
+};

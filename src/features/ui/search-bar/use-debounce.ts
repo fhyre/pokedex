@@ -1,10 +1,6 @@
 import { useEffect, useState } from 'react';
 
-interface IDebounce {
-  cb: (e: string) => void;
-}
-
-export function useDebounce({ cb }: IDebounce) {
+export function useDebounce({ cb }: UseDebounceProps) {
   const [debouncedQ, setDebouncedQ] = useState<string>('');
 
   useEffect(() => {
@@ -14,3 +10,7 @@ export function useDebounce({ cb }: IDebounce) {
 
   return [setDebouncedQ];
 }
+
+type UseDebounceProps = {
+  cb: (e: string) => void;
+};

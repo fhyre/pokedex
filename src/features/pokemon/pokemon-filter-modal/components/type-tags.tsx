@@ -1,7 +1,7 @@
 import { EPokeTypeColors, EPokeTypes } from '../../enums';
 import styles from './styles/type-tags.module.scss';
 
-export function TypeTags({ setType, currSelectedTypes }: ITypeTagsProps) {
+export function TypeTags({ setType, currSelectedTypes }: TypeTagsProps) {
   return (
     <section className={styles.container}>
       <h2>Types</h2>
@@ -30,7 +30,7 @@ export function TypeTags({ setType, currSelectedTypes }: ITypeTagsProps) {
   );
 }
 
-interface ITypeTagsProps {
+type TypeTagsProps = {
   setType: (type: EPokeTypes) => void;
   currSelectedTypes: EPokeTypes[];
-}
+};

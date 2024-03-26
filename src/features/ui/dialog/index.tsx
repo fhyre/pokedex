@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import styles from './dialog.module.scss';
 
-export function Dialog({ children, setModalVisible }: IDialogProps) {
+export function Dialog({ children, setModalVisible }: DialogProps) {
   return (
     <dialog
       className={styles.container}
@@ -14,7 +14,7 @@ export function Dialog({ children, setModalVisible }: IDialogProps) {
   );
 }
 
-interface IDialogProps {
+type DialogProps = {
   children: ReactNode;
   setModalVisible: (status: boolean) => void;
-}
+};

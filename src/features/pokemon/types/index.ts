@@ -1,11 +1,11 @@
 import { EPokeTypes, EStatusTypes } from '../enums';
 
-export interface INameURL {
+export type NameURL = {
   name: string;
   url: string;
-}
+};
 
-export interface IPokemon {
+export type Pokemon = {
   id: number;
   abilities: {
     effect: string;
@@ -46,16 +46,15 @@ export interface IPokemon {
     varietes: number[];
     egg_groups: string;
   };
-}
+};
 
-export interface IPokeTypes {
+export type PokeTypes = {
   type: EPokeTypes;
   status?: EStatusTypes;
-}
+};
 
-// TODO: base stats below or over a range
-export interface IFilters {
+export type Filters = {
   query: string;
   generations: number[];
   types: EPokeTypes[];
-}
+};

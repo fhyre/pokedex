@@ -12,7 +12,7 @@ export function ImageWrapper({
   quality,
   onLoaded,
   loading,
-}: IImageWrapper) {
+}: ImageWrapperProps) {
   return (
     <Image
       unoptimized
@@ -31,7 +31,7 @@ export function ImageWrapper({
   );
 }
 
-interface IImageWrapper {
+type ImageWrapperProps = {
   imagePath: string;
   imageAlt: string;
   styles?: any[];
@@ -43,4 +43,4 @@ interface IImageWrapper {
   quality?: number;
   onLoaded?: () => void;
   loading?: boolean;
-}
+};

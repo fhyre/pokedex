@@ -1,19 +1,11 @@
-interface IRequest {
-  url: string;
-  body?: string;
-  options: {
-    method: "GET" | "POST" | "DELETE" | "PATCH" | "PUT";
-  };
-}
-
 export async function jsonFetch<T>({
   url,
   body,
   options,
-}: IRequest): Promise<T> {
+}: Request): Promise<T> {
   return fetch(url, {
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify(body),
     ...options,
@@ -26,3 +18,11 @@ export async function jsonFetch<T>({
       return res.status;
     });
 }
+
+type Request = {
+  url: string;
+  body?: string;
+  options: {
+    method: 'GET' | 'POST' | 'DELETE' | 'PATCH' | 'PUT';
+  };
+};

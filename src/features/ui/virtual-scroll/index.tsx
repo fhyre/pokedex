@@ -10,15 +10,15 @@ const VirtualScroll = memo(
     offset: neighborOffset,
     FallbackComp,
     prevScrollPos,
-  }: IVirtualScroll) => {
+  }: VirtualScrollProps) => {
     const nodeContainerRef = useRef<HTMLDivElement>(null);
     const [containerRef, scrollTop] = useScrollListen();
-    const [virtStyles, setVirtStyles] = useState<IVirtStyles>({});
-    const [nodeRange, setNodeRange] = useState<IStartEndIndex>({
+    const [virtStyles, setVirtStyles] = useState<VirtStyles>({});
+    const [nodeRange, setNodeRange] = useState<NodeRange>({
       startIndex: 0,
       endIndex: 1,
     });
-    const [nodeDetails, setNodeDetails] = useState<INodeDetails>({});
+    const [nodeDetails, setNodeDetails] = useState<NodeDetails>({});
     const nodeClientWidth =
       nodeContainerRef.current &&
       nodeContainerRef.current.children[0] &&
@@ -123,31 +123,31 @@ const VirtualScroll = memo(
   }
 );
 
-interface IVirtualScroll {
+type VirtualScrollProps = {
   className: string;
   data: JSX.Element[];
   offset: number;
   FallbackComp: React.FunctionComponent;
   prevScrollPos?: number;
-}
+};
 
-interface IStartEndIndex {
+type NodeRange = {
   startIndex: number;
   endIndex: number;
-}
+};
 
-interface IVirtStyles {
+type VirtStyles = {
   height?: number;
   offsetY?: number;
-}
+};
 
-interface INodeDetails {
+type NodeDetails = {
   nodeWidth?: number;
   nodeHeight?: number;
   nodesPerRow?: number;
   totalNumRows?: number;
   totalHeight?: number;
-}
+};
 
 VirtualScroll.displayName = 'VirtualScroll';
 export { VirtualScroll };

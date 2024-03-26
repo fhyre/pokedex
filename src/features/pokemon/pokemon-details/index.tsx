@@ -11,7 +11,7 @@ import { upperCaseFirstLetter } from '@/utils';
 import { useRouter } from 'next/router';
 import { EPokeTypeColors } from '../enums';
 
-export function PokemonDetails({ id }: IPokemonDetailsProps) {
+export function PokemonDetails({ id }: PokemonDetailsProps) {
   const router = useRouter();
   const pokemon = useSelector((state: RootState) => state.pokemonData.data)[
     id - 1
@@ -141,6 +141,6 @@ export function PokemonDetails({ id }: IPokemonDetailsProps) {
   );
 }
 
-interface IPokemonDetailsProps {
+type PokemonDetailsProps = {
   id: number;
-}
+};

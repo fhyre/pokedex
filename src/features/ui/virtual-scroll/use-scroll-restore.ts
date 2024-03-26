@@ -10,7 +10,7 @@ export function useScrollRestore(): [number] {
 
   useEffect(() => {
     setScrollPos(Number(sessionStorage.getItem('scrollPos') || 0));
-  });
+  }, [setScrollPos]);
 
   useEffect(() => {
     if (scrollPos) setScrollPos(scrollPos);

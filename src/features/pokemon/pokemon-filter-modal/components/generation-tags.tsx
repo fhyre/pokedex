@@ -3,7 +3,7 @@ import styles from './styles/generation-tags.module.scss';
 export function GenerationTags({
   setGeneration,
   currSelectedGenerations,
-}: IGenerationTagsProps) {
+}: GenerationTagsProps) {
   const generations = Array.from(Array(9).keys(), (i) => i + 1);
 
   return (
@@ -25,7 +25,7 @@ export function GenerationTags({
   );
 }
 
-interface IGenerationTagsProps {
+type GenerationTagsProps = {
   setGeneration: (a: number) => void;
   currSelectedGenerations: number[];
-}
+};

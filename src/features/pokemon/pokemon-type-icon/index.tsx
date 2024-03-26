@@ -1,8 +1,8 @@
 import styles from './type-icon.module.scss';
-import { IPokeTypes } from '../types';
+import { PokeTypes } from '../types';
 import { ImageWrapper } from '@/features/ui/image-wrapper';
 
-export function TypeIcon({ type, status, size, prio }: ITypeIcon) {
+export function TypeIcon({ type, status, size, prio }: TypeIcon) {
   return (
     <ImageWrapper
       imagePath={`/type-icons/${type}.png`}
@@ -20,7 +20,7 @@ TypeIcon.defaultProps = {
   prio: false,
 };
 
-interface ITypeIcon extends IPokeTypes {
+type TypeIcon = PokeTypes & {
   size: 'small' | 'medium' | 'large';
   prio?: boolean;
-}
+};
