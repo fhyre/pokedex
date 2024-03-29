@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import { store } from '../store';
 import { Analytics } from '@vercel/analytics/react';
 import { UrlChangeListener } from '@/features/ui';
+import { SnackbarProvider } from 'notistack';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -14,9 +15,11 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Pokédex</title>
       </Head>
       <UrlChangeListener />
-      <div className={titilliumWeb.className}>
-        <Component {...pageProps} />
-      </div>
+      <SnackbarProvider>
+        <div className={titilliumWeb.className}>
+          <Component {...pageProps} />
+        </div>
+      </SnackbarProvider>
       <Analytics />
     </Provider>
   );

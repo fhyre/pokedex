@@ -9,11 +9,13 @@ import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/router';
 import { EFilterAction, EPokeTypes } from '../enums';
 import { TypeTags } from './components/type-tags';
+import { useSnackbar } from 'notistack';
 
 export function PokemonFilterModal({
   setModalVisible,
 }: PokemonFilterModalProps) {
   const router = useRouter();
+  const { enqueueSnackbar } = useSnackbar();
   const params = useSearchParams();
   const [state, dispatch] = useReducer(filterReducer, {
     generations: params.get('generations')
@@ -41,7 +43,14 @@ export function PokemonFilterModal({
 
   const handleApply = () => {
     const searchParams = buildSearchParams();
-    if (`/${searchParams}` === router.asPath) return;
+    if (`/${searchParams}` === decodeURIComponent(router.asPath)) {
+      enqueueSnackbar('Filters have not been modified', {
+        variant: 'info',
+        style: { fontFamily: 'sans-serif' },
+        autoHideDuration: 2000,
+      });
+      return;
+    }
     router.push(searchParams);
     router.push(buildSearchParams());
     sessionStorage.setItem('scrollPos', '0');
