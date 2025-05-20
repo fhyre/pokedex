@@ -1,6 +1,6 @@
 import styles from './pokemon-list.module.scss';
 import { VirtualScroll } from '@/features/ui';
-import { RootState } from '@/store/index';
+import { RootState } from '@/store';
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
 import { NotFound } from '@/features/ui';
