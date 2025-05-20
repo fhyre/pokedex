@@ -36,7 +36,7 @@ const VirtualScroll = memo(
       window.addEventListener('resize', onResize);
 
       return () => window.removeEventListener('resize', onResize);
-    }, [containerRef, data.length]);
+    }, [data.length]);
 
     // Set scroll position on reload
     useEffect(() => {

@@ -2,7 +2,7 @@ import styles from './pokemon-details.module.scss';
 import { convertId, getTypeColor } from '../utils';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { RootState } from '@/store/index';
+import { RootState } from '@/store';
 import { ImageWrapper } from '@/features/ui/image-wrapper';
 import { Icon } from '@iconify/react';
 import Head from 'next/head';
