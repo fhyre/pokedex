@@ -10,6 +10,8 @@ export default function DexEntry({ id }) {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
+  if (!params) return { notFound: true };
+
   const id = params['id'];
 
   return {
@@ -20,7 +22,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const pokePaths = [];
+  const pokePaths: { params: { id: string } }[] = [];
   for (let i = 1; i <= 1025; i++) {
     pokePaths.push({ params: { id: i.toString() } });
   }
