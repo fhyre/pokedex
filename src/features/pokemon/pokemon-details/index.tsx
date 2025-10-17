@@ -1,8 +1,6 @@
 import styles from './pokemon-details.module.scss';
 import { convertId, getTypeColor } from '../utils';
 import { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
-import { RootState } from '@/store';
 import { ImageWrapper } from '@/features/ui/image-wrapper';
 import { Icon } from '@iconify/react';
 import Head from 'next/head';
@@ -10,12 +8,11 @@ import { General, Stats } from './components';
 import { upperCaseFirstLetter } from '@/utils';
 import { useRouter } from 'next/router';
 import { EPokeTypeColors } from '../enums';
+import { allPokemon } from '../data';
 
 export function PokemonDetails({ id }: PokemonDetailsProps) {
   const router = useRouter();
-  const pokemon = useSelector((state: RootState) => state.pokemonData.data)[
-    id - 1
-  ];
+  const pokemon = allPokemon[id - 1];
 
   const strId = convertId(pokemon.id.toString());
   const type1Color = getTypeColor(pokemon.types[0]);

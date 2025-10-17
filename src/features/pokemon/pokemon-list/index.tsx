@@ -1,16 +1,15 @@
 import styles from './pokemon-list.module.scss';
 import { VirtualScroll } from '@/features/ui';
-import { RootState } from '@/store';
 import Link from 'next/link';
-import { useSelector } from 'react-redux';
 import { NotFound } from '@/features/ui';
 import { PokemonListCard } from '../pokemon-list-card';
 import { useScrollRestore } from '@/features/ui/virtual-scroll/use-scroll-restore';
 import { useSearchParams } from 'next/navigation';
 import { EPokeTypes } from '../enums';
+import { allPokemon } from '../data';
 
 export function PokemonList() {
-  const { data } = useSelector((state: RootState) => state.pokemonData);
+  const data = allPokemon;
 
   const params = useSearchParams();
   const searchQuery = params.get('query') || '';

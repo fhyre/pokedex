@@ -20,7 +20,7 @@ export function ImageWrapper({
       width={width}
       src={imagePath}
       alt={imageAlt}
-      className={styles ? styles.join(' ') : null}
+      className={styles ? styles.join(' ') : ''}
       quality={quality}
       priority={priority}
       aria-hidden={ariaHidden}
