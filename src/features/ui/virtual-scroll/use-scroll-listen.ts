@@ -1,8 +1,8 @@
-import { MutableRefObject, useEffect, useRef, useState } from 'react';
+import { RefObject, useEffect, useRef, useState } from 'react';
 
-export function useScrollListen(): [MutableRefObject<HTMLDivElement>, number] {
+export function useScrollListen(): [RefObject<HTMLDivElement>, number] {
   const [scrollTopOffset, setScrollTopOffset] = useState<number>(0);
-  const ref = useRef<HTMLDivElement>();
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const currentRef = ref.current;

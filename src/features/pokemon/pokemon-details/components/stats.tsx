@@ -2,7 +2,7 @@ import { useEffect, useLayoutEffect } from 'react';
 import { Pokemon } from '../../types';
 import styles from './styles/stats.module.scss';
 
-export function Stats({ pokemon, typeColor }: StatsProps): JSX.Element {
+export function Stats({ pokemon, typeColor }: StatsProps): React.JSX.Element {
   const { stats } = pokemon;
 
   const maxBaseStat = Math.max(...stats.map((stat) => stat.base_stat));

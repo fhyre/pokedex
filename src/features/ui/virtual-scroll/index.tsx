@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './virtual-scroll.module.scss';
 import { memo, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { formatNodeData } from './format-node-data';
@@ -121,7 +122,7 @@ const VirtualScroll = memo(
 
 type VirtualScrollProps = {
   className: string;
-  data: JSX.Element[];
+  data: React.JSX.Element[];
   offset: number;
   FallbackComp: React.FunctionComponent;
   prevScrollPos?: number;
