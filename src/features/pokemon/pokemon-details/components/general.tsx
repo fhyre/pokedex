@@ -61,7 +61,9 @@ export function General({ pokemon, gradientColor, typeColor }: GeneralProps) {
               <p>
                 {ability.name
                   .split('-')
-                  .map((word) => word.at(0).toUpperCase() + word.substring(1))
+                  .map(
+                    (word) => word?.at(0)?.toUpperCase() + word?.substring(1)
+                  )
                   .join(' ')}
               </p>
             </div>

@@ -26,6 +26,15 @@ export function PokemonDetails({ id }: PokemonDetailsProps) {
 
   const [imageLoading, setImageLoading] = useState(true);
 
+  const handleBack = () => {
+    const history = window.history;
+    if (history.length === 0 || (history.length === 2 && history[-2] !== '/')) {
+      router.push('/');
+    } else {
+      router.back();
+    }
+  };
+
   useEffect(() => {
     if (!imageLoading) {
       document
@@ -37,16 +46,6 @@ export function PokemonDetails({ id }: PokemonDetailsProps) {
         });
     }
   }, [imageLoading, readableColor]);
-
-  const handleBack = () => {
-    const history = window.history;
-    console.log(history[-1]);
-    if (history.length === 0 || (history.length === 2 && history[-2] !== '/')) {
-      router.push('/');
-    } else {
-      router.back();
-    }
-  };
 
   return (
     <>
