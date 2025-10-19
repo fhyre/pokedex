@@ -229,5 +229,22 @@
     "versions": [
       "the-indigo-disk"
     ]
+  },
+  {
+    "regions": [
+      "kanto"
+    ],
+    "versions": [
+      "red-japan",
+      "green-japan"
+    ]
+  },
+  {
+    "regions": [
+      "kanto"
+    ],
+    "versions": [
+      "blue-japan"
+    ]
   }
 ]

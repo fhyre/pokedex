@@ -28,7 +28,7 @@ export function parseAllPokemon() {
       });
     });
 
-    pokemonData[i].forms.forEach((formId: number) => {
+    currPokemon.forms.forEach((formId: number) => {
       if (formId === i + 1) return;
       const tempForm = forms[formId];
       tempForm.types = [];
@@ -38,13 +38,13 @@ export function parseAllPokemon() {
       toAdd.forms.push(tempForm);
     });
 
-    pokemonData[i].stats.forEach((stat: Stat) => {
+    currPokemon.stats.forEach((stat: Stat) => {
       const { id, ...tempStat } = stat;
       tempStat.name = stats[stat.id - 1];
       toAdd.stats.push(tempStat);
     });
 
-    pokemonData[i].types.forEach((typeId: number) => {
+    currPokemon.types.forEach((typeId: number) => {
       toAdd.types.push(pokeTypes[typeId - 1]);
     });
 

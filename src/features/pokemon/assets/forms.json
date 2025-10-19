@@ -3057,7 +3057,7 @@
     "mega": false
   },
   "10346": {
-    "name": "alcremie-ruby-cream",
+    "name": "alcremie-ruby-cream-strawberry-sweet",
     "types": [
       18
     ],
@@ -3065,7 +3065,7 @@
     "mega": false
   },
   "10347": {
-    "name": "alcremie-matcha-cream",
+    "name": "alcremie-matcha-cream-strawberry-sweet",
     "types": [
       18
     ],
@@ -3073,7 +3073,7 @@
     "mega": false
   },
   "10348": {
-    "name": "alcremie-mint-cream",
+    "name": "alcremie-mint-cream-strawberry-sweet",
     "types": [
       18
     ],
@@ -3081,7 +3081,7 @@
     "mega": false
   },
   "10349": {
-    "name": "alcremie-lemon-cream",
+    "name": "alcremie-lemon-cream-strawberry-sweet",
     "types": [
       18
     ],
@@ -3089,7 +3089,7 @@
     "mega": false
   },
   "10350": {
-    "name": "alcremie-salted-cream",
+    "name": "alcremie-salted-cream-strawberry-sweet",
     "types": [
       18
     ],
@@ -3097,7 +3097,7 @@
     "mega": false
   },
   "10351": {
-    "name": "alcremie-ruby-swirl",
+    "name": "alcremie-ruby-swirl-strawberry-sweet",
     "types": [
       18
     ],
@@ -3105,7 +3105,7 @@
     "mega": false
   },
   "10352": {
-    "name": "alcremie-caramel-swirl",
+    "name": "alcremie-caramel-swirl-strawberry-sweet",
     "types": [
       18
     ],
@@ -3113,7 +3113,7 @@
     "mega": false
   },
   "10353": {
-    "name": "alcremie-rainbow-swirl",
+    "name": "alcremie-rainbow-swirl-strawberry-sweet",
     "types": [
       18
     ],
@@ -3946,6 +3946,438 @@
     "types": [
       12,
       8
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10449": {
+    "name": "alcremie-vanilla-cream-berry-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10450": {
+    "name": "alcremie-ruby-cream-berry-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10451": {
+    "name": "alcremie-matcha-cream-berry-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10452": {
+    "name": "alcremie-mint-cream-berry-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10453": {
+    "name": "alcremie-lemon-cream-berry-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10454": {
+    "name": "alcremie-salted-cream-berry-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10455": {
+    "name": "alcremie-ruby-swirl-berry-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10456": {
+    "name": "alcremie-caramel-swirl-berry-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10457": {
+    "name": "alcremie-rainbow-swirl-berry-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10458": {
+    "name": "alcremie-vanilla-cream-love-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10459": {
+    "name": "alcremie-ruby-cream-love-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10460": {
+    "name": "alcremie-matcha-cream-love-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10461": {
+    "name": "alcremie-mint-cream-love-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10462": {
+    "name": "alcremie-lemon-cream-love-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10463": {
+    "name": "alcremie-salted-cream-love-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10464": {
+    "name": "alcremie-ruby-swirl-love-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10465": {
+    "name": "alcremie-caramel-swirl-love-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10466": {
+    "name": "alcremie-rainbow-swirl-love-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10467": {
+    "name": "alcremie-vanilla-cream-star-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10468": {
+    "name": "alcremie-ruby-cream-star-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10469": {
+    "name": "alcremie-matcha-cream-star-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10470": {
+    "name": "alcremie-mint-cream-star-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10471": {
+    "name": "alcremie-lemon-cream-star-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10472": {
+    "name": "alcremie-salted-cream-star-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10473": {
+    "name": "alcremie-ruby-swirl-star-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10474": {
+    "name": "alcremie-caramel-swirl-star-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10475": {
+    "name": "alcremie-rainbow-swirl-star-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10476": {
+    "name": "alcremie-vanilla-cream-clover-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10477": {
+    "name": "alcremie-ruby-cream-clover-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10478": {
+    "name": "alcremie-matcha-cream-clover-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10479": {
+    "name": "alcremie-mint-cream-clover-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10480": {
+    "name": "alcremie-lemon-cream-clover-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10481": {
+    "name": "alcremie-salted-cream-clover-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10482": {
+    "name": "alcremie-ruby-swirl-clover-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10483": {
+    "name": "alcremie-caramel-swirl-clover-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10484": {
+    "name": "alcremie-rainbow-swirl-clover-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10485": {
+    "name": "alcremie-vanilla-cream-flower-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10486": {
+    "name": "alcremie-ruby-cream-flower-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10487": {
+    "name": "alcremie-matcha-cream-flower-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10488": {
+    "name": "alcremie-mint-cream-flower-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10489": {
+    "name": "alcremie-lemon-cream-flower-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10490": {
+    "name": "alcremie-salted-cream-flower-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10491": {
+    "name": "alcremie-ruby-swirl-flower-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10492": {
+    "name": "alcremie-caramel-swirl-flower-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10493": {
+    "name": "alcremie-rainbow-swirl-flower-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10494": {
+    "name": "alcremie-vanilla-cream-ribbon-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10495": {
+    "name": "alcremie-ruby-cream-ribbon-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10496": {
+    "name": "alcremie-matcha-cream-ribbon-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10497": {
+    "name": "alcremie-mint-cream-ribbon-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10498": {
+    "name": "alcremie-lemon-cream-ribbon-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10499": {
+    "name": "alcremie-salted-cream-ribbon-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10500": {
+    "name": "alcremie-ruby-swirl-ribbon-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10501": {
+    "name": "alcremie-caramel-swirl-ribbon-sweet",
+    "types": [
+      18
+    ],
+    "battle_only": false,
+    "mega": false
+  },
+  "10502": {
+    "name": "alcremie-rainbow-swirl-ribbon-sweet",
+    "types": [
+      18
     ],
     "battle_only": false,
     "mega": false
