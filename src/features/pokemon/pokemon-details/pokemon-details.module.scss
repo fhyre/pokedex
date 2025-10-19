@@ -12,20 +12,23 @@
 
 .container {
   position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
 .gradientBg {
   position: absolute;
   filter: opacity(0.5);
-  width: 100%;
-  height: max(100vh, 100%);
+  width: 100vw;
+  height: 100vh;
 }
 
 .returnArrowContainer {
-  position: sticky;
+  position: fixed;
   top: 0;
-  backdrop-filter: blur(var(--size-2));
+  backdrop-filter: blur(var(--size-1));
   z-index: 1;
+  width: 100%;
 
   svg {
     width: var(--size-8);
@@ -34,8 +37,21 @@
 }
 
 .contentContainer {
-  @include fade-in(200ms);
+  @include fade-in(1000ms);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerContentContainer {
   @extend %flex-column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 
 .heading {
@@ -43,65 +59,53 @@
 }
 
 .pokeImgContainer {
-  @extend %flex-center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
+  @extend %flex-column;
+  margin-block: var(--size-3);
 }
 
-.pokeImgWrapper {
-  @extend %flex-center;
-  position: relative;
-  margin-block-end: var(--size-5);
-
-  & div:first-child {
-    position: absolute;
-    width: 95vw;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    letter-spacing: clamp(0px, 5vw, 5rem);
-    font-size: var(--font-size-6);
-    font-weight: var(--font-weight-6);
-    mix-blend-mode: multiply;
-    white-space: nowrap;
-    user-select: none;
-  }
+.pokemonName {
+  display: flex;
+  justify-content: center;
+  letter-spacing: clamp(0px, 2vw, 5rem);
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-6);
+  mix-blend-mode: multiply;
+  white-space: nowrap;
 }
 
 .pokeImg {
   position: relative;
-  width: 40%;
+  margin: auto;
+  width: 70%;
   height: auto;
   user-select: none;
 }
 
 .detailsContainer {
   @extend %flex-column;
-  flex-grow: 1;
-  gap: var(--size-3);
-  padding-block-end: var(--size-2);
-  padding-inline: var(--size-2);
+  width: 100%;
+  height: 100%;
+  gap: var(--size-4);
+  padding-inline: var(--size-3);
 }
 
-@include media-query($medium) {
-  .pokeImgWrapper {
-    & div:first-child {
-      font-size: var(--font-size-7);
-    }
+@include media-query($small) {
+  .innerContentContainer {
+    flex-direction: row;
+    max-width: 1300px;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .pokeImgContainer {
+    min-width: 50%;
   }
 
   .detailsContainer {
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    & > section {
-      flex-basis: 35%;
-    }
-  }
-
-  .pokeImg {
-    width: 50%;
+    overflow: auto;
+    justify-content: start;
+    align-items: stretch;
+    padding-top: var(--size-9);
+    padding-bottom: var(--size-3);
   }
 }

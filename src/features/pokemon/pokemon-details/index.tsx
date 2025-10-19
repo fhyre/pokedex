@@ -59,6 +59,7 @@ export function PokemonDetails({ id }: PokemonDetailsProps) {
             background: gradientStr,
           }}
         />
+        <h1 className={styles.heading}>{`about ${pokemon.name}`}</h1>
         <nav className={styles.returnArrowContainer}>
           <button
             onClick={handleBack}
@@ -90,45 +91,32 @@ export function PokemonDetails({ id }: PokemonDetailsProps) {
           </div>
         ) : (
           <div className={styles.contentContainer}>
-            <h1 className={styles.heading}>{`about ${pokemon.name}`}</h1>
-            <div className={styles.pokeImgContainer}>
-              <div className={styles.pokeImgWrapper}>
+            <div className={styles.innerContentContainer}>
+              <div className={styles.pokeImgContainer}>
+                <ImageWrapper
+                  imagePath={`https://poke-images.pages.dev/full-size/${strId}.png`}
+                  imageAlt={pokemon.name}
+                  quality={100}
+                  styles={[styles.pokeImg]}
+                  priority
+                />
                 <div
+                  className={styles.pokemonName}
                   style={{
                     color: type1Color,
                   }}
                 >
                   {pokemon.name.toUpperCase()}
                 </div>
-                {imageLoading && (
-                  <Icon
-                    icon="line-md:loading-loop"
-                    style={{
-                      width: '50px',
-                      height: '50px',
-                      color: type1Color,
-                      mixBlendMode: 'color-dodge',
-                    }}
-                  />
-                )}
-                <ImageWrapper
-                  imagePath={`https://poke-images.pages.dev/full-size/${strId}.png`}
-                  imageAlt={pokemon.name}
-                  quality={100}
-                  styles={[styles.pokeImg]}
-                  onLoaded={() => setImageLoading(false)}
-                  loading={imageLoading}
-                  priority
-                />
               </div>
-            </div>
-            <div className={styles.detailsContainer}>
-              <General
-                pokemon={pokemon}
-                gradientColor={gradientStr}
-                typeColor={readableColor}
-              />
-              <Stats pokemon={pokemon} typeColor={readableColor} />
+              <div className={styles.detailsContainer}>
+                <General
+                  pokemon={pokemon}
+                  gradientColor={gradientStr}
+                  typeColor={readableColor}
+                />
+                <Stats pokemon={pokemon} typeColor={readableColor} />
+              </div>
             </div>
           </div>
         )}
