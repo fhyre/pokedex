@@ -57,3 +57,34 @@
   color: var(--gray-4);
   font-weight: 400;
 }
+
+.clearButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--gray-5);
+  cursor: pointer;
+  padding: 0;
+  border-radius: 50%;
+  transition: all 150ms var(--ease-2);
+  margin-left: var(--size-1);
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+
+  &:hover {
+    background: var(--gray-2);
+    color: var(--gray-7);
+  }
+
+  &:active {
+    background: var(--gray-3);
+    transform: scale(0.9);
+  }
+
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 300;
+}

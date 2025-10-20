@@ -1,5 +1,5 @@
 import styles from './search-bar.module.scss';
-import { CSSProperties } from 'react';
+import { CSSProperties, useRef, useEffect } from 'react';
 import { Icon } from '@iconify/react';
 
 export function SearchBar({
@@ -8,6 +8,25 @@ export function SearchBar({
   style,
   className,
 }: SearchBarProps) {
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
+        e.preventDefault();
+        inputRef.current?.focus();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
+  const handleClear = () => {
+    cb('');
+    inputRef.current?.focus();
+  };
+
   return (
     <div
       role="search"
@@ -15,14 +34,25 @@ export function SearchBar({
       style={style}
       tabIndex={0}
     >
-      <Icon icon="jam:search" width={24} height={24} />
+      <Icon icon="jam:search" width={16} height={16} />
       <input
+        ref={inputRef}
         type="text"
         placeholder="Search"
         onChange={(e) => cb(e.target.value)}
         tabIndex={0}
         value={currentValue}
       />
+      {currentValue && (
+        <button
+          className={styles.clearButton}
+          onClick={handleClear}
+          aria-label="Clear search"
+          type="button"
+        >
+          <Icon icon="heroicons:x-mark-20-solid" width={12} height={12} />
+        </button>
+      )}
     </div>
   );
 }
