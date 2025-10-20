@@ -1,6 +1,6 @@
 import styles from './pokemon-filter-modal.module.scss';
 import { Dialog } from '@/features/ui/dialog';
-import { Icon } from '@iconify/react';
+import { X } from 'lucide-react';
 import { useCallback, useReducer } from 'react';
 import { Filters } from '../types';
 import { GenerationTags } from './components/generation-tags';
@@ -62,7 +62,7 @@ export function PokemonFilterModal({
       >
         <div className={styles.header}>
           <h2>Filter</h2>
-          <Icon icon="ep:close" onClick={() => setModalVisible(false)} />
+          <X onClick={() => setModalVisible(false)} />
         </div>
         <div className={styles.content}>
           <div className={styles.innerContent}>

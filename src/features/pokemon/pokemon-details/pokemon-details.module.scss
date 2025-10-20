@@ -2,7 +2,7 @@
 
 .loadingContainer {
   @extend %flex-center;
-  height: calc(100vh - var(--size-12));
+  height: 100vh;
 
   svg {
     width: 50px;

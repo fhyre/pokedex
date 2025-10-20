@@ -1,6 +1,6 @@
 import styles from './search-bar.module.scss';
 import { CSSProperties, useRef, useEffect } from 'react';
-import { Icon } from '@iconify/react';
+import { Search, X } from 'lucide-react';
 
 export function SearchBar({
   currentValue,
@@ -34,7 +34,7 @@ export function SearchBar({
       style={style}
       tabIndex={0}
     >
-      <Icon icon="jam:search" width={16} height={16} />
+      <Search width={16} height={16} />
       <input
         ref={inputRef}
         type="text"
@@ -50,7 +50,7 @@ export function SearchBar({
           aria-label="Clear search"
           type="button"
         >
-          <Icon icon="heroicons:x-mark-20-solid" width={12} height={12} />
+          <X width={12} height={12} />
         </button>
       )}
     </div>

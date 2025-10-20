@@ -3,7 +3,7 @@ import { ImageWrapper } from '../image-wrapper';
 import { SearchBar } from '../search-bar';
 import { useState, useCallback } from 'react';
 import { PokemonFilterModal } from '@/features/pokemon/pokemon-filter-modal';
-import { Icon } from '@iconify/react';
+import { Filter } from 'lucide-react';
 import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/router';
 
@@ -40,7 +40,7 @@ export function Header() {
           />
           <button onClick={() => setModalVisible(true)} title="Open Filters">
             {Array.from(searchParams.keys()).some(key => key !== 'query') && <div className={styles.dotIcon} />}
-            <Icon icon="iconoir:filter-solid" />
+            <Filter />
           </button>
         </div>
       </header>

@@ -2,7 +2,7 @@ import styles from './pokemon-details.module.scss';
 import { convertId, getTypeColor } from '../utils';
 import { useEffect, useState } from 'react';
 import { ImageWrapper } from '@/features/ui/image-wrapper';
-import { Icon } from '@iconify/react';
+import { ArrowLeft, LoaderCircle } from 'lucide-react';
 import Head from 'next/head';
 import { General, Stats } from './components';
 import { upperCaseFirstLetter } from '@/utils';
@@ -69,13 +69,13 @@ export function PokemonDetails({ id }: PokemonDetailsProps) {
             }}
             about="Return to previous page"
           >
-            <Icon icon="mdi:arrow-left" />
+            <ArrowLeft />
           </button>
         </nav>
         {imageLoading ? (
           <div className={styles.loadingContainer}>
-            <Icon
-              icon="line-md:loading-loop"
+            <LoaderCircle
+              className="animate-spin"
               style={{
                 color: readableColor,
               }}
