@@ -2,7 +2,8 @@ import styles from './pokemon-details.module.scss';
 import { convertId, getTypeColor } from '../utils';
 import { useEffect, useState } from 'react';
 import { ImageWrapper } from '@/features/ui/image-wrapper';
-import { ArrowLeft, LoaderCircle } from 'lucide-react';
+import { Navbar } from '@/features/ui';
+import { Home, ArrowLeft, ArrowRight, LoaderCircle } from 'lucide-react';
 import Head from 'next/head';
 import { General, Stats } from './components';
 import { upperCaseFirstLetter } from '@/utils';
@@ -26,12 +27,21 @@ export function PokemonDetails({ id }: PokemonDetailsProps) {
 
   const [imageLoading, setImageLoading] = useState(true);
 
-  const handleBack = () => {
-    const history = window.history;
-    if (history.length === 0 || (history.length === 2 && history[-2] !== '/')) {
-      router.push('/');
-    } else {
-      router.back();
+  const handleHome = () => {
+    router.push('/');
+  };
+
+  const handlePrev = () => {
+    const prevId = id - 1;
+    if (prevId >= 1) {
+      router.push(`/pokemon/${prevId}`);
+    }
+  };
+
+  const handleNext = () => {
+    const nextId = id + 1;
+    if (nextId <= allPokemon.length) {
+      router.push(`/pokemon/${nextId}`);
     }
   };
 
@@ -59,19 +69,58 @@ export function PokemonDetails({ id }: PokemonDetailsProps) {
             background: gradientStr,
           }}
         />
-        <h1 className={styles.heading}>{`about ${pokemon.name}`}</h1>
-        <nav className={styles.returnArrowContainer}>
-          <button
-            onClick={handleBack}
-            style={{
-              color: readableColor,
-              mixBlendMode: 'color-burn',
-            }}
-            about="Return to previous page"
-          >
-            <ArrowLeft />
-          </button>
-        </nav>
+        <Navbar
+          left={
+            <button
+              onClick={handleHome}
+              style={{
+                color: readableColor,
+                mixBlendMode: 'color-burn',
+              }}
+              title="Return to home"
+            >
+              <Home />
+            </button>
+          }
+          middle={
+            <h1
+              style={{
+                color: readableColor,
+                mixBlendMode: 'color-burn',
+              }}
+            >
+              {strId}
+            </h1>
+          }
+          right={
+            <>
+              <button
+                onClick={handlePrev}
+                disabled={id === 1}
+                style={{
+                  color: readableColor,
+                  mixBlendMode: 'color-burn',
+                  opacity: id === 1 ? 0.5 : 1,
+                }}
+                title="Previous Pokemon"
+              >
+                <ArrowLeft />
+              </button>
+              <button
+                onClick={handleNext}
+                disabled={id === allPokemon.length}
+                style={{
+                  color: readableColor,
+                  mixBlendMode: 'color-burn',
+                  opacity: id === allPokemon.length ? 0.5 : 1,
+                }}
+                title="Next Pokemon"
+              >
+                <ArrowRight />
+              </button>
+            </>
+          }
+        />
         {imageLoading ? (
           <div className={styles.loadingContainer}>
             <LoaderCircle

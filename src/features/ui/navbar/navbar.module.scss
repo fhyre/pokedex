@@ -1,0 +1,36 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(var(--size-1));
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+
+  svg {
+    width: var(--size-6);
+    height: auto;
+  }
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.middle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}

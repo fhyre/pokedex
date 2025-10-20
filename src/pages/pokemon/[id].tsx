@@ -4,7 +4,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 export default function DexEntry({ id }) {
   return (
     <main>
-      <PokemonDetails id={id} />
+      <PokemonDetails id={parseInt(id)} />
     </main>
   );
 }
