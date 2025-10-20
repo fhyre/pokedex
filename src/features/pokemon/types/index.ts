@@ -27,6 +27,34 @@ export type Pokemon = {
     name: string;
     chance: number;
   }[];
+  moves: {
+    id: number;
+    name: string;
+    acc: number | null;
+    dmg_class: string;
+    eff_chance: number | null;
+    contest_type: string;
+    pow: number | null;
+    pp: number;
+    prio: number;
+    type: string;
+    target: string;
+    machine: boolean;
+    stat_changes: any[];
+    effect: string;
+    version_group_details: {
+      level_learned_at: number;
+      move_learn_method: {
+        name: string;
+        desc: string;
+      };
+      version_group: {
+        regions: string[];
+        versions: string[];
+      };
+    }[];
+  }[];
+  evolutions: any; // The evolution chain structure
   name: string;
   stats: { base_stat: number; effort: number; name: string }[];
   types: EPokeTypes[];
@@ -43,7 +71,7 @@ export type Pokemon = {
     gender_diff: boolean;
     growth_rate: string;
     switch_form: boolean;
-    varietes: number[];
+    varieties: number[];
     egg_groups: string;
   };
 };
