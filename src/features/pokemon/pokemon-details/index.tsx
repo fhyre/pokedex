@@ -1,6 +1,6 @@
 import styles from './pokemon-details.module.scss';
 import { convertId, getTypeColor, darkenColor } from '../utils';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { ImageWrapper } from '@/features/ui/image-wrapper';
 import { Navbar } from '@/features/ui';
 import { Home, ArrowLeft, ArrowRight, LoaderCircle } from 'lucide-react';
@@ -24,28 +24,24 @@ export function PokemonDetails({ id }: PokemonDetailsProps) {
   );
   const readableColor = darkenColor(
     electricIndex === -1 || electricIndex === 1 ? type1Color : type2Color,
-    -10
+    -30
   );
 
   const [imageLoading, setImageLoading] = useState(true);
 
-  const handleHome = () => {
-    router.push('/');
-  };
-
-  const handlePrev = () => {
+  const handlePrev = useCallback(() => {
     const prevId = id - 1;
     if (prevId >= 1) {
       router.replace(`/pokemon/${prevId}`);
     }
-  };
+  }, [id, router]);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     const nextId = id + 1;
     if (nextId <= allPokemon.length) {
       router.replace(`/pokemon/${nextId}`);
     }
-  };
+  }, [id, router]);
 
   useEffect(() => {
     if (!imageLoading) {
@@ -58,6 +54,22 @@ export function PokemonDetails({ id }: PokemonDetailsProps) {
         });
     }
   }, [imageLoading, readableColor]);
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'ArrowLeft') {
+        handlePrev();
+      } else if (event.key === 'ArrowRight') {
+        handleNext();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [handlePrev, handleNext]);
 
   return (
     <>
