@@ -1,5 +1,4 @@
 import styles from './pokemon-filter-modal.module.scss';
-import { SearchBar } from '@/features/ui';
 import { Dialog } from '@/features/ui/dialog';
 import { Icon } from '@iconify/react';
 import { useCallback, useReducer } from 'react';
@@ -19,16 +18,14 @@ export function PokemonFilterModal({
   const params = useSearchParams();
   const [state, dispatch] = useReducer(filterReducer, {
     generations: params.get('generations')
-      ? JSON.parse(params.get('generations'))
+      ? JSON.parse(params.get('generations')!)
       : [],
-    query: params.get('query') || '',
-    types: JSON.parse(params.get('types')) || [],
+    types: params.get('types') ? JSON.parse(params.get('types')!) : [],
   } as Filters);
 
   const buildSearchParams = useCallback(() => {
-    const searchParamBuilder = [];
+    const searchParamBuilder: string[] = [];
 
-    if (state.query) searchParamBuilder.push(`query=${state.query}`);
     if (state.generations.length > 0)
       searchParamBuilder.push(
         `generations=${JSON.stringify(state.generations.sort())}`
@@ -68,12 +65,6 @@ export function PokemonFilterModal({
           <Icon icon="ep:close" onClick={() => setModalVisible(false)} />
         </div>
         <div className={styles.content}>
-          <SearchBar
-            currentValue={state.query}
-            cb={(val) =>
-              dispatch({ type: EFilterAction.SET_SEARCH_QUERY, payload: val })
-            }
-          />
           <div className={styles.innerContent}>
             <GenerationTags
               setGeneration={(gen) =>
@@ -104,8 +95,6 @@ export function PokemonFilterModal({
 
 function filterReducer(state: Filters, action: FilterAction) {
   switch (action.type) {
-    case EFilterAction.SET_SEARCH_QUERY:
-      return { ...state, query: action.payload };
     case EFilterAction.SET_GENERATION:
       const newGenerations = new Set(state.generations);
       if (newGenerations.has(action.payload)) {
@@ -123,7 +112,7 @@ function filterReducer(state: Filters, action: FilterAction) {
       }
       return { ...state, types: Array.from(newTypes) };
     case EFilterAction.CLEAR_FILTERS:
-      return { ...state, generations: [], query: '', types: [] };
+      return { ...state, generations: [], types: [] };
     default:
       return state;
   }
@@ -134,10 +123,6 @@ type PokemonFilterModalProps = {
 };
 
 type FilterAction =
-  | {
-      type: EFilterAction.SET_SEARCH_QUERY;
-      payload: string;
-    }
   | {
       type: EFilterAction.SET_GENERATION;
       payload: number;

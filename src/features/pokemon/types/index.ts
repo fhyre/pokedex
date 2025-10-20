@@ -82,7 +82,6 @@ export type PokeTypes = {
 };
 
 export type Filters = {
-  query: string;
   generations: number[];
   types: EPokeTypes[];
 };

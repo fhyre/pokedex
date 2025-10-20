@@ -1,34 +1,59 @@
 .container {
-  border-radius: var(--size-15);
   display: flex;
-  padding: var(--size-1);
-  background-color: var(--gray-2);
   align-items: center;
+  padding: var(--size-1);
+  background: transparent;
+  border: 1px solid var(--gray-3);
+  border-radius: var(--size-4);
+  transition: all 150ms var(--ease-2);
+  min-width: 160px;
+  position: relative;
+}
+
+.container > svg {
+  color: var(--gray-5);
+  flex-shrink: 0;
+  transition: color 150ms var(--ease-2);
+  width: 16px;
+  height: 16px;
 }
 
 .container > input {
-  border-style: hidden;
-  background-color: transparent;
-  font-weight: var(--font-weight-3);
+  border: none;
+  background: transparent;
+  font-weight: var(--font-weight-4);
   font-size: var(--size-3);
   font-family: inherit;
-  margin-inline: var(--size-1);
+  margin-inline-start: var(--size-1);
   width: 100%;
+  color: var(--text);
+  padding: 0;
 }
 
 .container > input:focus {
   outline: none;
 }
 
-.container:has(input:hover) {
-  transition: background-color 300ms var(--ease-2);
-  background-color: var(--gray-3);
+.container:hover {
+  border-color: var(--blue-4);
+  background: var(--gray-1);
+
+  > svg {
+    color: var(--blue-5);
+  }
 }
 
 .container:has(input:focus) {
-  background-color: var(--gray-3);
+  border-color: var(--blue-5);
+  background: var(--background);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+
+  > svg {
+    color: var(--blue-6);
+  }
 }
 
 .container > input::placeholder {
-  font-weight: 500;
+  color: var(--gray-4);
+  font-weight: 400;
 }
