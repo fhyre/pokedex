@@ -18,12 +18,14 @@ export function TypeTags({ setType, currSelectedTypes }: TypeTagsProps) {
                 currSelectedTypes.includes(EPokeTypes.ELECTRIC) &&
                 type === EPokeTypes.ELECTRIC
                   ? 'var(--gray-8)'
-                  : currSelectedTypes.includes(type) && 'var(--gray-1)',
+                  : currSelectedTypes.includes(type)
+                  ? 'var(--gray-1)'
+                  : 'transparent',
               borderColor:
                 currSelectedTypes.includes(type) &&
                 EPokeTypeColors[type.toUpperCase()],
             }}
-          >{`${type.at(0).toUpperCase()}${type.slice(1)}`}</button>
+          >{`${type.at(0)?.toUpperCase()}${type.slice(1)}`}</button>
         ))}
       </div>
     </section>

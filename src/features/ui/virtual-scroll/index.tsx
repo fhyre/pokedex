@@ -41,12 +41,11 @@ const VirtualScroll = memo(
 
     // Set scroll position on reload
     useEffect(() => {
-      if (containerRef.current) {
-        if (prevScrollPos > virtStyles.height) {
-          containerRef.current.scroll(0, 0);
-        } else {
-          containerRef.current.scroll(0, prevScrollPos);
-        }
+      if (!containerRef.current || !prevScrollPos || !virtStyles.height) return;
+      if (prevScrollPos > virtStyles.height) {
+        containerRef.current.scroll(0, 0);
+      } else {
+        containerRef.current.scroll(0, prevScrollPos);
       }
     }, [containerRef, prevScrollPos, virtStyles.height]);
 
@@ -59,6 +58,14 @@ const VirtualScroll = memo(
       };
 
       const nodesInView = (): void => {
+        if (
+          !containerRef.current ||
+          !nodeDetails.nodeHeight ||
+          !nodeDetails.nodesPerRow ||
+          !nodeDetails.nodeHeight
+        )
+          return;
+
         const renderAhead = 2;
 
         const rowsInView = Math.ceil(
@@ -85,7 +92,7 @@ const VirtualScroll = memo(
 
         setVirtStyles((prev) => ({
           ...prev,
-          offsetY: startingRow * nodeDetails.nodeHeight || 0,
+          offsetY: startingRow * (nodeDetails.nodeHeight || 0),
         }));
       };
 

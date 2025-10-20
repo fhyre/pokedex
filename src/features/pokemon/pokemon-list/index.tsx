@@ -13,8 +13,8 @@ export function PokemonList() {
 
   const params = useSearchParams();
   const searchQuery = params.get('query') || '';
-  const generations: number[] = JSON.parse(params.get('generations')) || [];
-  const queryTypes: EPokeTypes[] = JSON.parse(params.get('types')) || [];
+  const generations: number[] = JSON.parse(params.get('generations') || '[]');
+  const queryTypes: EPokeTypes[] = JSON.parse(params.get('types') || '[]');
 
   const [prevScrollPos] = useScrollRestore();
 
@@ -23,7 +23,7 @@ export function PokemonList() {
 
     sessionStorage.setItem(
       'scrollPos',
-      virtualScrollContainer.scrollTop.toString()
+      virtualScrollContainer?.scrollTop.toString() || '0'
     );
   };
 

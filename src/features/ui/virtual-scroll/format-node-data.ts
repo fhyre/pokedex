@@ -1,9 +1,11 @@
-import { MutableRefObject } from 'react';
+import { RefObject } from 'react';
 
 export function formatNodeData(
-  containerRef: MutableRefObject<HTMLDivElement>,
+  containerRef: RefObject<HTMLDivElement | null>,
   dataLength: number
 ) {
+  if (!containerRef.current) return {};
+
   const childNodes = containerRef.current.children;
 
   const childNode = childNodes[0] ? (childNodes[0] as HTMLElement) : null;

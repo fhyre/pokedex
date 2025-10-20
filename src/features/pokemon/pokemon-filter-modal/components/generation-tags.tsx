@@ -14,8 +14,9 @@ export function GenerationTags({
           <button
             key={`Generation ${i}`}
             style={{
-              backgroundColor:
-                currSelectedGenerations.includes(i) && 'var(--blue-1)',
+              backgroundColor: currSelectedGenerations.includes(i)
+                ? 'var(--blue-1)'
+                : 'transparent',
             }}
             onClick={() => setGeneration(i)}
           >{`Generation ${i}`}</button>
